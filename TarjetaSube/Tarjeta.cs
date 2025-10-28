@@ -1,28 +1,52 @@
 ﻿using System;
+using System.Collections.Generic;
 
 namespace TarjetaSube
 {
     public class Tarjeta
     {
-        private int saldo;
-        public Tarjeta(int saldo = 0)
+        private decimal saldo;
+        private const decimal LIMITE_SALDO = 40000m;
+        private static readonly List<decimal> CARGAS_ACEPTADAS = new List<decimal>
         {
-            this.saldo = saldo;
-        }
+            2000, 3000, 4000, 5000, 8000, 10000, 15000, 20000, 25000, 30000
+        };
 
-        public int Saldo
+        public decimal Saldo
         {
             get { return saldo; }
-            set { saldo = value; }
         }
-        
-        public void Cargar(int importe)
+
+        public Tarjeta()
         {
-            saldo += importe;
+            saldo = 0m;
         }
-        public void Pagar()
+
+        public bool Cargar(decimal monto)
         {
-            saldo -= 50;
+            if (!CARGAS_ACEPTADAS.Contains(monto))
+            {
+                return false;
+            }
+
+            if (saldo + monto > LIMITE_SALDO)
+            {
+                return false;
+            }
+
+            saldo += monto;
+            return true;
+        }
+
+        public bool DescontarSaldo(decimal monto)
+        {
+            if (saldo < monto)
+            {
+                return false;
+            }
+
+            saldo -= monto;
+            return true;
         }
     }
 }
