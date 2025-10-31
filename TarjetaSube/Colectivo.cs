@@ -24,19 +24,21 @@ namespace TarjetaSube
                 return null;
             }
 
-            decimal saldoAnterior = tarjeta.Saldo;
+         
+            decimal tarifaAPagar = tarjeta.ObtenerTarifa(TARIFA_BASICA);
 
-            if (!tarjeta.DescontarSaldo(TARIFA_BASICA))
+      
+            if (!tarjeta.DescontarSaldo(tarifaAPagar))
             {
                 return null;
             }
 
             Boleto boleto = new Boleto(
-                TARIFA_BASICA,
+                tarifaAPagar,
                 tarjeta.Saldo,
                 linea,
                 DateTime.Now,
-                "Normal"
+                tarjeta.ObtenerTipoBoleto()
             );
 
             return boleto;
