@@ -5,8 +5,9 @@ namespace TarjetaSube
 {
     public class Tarjeta
     {
-        private decimal saldo;
+        protected decimal saldo;
         private const decimal LIMITE_SALDO = 40000m;
+        private const decimal SALDO_NEGATIVO_PERMITIDO = -1200m;
         private static readonly List<decimal> CARGAS_ACEPTADAS = new List<decimal>
         {
             2000, 3000, 4000, 5000, 8000, 10000, 15000, 20000, 25000, 30000
@@ -22,14 +23,16 @@ namespace TarjetaSube
             saldo = 0m;
         }
 
-        public bool Cargar(decimal monto)
+        public virtual bool Cargar(decimal monto)
         {
             if (!CARGAS_ACEPTADAS.Contains(monto))
             {
                 return false;
             }
 
-            if (saldo + monto > LIMITE_SALDO)
+            decimal nuevoSaldo = saldo + monto;
+
+            if (nuevoSaldo > LIMITE_SALDO)
             {
                 return false;
             }
@@ -38,15 +41,25 @@ namespace TarjetaSube
             return true;
         }
 
-        public bool DescontarSaldo(decimal monto)
+        public virtual bool DescontarSaldo(decimal monto)
         {
-            if (saldo < monto)
+            if (saldo - monto < SALDO_NEGATIVO_PERMITIDO)
             {
                 return false;
             }
 
             saldo -= monto;
             return true;
+        }
+
+        public virtual decimal ObtenerTarifa(decimal tarifaBase)
+        {
+            return tarifaBase;
+        }
+
+        public virtual string ObtenerTipoBoleto()
+        {
+            return "Normal";
         }
     }
 }
