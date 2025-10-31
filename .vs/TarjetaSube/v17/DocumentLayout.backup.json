@@ -3,6 +3,10 @@
   "WorkspaceRootPath": "C:\\Users\\veron\\OneDrive\\Documents\\repos\\Tarjeta\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{F450CDA7-7FD3-4689-BCD5-09F50A00483B}|TarjetaSubeTest\\TarjetaSubeTest.csproj|c:\\users\\veron\\onedrive\\documents\\repos\\tarjeta\\tarjetasubetest\\testprogram.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F450CDA7-7FD3-4689-BCD5-09F50A00483B}|TarjetaSubeTest\\TarjetaSubeTest.csproj|solutionrelative:tarjetasubetest\\testprogram.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{F450CDA7-7FD3-4689-BCD5-09F50A00483B}|TarjetaSubeTest\\TarjetaSubeTest.csproj|c:\\users\\veron\\onedrive\\documents\\repos\\tarjeta\\tarjetasubetest\\testfranquicias.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{F450CDA7-7FD3-4689-BCD5-09F50A00483B}|TarjetaSubeTest\\TarjetaSubeTest.csproj|solutionrelative:tarjetasubetest\\testfranquicias.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -50,11 +54,24 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 5,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
+              "Title": "TestProgram.cs",
+              "DocumentMoniker": "C:\\Users\\veron\\OneDrive\\Documents\\repos\\Tarjeta\\TarjetaSubeTest\\TestProgram.cs",
+              "RelativeDocumentMoniker": "TarjetaSubeTest\\TestProgram.cs",
+              "ToolTip": "C:\\Users\\veron\\OneDrive\\Documents\\repos\\Tarjeta\\TarjetaSubeTest\\TestProgram.cs",
+              "RelativeToolTip": "TarjetaSubeTest\\TestProgram.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAANEBAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-31T18:03:17.763Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
               "Title": "TestSaldoNegativo.cs",
               "DocumentMoniker": "C:\\Users\\veron\\OneDrive\\Documents\\repos\\Tarjeta\\TarjetaSubeTest\\TestSaldoNegativo.cs",
               "RelativeDocumentMoniker": "TarjetaSubeTest\\TestSaldoNegativo.cs",
@@ -66,7 +83,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 7,
               "Title": "BoletoGratuito.cs",
               "DocumentMoniker": "C:\\Users\\veron\\OneDrive\\Documents\\repos\\Tarjeta\\TarjetaSube\\BoletoGratuito.cs",
               "RelativeDocumentMoniker": "TarjetaSube\\BoletoGratuito.cs",
@@ -78,7 +95,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 8,
               "Title": "MedioBoleto.cs",
               "DocumentMoniker": "C:\\Users\\veron\\OneDrive\\Documents\\repos\\Tarjeta\\TarjetaSube\\MedioBoleto.cs",
               "RelativeDocumentMoniker": "TarjetaSube\\MedioBoleto.cs",
@@ -90,7 +107,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 5,
               "Title": "Colectivo.cs",
               "DocumentMoniker": "C:\\Users\\veron\\OneDrive\\Documents\\repos\\Tarjeta\\TarjetaSube\\Colectivo.cs",
               "RelativeDocumentMoniker": "TarjetaSube\\Colectivo.cs",
@@ -102,7 +119,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\veron\\OneDrive\\Documents\\repos\\Tarjeta\\TarjetaSube\\Program.cs",
               "RelativeDocumentMoniker": "TarjetaSube\\Program.cs",
@@ -114,7 +131,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "TestFranquicias.cs",
               "DocumentMoniker": "C:\\Users\\veron\\OneDrive\\Documents\\repos\\Tarjeta\\TarjetaSubeTest\\TestFranquicias.cs",
               "RelativeDocumentMoniker": "TarjetaSubeTest\\TestFranquicias.cs",
@@ -127,7 +144,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 6,
               "Title": "FranquiciaCompleta.cs",
               "DocumentMoniker": "C:\\Users\\veron\\OneDrive\\Documents\\repos\\Tarjeta\\TarjetaSube\\FranquiciaCompleta.cs",
               "RelativeDocumentMoniker": "TarjetaSube\\FranquiciaCompleta.cs",
@@ -139,7 +156,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "UnitTest1.cs",
               "DocumentMoniker": "C:\\Users\\veron\\OneDrive\\Documents\\repos\\Tarjeta\\TarjetaSubeTest\\UnitTest1.cs",
               "RelativeDocumentMoniker": "TarjetaSubeTest\\UnitTest1.cs",
@@ -151,7 +168,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 9,
               "Title": "Boleto.cs",
               "DocumentMoniker": "C:\\Users\\veron\\OneDrive\\Documents\\repos\\Tarjeta\\TarjetaSube\\Boleto.cs",
               "RelativeDocumentMoniker": "TarjetaSube\\Boleto.cs",
@@ -163,7 +180,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 10,
               "Title": "Tarjeta.cs",
               "DocumentMoniker": "C:\\Users\\veron\\OneDrive\\Documents\\repos\\Tarjeta\\TarjetaSube\\Tarjeta.cs",
               "RelativeDocumentMoniker": "TarjetaSube\\Tarjeta.cs",
