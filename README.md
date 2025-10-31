@@ -1,6 +1,6 @@
 [![codecov](https://codecov.io/gh/francorubin/TrabajoTarjeta2025-FINAL/graph/badge.svg?token=b62280df-500f-403b-bc26-d85d410de16a)](https://codecov.io/gh/francorubin/TrabajoTarjeta2025-FINAL)
 
-# Trabajo Tarjeta 2025
+# Trabajo Tarjeta 2025.
 
 El siguiente trabajo es un enunciado iterativo. Regularmente se ampliará y/o modificará el enunciado.
 
