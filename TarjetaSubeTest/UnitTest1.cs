@@ -197,9 +197,10 @@ namespace TarjetaSubeTest
         {
             Tarjeta tarjeta = new Tarjeta();
             tarjeta.Cargar(2000);
+            // Ahora puede descontar hasta -1200, entonces 2000 - 3000 = -1000 (PERMITIDO)
             bool resultado = tarjeta.DescontarSaldo(3000);
-            Assert.IsFalse(resultado);
-            Assert.AreEqual(2000, tarjeta.Saldo);
+            Assert.IsTrue(resultado);
+            Assert.AreEqual(-1000, tarjeta.Saldo);
         }
 
         [Test]
@@ -216,9 +217,10 @@ namespace TarjetaSubeTest
         public void TestDescontarSaldoConSaldoCero()
         {
             Tarjeta tarjeta = new Tarjeta();
-            bool resultado = tarjeta.DescontarSaldo(1580);
-            Assert.IsFalse(resultado);
-            Assert.AreEqual(0, tarjeta.Saldo);
+            // Con saldo 0, puede descontar hasta -1200
+            bool resultado = tarjeta.DescontarSaldo(1000);
+            Assert.IsTrue(resultado);
+            Assert.AreEqual(-1000, tarjeta.Saldo);
         }
 
         [Test]
@@ -256,11 +258,11 @@ namespace TarjetaSubeTest
             tarjeta.Cargar(2000);
             Colectivo colectivo = new Colectivo("K");
 
-            colectivo.PagarCon(tarjeta);
-            Boleto boleto = colectivo.PagarCon(tarjeta);
+            colectivo.PagarCon(tarjeta); // 2000 - 1580 = 420
+            Boleto boleto = colectivo.PagarCon(tarjeta); // 420 - 1580 = -1160 (PERMITIDO)
 
-            Assert.IsNull(boleto);
-            Assert.AreEqual(420, tarjeta.Saldo);
+            Assert.IsNotNull(boleto);
+            Assert.AreEqual(-1160, tarjeta.Saldo);
         }
 
         [Test]
@@ -362,13 +364,61 @@ namespace TarjetaSubeTest
             tarjeta.Cargar(2000);
             Colectivo colectivo = new Colectivo("K");
 
-            colectivo.PagarCon(tarjeta);
+            // Hacer dos pagos para llegar a saldo negativo
+            colectivo.PagarCon(tarjeta); // 420
+            colectivo.PagarCon(tarjeta); // -1160
             decimal saldoAntes = tarjeta.Saldo;
 
+            // Intentar un tercer pago que excedería el límite de -1200
             Boleto boleto = colectivo.PagarCon(tarjeta);
 
             Assert.IsNull(boleto);
             Assert.AreEqual(saldoAntes, tarjeta.Saldo);
+        }
+
+        [Test]
+        public void TestTarjetaObtenerTarifaBase()
+        {
+            Tarjeta tarjeta = new Tarjeta();
+            decimal tarifa = tarjeta.ObtenerTarifa(1580);
+            Assert.AreEqual(1580, tarifa);
+        }
+
+        [Test]
+        public void TestTarjetaObtenerTipoBoletoNormal()
+        {
+            Tarjeta tarjeta = new Tarjeta();
+            string tipo = tarjeta.ObtenerTipoBoleto();
+            Assert.AreEqual("Normal", tipo);
+        }
+
+        [Test]
+        public void TestBoletoGetters()
+        {
+            DateTime fechaActual = DateTime.Now;
+            Boleto boleto = new Boleto(1580, 5000, "K", fechaActual, "Normal");
+
+            Assert.AreEqual(1580, boleto.Monto);
+            Assert.AreEqual(5000, boleto.SaldoRestante);
+            Assert.AreEqual("K", boleto.Linea);
+            Assert.AreEqual("Normal", boleto.TipoBoleto);
+            Assert.AreEqual(fechaActual, boleto.Fecha);
+        }
+
+        [Test]
+        public void TestColectivoConstructorYGetter()
+        {
+            Colectivo colectivo = new Colectivo("142");
+            Assert.AreEqual("142", colectivo.Linea);
+        }
+
+        [Test]
+        public void TestDescontarSaldoHastaLimiteNegativo()
+        {
+            Tarjeta tarjeta = new Tarjeta();
+            bool resultado = tarjeta.DescontarSaldo(1200);
+            Assert.IsTrue(resultado);
+            Assert.AreEqual(-1200, tarjeta.Saldo);
         }
     }
 }
