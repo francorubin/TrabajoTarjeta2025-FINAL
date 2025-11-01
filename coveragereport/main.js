@@ -218,7 +218,6 @@ var assemblies = [
       { "name": "TarjetaSube.Colectivo", "rp": "TarjetaSube_Colectivo.html", "cl": 22, "ucl": 1, "cal": 23, "tl": 47, "cb": 4, "tb": 4, "cm": 0, "fcm": 0, "tm": 0, "lch": [], "bch": [], "mch": [], "mfch": [], "hc": [], "metrics": { } },
       { "name": "TarjetaSube.FranquiciaCompleta", "rp": "TarjetaSube_FranquiciaCompleta.html", "cl": 12, "ucl": 0, "cal": 12, "tl": 32, "cb": 0, "tb": 0, "cm": 0, "fcm": 0, "tm": 0, "lch": [], "bch": [], "mch": [], "mfch": [], "hc": [], "metrics": { } },
       { "name": "TarjetaSube.MedioBoleto", "rp": "TarjetaSube_MedioBoleto.html", "cl": 9, "ucl": 0, "cal": 9, "tl": 26, "cb": 0, "tb": 0, "cm": 0, "fcm": 0, "tm": 0, "lch": [], "bch": [], "mch": [], "mfch": [], "hc": [], "metrics": { } },
-      { "name": "TarjetaSube.Program", "rp": "TarjetaSube_Program.html", "cl": 0, "ucl": 93, "cal": 93, "tl": 136, "cb": 0, "tb": 32, "cm": 0, "fcm": 0, "tm": 0, "lch": [], "bch": [], "mch": [], "mfch": [], "hc": [], "metrics": { } },
       { "name": "TarjetaSube.Tarjeta", "rp": "TarjetaSube_Tarjeta.html", "cl": 35, "ucl": 0, "cal": 35, "tl": 65, "cb": 6, "tb": 6, "cm": 0, "fcm": 0, "tm": 0, "lch": [], "bch": [], "mch": [], "mfch": [], "hc": [], "metrics": { } },
     ]},
 ];
@@ -228,17 +227,9 @@ var metrics = [{ "name": "Crap Score", "abbreviation": "crp", "explanationUrl": 
 var historicCoverageExecutionTimes = [];
 
 var riskHotspotMetrics = [
-      { "name": "Crap Score", "explanationUrl": "https://googletesting.blogspot.de/2011/02/this-code-is-crap.html" },
-      { "name": "Cyclomatic complexity", "explanationUrl": "https://en.wikipedia.org/wiki/Cyclomatic_complexity" },
 ];
 
 var riskHotspots = [
-  {
-    "assembly": "TarjetaSube", "class": "TarjetaSube.Program", "reportPath": "TarjetaSube_Program.html", "methodName": "Main(System.String[])", "methodShortName": "Main(...)", "fileIndex": 0, "line": 8,
-    "metrics": [
-      { "value": 1056, "exceeded": true },
-      { "value": 32, "exceeded": true },
-    ]},
 ];
 
 var branchCoverageAvailable = true;
