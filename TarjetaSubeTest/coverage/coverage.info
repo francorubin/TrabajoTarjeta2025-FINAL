@@ -1,0 +1,353 @@
+SF:C:\Users\Usuario\Documents\Fran\escuela\mauri\tp-ultimo\TarjetaSube\Boleto.cs
+FN:14,System.Decimal TarjetaSube.Boleto::get_Monto()
+FNDA:147,System.Decimal TarjetaSube.Boleto::get_Monto()
+DA:15,147
+FN:19,System.Decimal TarjetaSube.Boleto::get_SaldoRestante()
+FNDA:27,System.Decimal TarjetaSube.Boleto::get_SaldoRestante()
+DA:20,27
+FN:24,System.String TarjetaSube.Boleto::get_Linea()
+FNDA:78,System.String TarjetaSube.Boleto::get_Linea()
+DA:25,78
+FN:29,System.DateTime TarjetaSube.Boleto::get_Fecha()
+FNDA:30,System.DateTime TarjetaSube.Boleto::get_Fecha()
+DA:30,30
+FN:34,System.String TarjetaSube.Boleto::get_TipoBoleto()
+FNDA:42,System.String TarjetaSube.Boleto::get_TipoBoleto()
+DA:35,42
+FN:37,System.Void TarjetaSube.Boleto::.ctor(System.Decimal,System.Decimal,System.String,System.DateTime,System.String)
+FNDA:179,System.Void TarjetaSube.Boleto::.ctor(System.Decimal,System.Decimal,System.String,System.DateTime,System.String)
+DA:38,179
+DA:39,179
+DA:40,179
+DA:41,179
+DA:42,179
+DA:43,179
+DA:44,179
+DA:45,179
+LF:13
+LH:13
+BRF:0
+BRH:0
+FNF:6
+FNH:6
+end_of_record
+SF:C:\Users\Usuario\Documents\Fran\escuela\mauri\tp-ultimo\TarjetaSube\BoletoGratuito.cs
+FN:14,System.Decimal TarjetaSube.BoletoGratuito::ObtenerTarifa(System.Decimal)
+FNDA:31,System.Decimal TarjetaSube.BoletoGratuito::ObtenerTarifa(System.Decimal)
+DA:15,31
+DA:16,31
+DA:17,31
+FN:19,System.String TarjetaSube.BoletoGratuito::ObtenerTipoBoleto()
+FNDA:31,System.String TarjetaSube.BoletoGratuito::ObtenerTipoBoleto()
+DA:20,31
+DA:21,31
+DA:22,31
+FN:24,System.Boolean TarjetaSube.BoletoGratuito::DescontarSaldo(System.Decimal)
+FNDA:31,System.Boolean TarjetaSube.BoletoGratuito::DescontarSaldo(System.Decimal)
+DA:25,31
+DA:27,31
+DA:28,31
+FN:9,System.Void TarjetaSube.BoletoGratuito::.ctor()
+FNDA:22,System.Void TarjetaSube.BoletoGratuito::.ctor()
+DA:10,22
+DA:11,22
+DA:12,22
+LF:12
+LH:12
+BRF:0
+BRH:0
+FNF:4
+FNH:4
+end_of_record
+SF:C:\Users\Usuario\Documents\Fran\escuela\mauri\tp-ultimo\TarjetaSube\Colectivo.cs
+FN:11,System.String TarjetaSube.Colectivo::get_Linea()
+FNDA:12,System.String TarjetaSube.Colectivo::get_Linea()
+DA:12,12
+FN:20,TarjetaSube.Boleto TarjetaSube.Colectivo::PagarCon(TarjetaSube.Tarjeta)
+FNDA:180,TarjetaSube.Boleto TarjetaSube.Colectivo::PagarCon(TarjetaSube.Tarjeta)
+DA:21,180
+DA:22,180
+DA:23,3
+DA:24,3
+DA:28,177
+DA:31,177
+DA:32,7
+DA:33,7
+DA:36,170
+DA:37,170
+DA:38,170
+DA:39,170
+DA:40,170
+DA:41,170
+DA:42,170
+DA:44,170
+DA:45,180
+BRDA:22,7,0,3
+BRDA:22,7,1,177
+BRDA:31,45,0,7
+BRDA:31,45,1,170
+FN:14,System.Void TarjetaSube.Colectivo::.ctor(System.String)
+FNDA:80,System.Void TarjetaSube.Colectivo::.ctor(System.String)
+DA:15,80
+DA:16,80
+DA:17,80
+DA:18,80
+FN:6,System.Void TarjetaSube.Colectivo::.cctor()
+FNDA:0,System.Void TarjetaSube.Colectivo::.cctor()
+DA:7,0
+LF:23
+LH:22
+BRF:4
+BRH:4
+FNF:4
+FNH:3
+end_of_record
+SF:C:\Users\Usuario\Documents\Fran\escuela\mauri\tp-ultimo\TarjetaSube\FranquiciaCompleta.cs
+FN:16,System.Decimal TarjetaSube.FranquiciaCompleta::ObtenerTarifa(System.Decimal)
+FNDA:39,System.Decimal TarjetaSube.FranquiciaCompleta::ObtenerTarifa(System.Decimal)
+DA:17,39
+DA:18,39
+DA:19,39
+FN:21,System.String TarjetaSube.FranquiciaCompleta::ObtenerTipoBoleto()
+FNDA:39,System.String TarjetaSube.FranquiciaCompleta::ObtenerTipoBoleto()
+DA:22,39
+DA:23,39
+DA:24,39
+FN:26,System.Boolean TarjetaSube.FranquiciaCompleta::DescontarSaldo(System.Decimal)
+FNDA:39,System.Boolean TarjetaSube.FranquiciaCompleta::DescontarSaldo(System.Decimal)
+DA:27,39
+DA:29,39
+DA:30,39
+FN:11,System.Void TarjetaSube.FranquiciaCompleta::.ctor()
+FNDA:23,System.Void TarjetaSube.FranquiciaCompleta::.ctor()
+DA:12,23
+DA:13,23
+DA:14,23
+LF:12
+LH:12
+BRF:0
+BRH:0
+FNF:4
+FNH:4
+end_of_record
+SF:C:\Users\Usuario\Documents\Fran\escuela\mauri\tp-ultimo\TarjetaSube\MedioBoleto.cs
+FN:16,System.Decimal TarjetaSube.MedioBoleto::ObtenerTarifa(System.Decimal)
+FNDA:46,System.Decimal TarjetaSube.MedioBoleto::ObtenerTarifa(System.Decimal)
+DA:17,46
+DA:18,46
+DA:19,46
+FN:21,System.String TarjetaSube.MedioBoleto::ObtenerTipoBoleto()
+FNDA:45,System.String TarjetaSube.MedioBoleto::ObtenerTipoBoleto()
+DA:22,45
+DA:23,45
+DA:24,45
+FN:11,System.Void TarjetaSube.MedioBoleto::.ctor()
+FNDA:27,System.Void TarjetaSube.MedioBoleto::.ctor()
+DA:12,27
+DA:13,27
+DA:14,27
+LF:9
+LH:9
+BRF:0
+BRH:0
+FNF:3
+FNH:3
+end_of_record
+SF:C:\Users\Usuario\Documents\Fran\escuela\mauri\tp-ultimo\TarjetaSube\Program.cs
+FN:7,System.Void TarjetaSube.Program::Main(System.String[])
+FNDA:0,System.Void TarjetaSube.Program::Main(System.String[])
+DA:8,0
+DA:9,0
+DA:10,0
+DA:11,0
+DA:13,0
+DA:15,0
+DA:16,0
+DA:17,0
+DA:18,0
+DA:19,0
+DA:20,0
+DA:21,0
+DA:22,0
+DA:23,0
+DA:25,0
+DA:27,0
+DA:30,0
+DA:31,0
+DA:32,0
+DA:33,0
+DA:34,0
+DA:35,0
+DA:36,0
+DA:38,0
+DA:41,0
+DA:42,0
+DA:43,0
+DA:45,0
+DA:46,0
+DA:47,0
+DA:49,0
+DA:50,0
+DA:51,0
+DA:53,0
+DA:54,0
+DA:55,0
+DA:57,0
+DA:58,0
+DA:60,0
+DA:63,0
+DA:64,0
+DA:65,0
+DA:66,0
+DA:69,0
+DA:70,0
+DA:71,0
+DA:72,0
+DA:73,0
+DA:74,0
+DA:75,0
+DA:76,0
+DA:78,0
+DA:79,0
+DA:80,0
+DA:81,0
+DA:83,0
+DA:84,0
+DA:85,0
+DA:86,0
+DA:89,0
+DA:90,0
+DA:91,0
+DA:92,0
+DA:94,0
+DA:95,0
+DA:98,0
+DA:99,0
+DA:100,0
+DA:101,0
+DA:104,0
+DA:105,0
+DA:106,0
+DA:108,0
+DA:110,0
+DA:111,0
+DA:112,0
+DA:113,0
+DA:114,0
+DA:115,0
+DA:116,0
+DA:117,0
+DA:118,0
+DA:120,0
+DA:121,0
+DA:122,0
+DA:123,0
+DA:126,0
+DA:127,0
+DA:128,0
+DA:131,0
+DA:132,0
+DA:134,0
+DA:135,0
+BRDA:15,922,1,0
+BRDA:27,135,0,0
+BRDA:27,149,0,0
+BRDA:27,166,0,0
+BRDA:27,183,0,0
+BRDA:27,135,1,0
+BRDA:38,303,0,0
+BRDA:38,317,0,0
+BRDA:38,331,0,0
+BRDA:38,303,1,0
+BRDA:38,317,1,0
+BRDA:38,331,1,0
+BRDA:38,345,1,0
+BRDA:38,345,0,0
+BRDA:27,149,1,0
+BRDA:63,451,0,0
+BRDA:63,451,1,0
+BRDA:71,508,0,0
+BRDA:73,523,0,0
+BRDA:73,523,1,0
+BRDA:71,508,1,0
+BRDA:27,166,1,0
+BRDA:89,598,0,0
+BRDA:89,598,1,0
+BRDA:27,183,1,0
+BRDA:98,657,0,0
+BRDA:98,657,1,0
+BRDA:110,720,0,0
+BRDA:110,720,1,0
+BRDA:27,200,1,0
+BRDA:27,200,0,0
+BRDA:15,922,0,0
+LF:93
+LH:0
+BRF:32
+BRH:0
+FNF:1
+FNH:0
+end_of_record
+SF:C:\Users\Usuario\Documents\Fran\escuela\mauri\tp-ultimo\TarjetaSube\Tarjeta.cs
+FN:17,System.Decimal TarjetaSube.Tarjeta::get_Saldo()
+FNDA:999,System.Decimal TarjetaSube.Tarjeta::get_Saldo()
+DA:18,999
+FN:26,System.Boolean TarjetaSube.Tarjeta::Cargar(System.Decimal)
+FNDA:165,System.Boolean TarjetaSube.Tarjeta::Cargar(System.Decimal)
+DA:27,165
+DA:28,165
+DA:29,9
+DA:30,9
+DA:33,156
+DA:35,156
+DA:36,6
+DA:37,6
+DA:40,150
+DA:41,150
+DA:42,165
+BRDA:28,17,0,9
+BRDA:28,17,1,156
+BRDA:35,55,0,6
+BRDA:35,55,1,150
+FN:44,System.Boolean TarjetaSube.Tarjeta::DescontarSaldo(System.Decimal)
+FNDA:135,System.Boolean TarjetaSube.Tarjeta::DescontarSaldo(System.Decimal)
+DA:45,135
+DA:46,135
+DA:47,10
+DA:48,10
+DA:51,125
+DA:52,125
+DA:53,135
+BRDA:46,30,0,10
+BRDA:46,30,1,125
+FN:55,System.Decimal TarjetaSube.Tarjeta::ObtenerTarifa(System.Decimal)
+FNDA:69,System.Decimal TarjetaSube.Tarjeta::ObtenerTarifa(System.Decimal)
+DA:56,69
+DA:57,69
+DA:58,69
+FN:60,System.String TarjetaSube.Tarjeta::ObtenerTipoBoleto()
+FNDA:63,System.String TarjetaSube.Tarjeta::ObtenerTipoBoleto()
+DA:61,63
+DA:62,63
+DA:63,63
+FN:20,System.Void TarjetaSube.Tarjeta::.ctor()
+FNDA:172,System.Void TarjetaSube.Tarjeta::.ctor()
+DA:21,172
+DA:22,172
+DA:23,172
+DA:24,172
+FN:8,System.Void TarjetaSube.Tarjeta::.cctor()
+FNDA:1,System.Void TarjetaSube.Tarjeta::.cctor()
+DA:9,1
+DA:10,1
+DA:11,1
+DA:12,1
+DA:13,1
+DA:14,1
+LF:35
+LH:35
+BRF:6
+BRH:6
+FNF:7
+FNH:7
+end_of_record

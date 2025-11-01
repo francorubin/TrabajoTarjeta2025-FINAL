@@ -1,0 +1,714 @@
+{
+  "TarjetaSube.dll": {
+    "C:\\Users\\Usuario\\Documents\\Fran\\escuela\\mauri\\tp-ultimo\\TarjetaSube\\Boleto.cs": {
+      "TarjetaSube.Boleto": {
+        "System.Decimal TarjetaSube.Boleto::get_Monto()": {
+          "Lines": {
+            "15": 147
+          },
+          "Branches": []
+        },
+        "System.Decimal TarjetaSube.Boleto::get_SaldoRestante()": {
+          "Lines": {
+            "20": 27
+          },
+          "Branches": []
+        },
+        "System.String TarjetaSube.Boleto::get_Linea()": {
+          "Lines": {
+            "25": 78
+          },
+          "Branches": []
+        },
+        "System.DateTime TarjetaSube.Boleto::get_Fecha()": {
+          "Lines": {
+            "30": 30
+          },
+          "Branches": []
+        },
+        "System.String TarjetaSube.Boleto::get_TipoBoleto()": {
+          "Lines": {
+            "35": 42
+          },
+          "Branches": []
+        },
+        "System.Void TarjetaSube.Boleto::.ctor(System.Decimal,System.Decimal,System.String,System.DateTime,System.String)": {
+          "Lines": {
+            "38": 179,
+            "39": 179,
+            "40": 179,
+            "41": 179,
+            "42": 179,
+            "43": 179,
+            "44": 179,
+            "45": 179
+          },
+          "Branches": []
+        }
+      }
+    },
+    "C:\\Users\\Usuario\\Documents\\Fran\\escuela\\mauri\\tp-ultimo\\TarjetaSube\\BoletoGratuito.cs": {
+      "TarjetaSube.BoletoGratuito": {
+        "System.Decimal TarjetaSube.BoletoGratuito::ObtenerTarifa(System.Decimal)": {
+          "Lines": {
+            "15": 31,
+            "16": 31,
+            "17": 31
+          },
+          "Branches": []
+        },
+        "System.String TarjetaSube.BoletoGratuito::ObtenerTipoBoleto()": {
+          "Lines": {
+            "20": 31,
+            "21": 31,
+            "22": 31
+          },
+          "Branches": []
+        },
+        "System.Boolean TarjetaSube.BoletoGratuito::DescontarSaldo(System.Decimal)": {
+          "Lines": {
+            "25": 31,
+            "27": 31,
+            "28": 31
+          },
+          "Branches": []
+        },
+        "System.Void TarjetaSube.BoletoGratuito::.ctor()": {
+          "Lines": {
+            "10": 22,
+            "11": 22,
+            "12": 22
+          },
+          "Branches": []
+        }
+      }
+    },
+    "C:\\Users\\Usuario\\Documents\\Fran\\escuela\\mauri\\tp-ultimo\\TarjetaSube\\Colectivo.cs": {
+      "TarjetaSube.Colectivo": {
+        "System.String TarjetaSube.Colectivo::get_Linea()": {
+          "Lines": {
+            "12": 12
+          },
+          "Branches": []
+        },
+        "TarjetaSube.Boleto TarjetaSube.Colectivo::PagarCon(TarjetaSube.Tarjeta)": {
+          "Lines": {
+            "21": 180,
+            "22": 180,
+            "23": 3,
+            "24": 3,
+            "28": 177,
+            "31": 177,
+            "32": 7,
+            "33": 7,
+            "36": 170,
+            "37": 170,
+            "38": 170,
+            "39": 170,
+            "40": 170,
+            "41": 170,
+            "42": 170,
+            "44": 170,
+            "45": 180
+          },
+          "Branches": [
+            {
+              "Line": 22,
+              "Offset": 7,
+              "EndOffset": 9,
+              "Path": 0,
+              "Ordinal": 0,
+              "Hits": 3
+            },
+            {
+              "Line": 22,
+              "Offset": 7,
+              "EndOffset": 14,
+              "Path": 1,
+              "Ordinal": 1,
+              "Hits": 177
+            },
+            {
+              "Line": 31,
+              "Offset": 45,
+              "EndOffset": 47,
+              "Path": 0,
+              "Ordinal": 2,
+              "Hits": 7
+            },
+            {
+              "Line": 31,
+              "Offset": 45,
+              "EndOffset": 52,
+              "Path": 1,
+              "Ordinal": 3,
+              "Hits": 170
+            }
+          ]
+        },
+        "System.Void TarjetaSube.Colectivo::.ctor(System.String)": {
+          "Lines": {
+            "15": 80,
+            "16": 80,
+            "17": 80,
+            "18": 80
+          },
+          "Branches": []
+        },
+        "System.Void TarjetaSube.Colectivo::.cctor()": {
+          "Lines": {
+            "7": 0
+          },
+          "Branches": []
+        }
+      }
+    },
+    "C:\\Users\\Usuario\\Documents\\Fran\\escuela\\mauri\\tp-ultimo\\TarjetaSube\\FranquiciaCompleta.cs": {
+      "TarjetaSube.FranquiciaCompleta": {
+        "System.Decimal TarjetaSube.FranquiciaCompleta::ObtenerTarifa(System.Decimal)": {
+          "Lines": {
+            "17": 39,
+            "18": 39,
+            "19": 39
+          },
+          "Branches": []
+        },
+        "System.String TarjetaSube.FranquiciaCompleta::ObtenerTipoBoleto()": {
+          "Lines": {
+            "22": 39,
+            "23": 39,
+            "24": 39
+          },
+          "Branches": []
+        },
+        "System.Boolean TarjetaSube.FranquiciaCompleta::DescontarSaldo(System.Decimal)": {
+          "Lines": {
+            "27": 39,
+            "29": 39,
+            "30": 39
+          },
+          "Branches": []
+        },
+        "System.Void TarjetaSube.FranquiciaCompleta::.ctor()": {
+          "Lines": {
+            "12": 23,
+            "13": 23,
+            "14": 23
+          },
+          "Branches": []
+        }
+      }
+    },
+    "C:\\Users\\Usuario\\Documents\\Fran\\escuela\\mauri\\tp-ultimo\\TarjetaSube\\MedioBoleto.cs": {
+      "TarjetaSube.MedioBoleto": {
+        "System.Decimal TarjetaSube.MedioBoleto::ObtenerTarifa(System.Decimal)": {
+          "Lines": {
+            "17": 46,
+            "18": 46,
+            "19": 46
+          },
+          "Branches": []
+        },
+        "System.String TarjetaSube.MedioBoleto::ObtenerTipoBoleto()": {
+          "Lines": {
+            "22": 45,
+            "23": 45,
+            "24": 45
+          },
+          "Branches": []
+        },
+        "System.Void TarjetaSube.MedioBoleto::.ctor()": {
+          "Lines": {
+            "12": 27,
+            "13": 27,
+            "14": 27
+          },
+          "Branches": []
+        }
+      }
+    },
+    "C:\\Users\\Usuario\\Documents\\Fran\\escuela\\mauri\\tp-ultimo\\TarjetaSube\\Program.cs": {
+      "TarjetaSube.Program": {
+        "System.Void TarjetaSube.Program::Main(System.String[])": {
+          "Lines": {
+            "8": 0,
+            "9": 0,
+            "10": 0,
+            "11": 0,
+            "13": 0,
+            "15": 0,
+            "16": 0,
+            "17": 0,
+            "18": 0,
+            "19": 0,
+            "20": 0,
+            "21": 0,
+            "22": 0,
+            "23": 0,
+            "25": 0,
+            "27": 0,
+            "30": 0,
+            "31": 0,
+            "32": 0,
+            "33": 0,
+            "34": 0,
+            "35": 0,
+            "36": 0,
+            "38": 0,
+            "41": 0,
+            "42": 0,
+            "43": 0,
+            "45": 0,
+            "46": 0,
+            "47": 0,
+            "49": 0,
+            "50": 0,
+            "51": 0,
+            "53": 0,
+            "54": 0,
+            "55": 0,
+            "57": 0,
+            "58": 0,
+            "60": 0,
+            "63": 0,
+            "64": 0,
+            "65": 0,
+            "66": 0,
+            "69": 0,
+            "70": 0,
+            "71": 0,
+            "72": 0,
+            "73": 0,
+            "74": 0,
+            "75": 0,
+            "76": 0,
+            "78": 0,
+            "79": 0,
+            "80": 0,
+            "81": 0,
+            "83": 0,
+            "84": 0,
+            "85": 0,
+            "86": 0,
+            "89": 0,
+            "90": 0,
+            "91": 0,
+            "92": 0,
+            "94": 0,
+            "95": 0,
+            "98": 0,
+            "99": 0,
+            "100": 0,
+            "101": 0,
+            "104": 0,
+            "105": 0,
+            "106": 0,
+            "108": 0,
+            "110": 0,
+            "111": 0,
+            "112": 0,
+            "113": 0,
+            "114": 0,
+            "115": 0,
+            "116": 0,
+            "117": 0,
+            "118": 0,
+            "120": 0,
+            "121": 0,
+            "122": 0,
+            "123": 0,
+            "126": 0,
+            "127": 0,
+            "128": 0,
+            "131": 0,
+            "132": 0,
+            "134": 0,
+            "135": 0
+          },
+          "Branches": [
+            {
+              "Line": 15,
+              "Offset": 922,
+              "EndOffset": 32,
+              "Path": 1,
+              "Ordinal": 31,
+              "Hits": 0
+            },
+            {
+              "Line": 27,
+              "Offset": 135,
+              "EndOffset": 137,
+              "Path": 0,
+              "Ordinal": 0,
+              "Hits": 0
+            },
+            {
+              "Line": 27,
+              "Offset": 149,
+              "EndOffset": 154,
+              "Path": 0,
+              "Ordinal": 2,
+              "Hits": 0
+            },
+            {
+              "Line": 27,
+              "Offset": 166,
+              "EndOffset": 171,
+              "Path": 0,
+              "Ordinal": 4,
+              "Hits": 0
+            },
+            {
+              "Line": 27,
+              "Offset": 183,
+              "EndOffset": 188,
+              "Path": 0,
+              "Ordinal": 6,
+              "Hits": 0
+            },
+            {
+              "Line": 27,
+              "Offset": 135,
+              "EndOffset": 210,
+              "Path": 1,
+              "Ordinal": 1,
+              "Hits": 0
+            },
+            {
+              "Line": 38,
+              "Offset": 303,
+              "EndOffset": 305,
+              "Path": 0,
+              "Ordinal": 10,
+              "Hits": 0
+            },
+            {
+              "Line": 38,
+              "Offset": 317,
+              "EndOffset": 319,
+              "Path": 0,
+              "Ordinal": 12,
+              "Hits": 0
+            },
+            {
+              "Line": 38,
+              "Offset": 331,
+              "EndOffset": 333,
+              "Path": 0,
+              "Ordinal": 14,
+              "Hits": 0
+            },
+            {
+              "Line": 38,
+              "Offset": 303,
+              "EndOffset": 349,
+              "Path": 1,
+              "Ordinal": 11,
+              "Hits": 0
+            },
+            {
+              "Line": 38,
+              "Offset": 317,
+              "EndOffset": 368,
+              "Path": 1,
+              "Ordinal": 13,
+              "Hits": 0
+            },
+            {
+              "Line": 38,
+              "Offset": 331,
+              "EndOffset": 387,
+              "Path": 1,
+              "Ordinal": 15,
+              "Hits": 0
+            },
+            {
+              "Line": 38,
+              "Offset": 345,
+              "EndOffset": 406,
+              "Path": 1,
+              "Ordinal": 17,
+              "Hits": 0
+            },
+            {
+              "Line": 38,
+              "Offset": 345,
+              "EndOffset": 425,
+              "Path": 0,
+              "Ordinal": 16,
+              "Hits": 0
+            },
+            {
+              "Line": 27,
+              "Offset": 149,
+              "EndOffset": 443,
+              "Path": 1,
+              "Ordinal": 3,
+              "Hits": 0
+            },
+            {
+              "Line": 63,
+              "Offset": 451,
+              "EndOffset": 453,
+              "Path": 0,
+              "Ordinal": 18,
+              "Hits": 0
+            },
+            {
+              "Line": 63,
+              "Offset": 451,
+              "EndOffset": 470,
+              "Path": 1,
+              "Ordinal": 19,
+              "Hits": 0
+            },
+            {
+              "Line": 71,
+              "Offset": 508,
+              "EndOffset": 510,
+              "Path": 0,
+              "Ordinal": 20,
+              "Hits": 0
+            },
+            {
+              "Line": 73,
+              "Offset": 523,
+              "EndOffset": 525,
+              "Path": 0,
+              "Ordinal": 22,
+              "Hits": 0
+            },
+            {
+              "Line": 73,
+              "Offset": 523,
+              "EndOffset": 556,
+              "Path": 1,
+              "Ordinal": 23,
+              "Hits": 0
+            },
+            {
+              "Line": 71,
+              "Offset": 508,
+              "EndOffset": 572,
+              "Path": 1,
+              "Ordinal": 21,
+              "Hits": 0
+            },
+            {
+              "Line": 27,
+              "Offset": 166,
+              "EndOffset": 590,
+              "Path": 1,
+              "Ordinal": 5,
+              "Hits": 0
+            },
+            {
+              "Line": 89,
+              "Offset": 598,
+              "EndOffset": 600,
+              "Path": 0,
+              "Ordinal": 24,
+              "Hits": 0
+            },
+            {
+              "Line": 89,
+              "Offset": 598,
+              "EndOffset": 617,
+              "Path": 1,
+              "Ordinal": 25,
+              "Hits": 0
+            },
+            {
+              "Line": 27,
+              "Offset": 183,
+              "EndOffset": 649,
+              "Path": 1,
+              "Ordinal": 7,
+              "Hits": 0
+            },
+            {
+              "Line": 98,
+              "Offset": 657,
+              "EndOffset": 659,
+              "Path": 0,
+              "Ordinal": 26,
+              "Hits": 0
+            },
+            {
+              "Line": 98,
+              "Offset": 657,
+              "EndOffset": 676,
+              "Path": 1,
+              "Ordinal": 27,
+              "Hits": 0
+            },
+            {
+              "Line": 110,
+              "Offset": 720,
+              "EndOffset": 725,
+              "Path": 0,
+              "Ordinal": 28,
+              "Hits": 0
+            },
+            {
+              "Line": 110,
+              "Offset": 720,
+              "EndOffset": 870,
+              "Path": 1,
+              "Ordinal": 29,
+              "Hits": 0
+            },
+            {
+              "Line": 27,
+              "Offset": 200,
+              "EndOffset": 885,
+              "Path": 1,
+              "Ordinal": 9,
+              "Hits": 0
+            },
+            {
+              "Line": 27,
+              "Offset": 200,
+              "EndOffset": 900,
+              "Path": 0,
+              "Ordinal": 8,
+              "Hits": 0
+            },
+            {
+              "Line": 15,
+              "Offset": 922,
+              "EndOffset": 927,
+              "Path": 0,
+              "Ordinal": 30,
+              "Hits": 0
+            }
+          ]
+        }
+      }
+    },
+    "C:\\Users\\Usuario\\Documents\\Fran\\escuela\\mauri\\tp-ultimo\\TarjetaSube\\Tarjeta.cs": {
+      "TarjetaSube.Tarjeta": {
+        "System.Decimal TarjetaSube.Tarjeta::get_Saldo()": {
+          "Lines": {
+            "18": 999
+          },
+          "Branches": []
+        },
+        "System.Boolean TarjetaSube.Tarjeta::Cargar(System.Decimal)": {
+          "Lines": {
+            "27": 165,
+            "28": 165,
+            "29": 9,
+            "30": 9,
+            "33": 156,
+            "35": 156,
+            "36": 6,
+            "37": 6,
+            "40": 150,
+            "41": 150,
+            "42": 165
+          },
+          "Branches": [
+            {
+              "Line": 28,
+              "Offset": 17,
+              "EndOffset": 19,
+              "Path": 0,
+              "Ordinal": 0,
+              "Hits": 9
+            },
+            {
+              "Line": 28,
+              "Offset": 17,
+              "EndOffset": 24,
+              "Path": 1,
+              "Ordinal": 1,
+              "Hits": 156
+            },
+            {
+              "Line": 35,
+              "Offset": 55,
+              "EndOffset": 57,
+              "Path": 0,
+              "Ordinal": 2,
+              "Hits": 6
+            },
+            {
+              "Line": 35,
+              "Offset": 55,
+              "EndOffset": 62,
+              "Path": 1,
+              "Ordinal": 3,
+              "Hits": 150
+            }
+          ]
+        },
+        "System.Boolean TarjetaSube.Tarjeta::DescontarSaldo(System.Decimal)": {
+          "Lines": {
+            "45": 135,
+            "46": 135,
+            "47": 10,
+            "48": 10,
+            "51": 125,
+            "52": 125,
+            "53": 135
+          },
+          "Branches": [
+            {
+              "Line": 46,
+              "Offset": 30,
+              "EndOffset": 32,
+              "Path": 0,
+              "Ordinal": 0,
+              "Hits": 10
+            },
+            {
+              "Line": 46,
+              "Offset": 30,
+              "EndOffset": 37,
+              "Path": 1,
+              "Ordinal": 1,
+              "Hits": 125
+            }
+          ]
+        },
+        "System.Decimal TarjetaSube.Tarjeta::ObtenerTarifa(System.Decimal)": {
+          "Lines": {
+            "56": 69,
+            "57": 69,
+            "58": 69
+          },
+          "Branches": []
+        },
+        "System.String TarjetaSube.Tarjeta::ObtenerTipoBoleto()": {
+          "Lines": {
+            "61": 63,
+            "62": 63,
+            "63": 63
+          },
+          "Branches": []
+        },
+        "System.Void TarjetaSube.Tarjeta::.ctor()": {
+          "Lines": {
+            "21": 172,
+            "22": 172,
+            "23": 172,
+            "24": 172
+          },
+          "Branches": []
+        },
+        "System.Void TarjetaSube.Tarjeta::.cctor()": {
+          "Lines": {
+            "9": 1,
+            "10": 1,
+            "11": 1,
+            "12": 1,
+            "13": 1,
+            "14": 1
+          },
+          "Branches": []
+        }
+      }
+    }
+  }
+}

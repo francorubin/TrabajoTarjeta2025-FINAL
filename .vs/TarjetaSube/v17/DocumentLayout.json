@@ -1,49 +1,53 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\veron\\OneDrive\\Documents\\repos\\Tarjeta\\",
+  "WorkspaceRootPath": "C:\\Users\\Usuario\\Documents\\Fran\\escuela\\mauri\\tp-ultimo\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{F450CDA7-7FD3-4689-BCD5-09F50A00483B}|TarjetaSubeTest\\TarjetaSubeTest.csproj|c:\\users\\veron\\onedrive\\documents\\repos\\tarjeta\\tarjetasubetest\\testprogram.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F450CDA7-7FD3-4689-BCD5-09F50A00483B}|TarjetaSubeTest\\TarjetaSubeTest.csproj|solutionrelative:tarjetasubetest\\testprogram.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F450CDA7-7FD3-4689-BCD5-09F50A00483B}|TarjetaSubeTest\\TarjetaSubeTest.csproj|c:\\users\\veron\\onedrive\\documents\\repos\\tarjeta\\tarjetasubetest\\testfranquicias.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F450CDA7-7FD3-4689-BCD5-09F50A00483B}|TarjetaSubeTest\\TarjetaSubeTest.csproj|solutionrelative:tarjetasubetest\\testfranquicias.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F450CDA7-7FD3-4689-BCD5-09F50A00483B}|TarjetaSubeTest\\TarjetaSubeTest.csproj|c:\\users\\veron\\onedrive\\documents\\repos\\tarjeta\\tarjetasubetest\\testsaldonegativo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F450CDA7-7FD3-4689-BCD5-09F50A00483B}|TarjetaSubeTest\\TarjetaSubeTest.csproj|solutionrelative:tarjetasubetest\\testsaldonegativo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F450CDA7-7FD3-4689-BCD5-09F50A00483B}|TarjetaSubeTest\\TarjetaSubeTest.csproj|c:\\users\\veron\\onedrive\\documents\\repos\\tarjeta\\tarjetasubetest\\unittest1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F450CDA7-7FD3-4689-BCD5-09F50A00483B}|TarjetaSubeTest\\TarjetaSubeTest.csproj|solutionrelative:tarjetasubetest\\unittest1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F7FE6A7B-5DDD-4A43-B9E2-0A22A9EB62E5}|TarjetaSube\\TarjetaSube.csproj|c:\\users\\veron\\onedrive\\documents\\repos\\tarjeta\\tarjetasube\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{F7FE6A7B-5DDD-4A43-B9E2-0A22A9EB62E5}|TarjetaSube\\TarjetaSube.csproj|c:\\users\\usuario\\documents\\fran\\escuela\\mauri\\tp-ultimo\\tarjetasube\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{F7FE6A7B-5DDD-4A43-B9E2-0A22A9EB62E5}|TarjetaSube\\TarjetaSube.csproj|solutionrelative:tarjetasube\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F7FE6A7B-5DDD-4A43-B9E2-0A22A9EB62E5}|TarjetaSube\\TarjetaSube.csproj|c:\\users\\veron\\onedrive\\documents\\repos\\tarjeta\\tarjetasube\\colectivo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F7FE6A7B-5DDD-4A43-B9E2-0A22A9EB62E5}|TarjetaSube\\TarjetaSube.csproj|solutionrelative:tarjetasube\\colectivo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F7FE6A7B-5DDD-4A43-B9E2-0A22A9EB62E5}|TarjetaSube\\TarjetaSube.csproj|c:\\users\\veron\\onedrive\\documents\\repos\\tarjeta\\tarjetasube\\franquiciacompleta.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{F7FE6A7B-5DDD-4A43-B9E2-0A22A9EB62E5}|TarjetaSube\\TarjetaSube.csproj|c:\\users\\usuario\\documents\\fran\\escuela\\mauri\\tp-ultimo\\tarjetasube\\franquiciacompleta.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{F7FE6A7B-5DDD-4A43-B9E2-0A22A9EB62E5}|TarjetaSube\\TarjetaSube.csproj|solutionrelative:tarjetasube\\franquiciacompleta.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F7FE6A7B-5DDD-4A43-B9E2-0A22A9EB62E5}|TarjetaSube\\TarjetaSube.csproj|c:\\users\\veron\\onedrive\\documents\\repos\\tarjeta\\tarjetasube\\boletogratuito.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{F450CDA7-7FD3-4689-BCD5-09F50A00483B}|TarjetaSubeTest\\TarjetaSubeTest.csproj|c:\\users\\usuario\\documents\\fran\\escuela\\mauri\\tp-ultimo\\tarjetasubetest\\tarjetasubetest.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{F450CDA7-7FD3-4689-BCD5-09F50A00483B}|TarjetaSubeTest\\TarjetaSubeTest.csproj|solutionrelative:tarjetasubetest\\tarjetasubetest.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F450CDA7-7FD3-4689-BCD5-09F50A00483B}|TarjetaSubeTest\\TarjetaSubeTest.csproj|c:\\users\\usuario\\documents\\fran\\escuela\\mauri\\tp-ultimo\\tarjetasubetest\\testprogram.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F450CDA7-7FD3-4689-BCD5-09F50A00483B}|TarjetaSubeTest\\TarjetaSubeTest.csproj|solutionrelative:tarjetasubetest\\testprogram.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F450CDA7-7FD3-4689-BCD5-09F50A00483B}|TarjetaSubeTest\\TarjetaSubeTest.csproj|c:\\users\\usuario\\documents\\fran\\escuela\\mauri\\tp-ultimo\\tarjetasubetest\\testfranquicias.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F450CDA7-7FD3-4689-BCD5-09F50A00483B}|TarjetaSubeTest\\TarjetaSubeTest.csproj|solutionrelative:tarjetasubetest\\testfranquicias.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F450CDA7-7FD3-4689-BCD5-09F50A00483B}|TarjetaSubeTest\\TarjetaSubeTest.csproj|c:\\users\\usuario\\documents\\fran\\escuela\\mauri\\tp-ultimo\\tarjetasubetest\\testsaldonegativo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F450CDA7-7FD3-4689-BCD5-09F50A00483B}|TarjetaSubeTest\\TarjetaSubeTest.csproj|solutionrelative:tarjetasubetest\\testsaldonegativo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F450CDA7-7FD3-4689-BCD5-09F50A00483B}|TarjetaSubeTest\\TarjetaSubeTest.csproj|c:\\users\\usuario\\documents\\fran\\escuela\\mauri\\tp-ultimo\\tarjetasubetest\\unittest1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F450CDA7-7FD3-4689-BCD5-09F50A00483B}|TarjetaSubeTest\\TarjetaSubeTest.csproj|solutionrelative:tarjetasubetest\\unittest1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F7FE6A7B-5DDD-4A43-B9E2-0A22A9EB62E5}|TarjetaSube\\TarjetaSube.csproj|c:\\users\\usuario\\documents\\fran\\escuela\\mauri\\tp-ultimo\\tarjetasube\\colectivo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F7FE6A7B-5DDD-4A43-B9E2-0A22A9EB62E5}|TarjetaSube\\TarjetaSube.csproj|solutionrelative:tarjetasube\\colectivo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F7FE6A7B-5DDD-4A43-B9E2-0A22A9EB62E5}|TarjetaSube\\TarjetaSube.csproj|c:\\users\\usuario\\documents\\fran\\escuela\\mauri\\tp-ultimo\\tarjetasube\\boletogratuito.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{F7FE6A7B-5DDD-4A43-B9E2-0A22A9EB62E5}|TarjetaSube\\TarjetaSube.csproj|solutionrelative:tarjetasube\\boletogratuito.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F7FE6A7B-5DDD-4A43-B9E2-0A22A9EB62E5}|TarjetaSube\\TarjetaSube.csproj|c:\\users\\veron\\onedrive\\documents\\repos\\tarjeta\\tarjetasube\\medioboleto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{F7FE6A7B-5DDD-4A43-B9E2-0A22A9EB62E5}|TarjetaSube\\TarjetaSube.csproj|c:\\users\\usuario\\documents\\fran\\escuela\\mauri\\tp-ultimo\\tarjetasube\\medioboleto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{F7FE6A7B-5DDD-4A43-B9E2-0A22A9EB62E5}|TarjetaSube\\TarjetaSube.csproj|solutionrelative:tarjetasube\\medioboleto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F7FE6A7B-5DDD-4A43-B9E2-0A22A9EB62E5}|TarjetaSube\\TarjetaSube.csproj|c:\\users\\veron\\onedrive\\documents\\repos\\tarjeta\\tarjetasube\\boleto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{F7FE6A7B-5DDD-4A43-B9E2-0A22A9EB62E5}|TarjetaSube\\TarjetaSube.csproj|c:\\users\\usuario\\documents\\fran\\escuela\\mauri\\tp-ultimo\\tarjetasube\\boleto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{F7FE6A7B-5DDD-4A43-B9E2-0A22A9EB62E5}|TarjetaSube\\TarjetaSube.csproj|solutionrelative:tarjetasube\\boleto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F7FE6A7B-5DDD-4A43-B9E2-0A22A9EB62E5}|TarjetaSube\\TarjetaSube.csproj|c:\\users\\veron\\onedrive\\documents\\repos\\tarjeta\\tarjetasube\\tarjeta.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{F7FE6A7B-5DDD-4A43-B9E2-0A22A9EB62E5}|TarjetaSube\\TarjetaSube.csproj|c:\\users\\usuario\\documents\\fran\\escuela\\mauri\\tp-ultimo\\tarjetasube\\tarjeta.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{F7FE6A7B-5DDD-4A43-B9E2-0A22A9EB62E5}|TarjetaSube\\TarjetaSube.csproj|solutionrelative:tarjetasube\\tarjeta.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
@@ -54,15 +58,28 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 6,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 2,
+              "Title": "TarjetaSubeTest",
+              "DocumentMoniker": "C:\\Users\\Usuario\\Documents\\Fran\\escuela\\mauri\\tp-ultimo\\TarjetaSubeTest\\TarjetaSubeTest.csproj",
+              "RelativeDocumentMoniker": "TarjetaSubeTest\\TarjetaSubeTest.csproj",
+              "ToolTip": "C:\\Users\\Usuario\\Documents\\Fran\\escuela\\mauri\\tp-ultimo\\TarjetaSubeTest\\TarjetaSubeTest.csproj",
+              "RelativeToolTip": "TarjetaSubeTest\\TarjetaSubeTest.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-11-01T22:30:07.432Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
               "Title": "TestProgram.cs",
-              "DocumentMoniker": "C:\\Users\\veron\\OneDrive\\Documents\\repos\\Tarjeta\\TarjetaSubeTest\\TestProgram.cs",
+              "DocumentMoniker": "C:\\Users\\Usuario\\Documents\\Fran\\escuela\\mauri\\tp-ultimo\\TarjetaSubeTest\\TestProgram.cs",
               "RelativeDocumentMoniker": "TarjetaSubeTest\\TestProgram.cs",
-              "ToolTip": "C:\\Users\\veron\\OneDrive\\Documents\\repos\\Tarjeta\\TarjetaSubeTest\\TestProgram.cs",
+              "ToolTip": "C:\\Users\\Usuario\\Documents\\Fran\\escuela\\mauri\\tp-ultimo\\TarjetaSubeTest\\TestProgram.cs",
               "RelativeToolTip": "TarjetaSubeTest\\TestProgram.cs",
               "ViewState": "AgIAAMwBAAAAAAAAAAAYwNwBAAAhAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -71,11 +88,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 5,
               "Title": "TestSaldoNegativo.cs",
-              "DocumentMoniker": "C:\\Users\\veron\\OneDrive\\Documents\\repos\\Tarjeta\\TarjetaSubeTest\\TestSaldoNegativo.cs",
+              "DocumentMoniker": "C:\\Users\\Usuario\\Documents\\Fran\\escuela\\mauri\\tp-ultimo\\TarjetaSubeTest\\TestSaldoNegativo.cs",
               "RelativeDocumentMoniker": "TarjetaSubeTest\\TestSaldoNegativo.cs",
-              "ToolTip": "C:\\Users\\veron\\OneDrive\\Documents\\repos\\Tarjeta\\TarjetaSubeTest\\TestSaldoNegativo.cs",
+              "ToolTip": "C:\\Users\\Usuario\\Documents\\Fran\\escuela\\mauri\\tp-ultimo\\TarjetaSubeTest\\TestSaldoNegativo.cs",
               "RelativeToolTip": "TarjetaSubeTest\\TestSaldoNegativo.cs",
               "ViewState": "AgIAADMBAAAAAAAAAAAAADMBAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -83,11 +100,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 8,
               "Title": "BoletoGratuito.cs",
-              "DocumentMoniker": "C:\\Users\\veron\\OneDrive\\Documents\\repos\\Tarjeta\\TarjetaSube\\BoletoGratuito.cs",
+              "DocumentMoniker": "C:\\Users\\Usuario\\Documents\\Fran\\escuela\\mauri\\tp-ultimo\\TarjetaSube\\BoletoGratuito.cs",
               "RelativeDocumentMoniker": "TarjetaSube\\BoletoGratuito.cs",
-              "ToolTip": "C:\\Users\\veron\\OneDrive\\Documents\\repos\\Tarjeta\\TarjetaSube\\BoletoGratuito.cs",
+              "ToolTip": "C:\\Users\\Usuario\\Documents\\Fran\\escuela\\mauri\\tp-ultimo\\TarjetaSube\\BoletoGratuito.cs",
               "RelativeToolTip": "TarjetaSube\\BoletoGratuito.cs",
               "ViewState": "AgIAAAIAAAAAAAAAAAAqwBEAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -95,11 +112,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 9,
               "Title": "MedioBoleto.cs",
-              "DocumentMoniker": "C:\\Users\\veron\\OneDrive\\Documents\\repos\\Tarjeta\\TarjetaSube\\MedioBoleto.cs",
+              "DocumentMoniker": "C:\\Users\\Usuario\\Documents\\Fran\\escuela\\mauri\\tp-ultimo\\TarjetaSube\\MedioBoleto.cs",
               "RelativeDocumentMoniker": "TarjetaSube\\MedioBoleto.cs",
-              "ToolTip": "C:\\Users\\veron\\OneDrive\\Documents\\repos\\Tarjeta\\TarjetaSube\\MedioBoleto.cs",
+              "ToolTip": "C:\\Users\\Usuario\\Documents\\Fran\\escuela\\mauri\\tp-ultimo\\TarjetaSube\\MedioBoleto.cs",
               "RelativeToolTip": "TarjetaSube\\MedioBoleto.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -107,11 +124,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 7,
               "Title": "Colectivo.cs",
-              "DocumentMoniker": "C:\\Users\\veron\\OneDrive\\Documents\\repos\\Tarjeta\\TarjetaSube\\Colectivo.cs",
+              "DocumentMoniker": "C:\\Users\\Usuario\\Documents\\Fran\\escuela\\mauri\\tp-ultimo\\TarjetaSube\\Colectivo.cs",
               "RelativeDocumentMoniker": "TarjetaSube\\Colectivo.cs",
-              "ToolTip": "C:\\Users\\veron\\OneDrive\\Documents\\repos\\Tarjeta\\TarjetaSube\\Colectivo.cs",
+              "ToolTip": "C:\\Users\\Usuario\\Documents\\Fran\\escuela\\mauri\\tp-ultimo\\TarjetaSube\\Colectivo.cs",
               "RelativeToolTip": "TarjetaSube\\Colectivo.cs",
               "ViewState": "AgIAABQAAAAAAAAAAAAgwA4AAAAvAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -119,23 +136,24 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 0,
               "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\veron\\OneDrive\\Documents\\repos\\Tarjeta\\TarjetaSube\\Program.cs",
+              "DocumentMoniker": "C:\\Users\\Usuario\\Documents\\Fran\\escuela\\mauri\\tp-ultimo\\TarjetaSube\\Program.cs",
               "RelativeDocumentMoniker": "TarjetaSube\\Program.cs",
-              "ToolTip": "C:\\Users\\veron\\OneDrive\\Documents\\repos\\Tarjeta\\TarjetaSube\\Program.cs",
+              "ToolTip": "C:\\Users\\Usuario\\Documents\\Fran\\escuela\\mauri\\tp-ultimo\\TarjetaSube\\Program.cs",
               "RelativeToolTip": "TarjetaSube\\Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAA0AAAAAAAAAA==",
+              "ViewState": "AgIAAG4AAAAAAAAAAAAgwIoAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-28T20:21:45.429Z"
+              "WhenOpened": "2025-10-28T20:21:45.429Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 4,
               "Title": "TestFranquicias.cs",
-              "DocumentMoniker": "C:\\Users\\veron\\OneDrive\\Documents\\repos\\Tarjeta\\TarjetaSubeTest\\TestFranquicias.cs",
+              "DocumentMoniker": "C:\\Users\\Usuario\\Documents\\Fran\\escuela\\mauri\\tp-ultimo\\TarjetaSubeTest\\TestFranquicias.cs",
               "RelativeDocumentMoniker": "TarjetaSubeTest\\TestFranquicias.cs",
-              "ToolTip": "C:\\Users\\veron\\OneDrive\\Documents\\repos\\Tarjeta\\TarjetaSubeTest\\TestFranquicias.cs",
+              "ToolTip": "C:\\Users\\Usuario\\Documents\\Fran\\escuela\\mauri\\tp-ultimo\\TarjetaSubeTest\\TestFranquicias.cs",
               "RelativeToolTip": "TarjetaSubeTest\\TestFranquicias.cs",
               "ViewState": "AgIAAPgBAAAAAAAAAAAAAB8CAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -143,23 +161,24 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 1,
               "Title": "FranquiciaCompleta.cs",
-              "DocumentMoniker": "C:\\Users\\veron\\OneDrive\\Documents\\repos\\Tarjeta\\TarjetaSube\\FranquiciaCompleta.cs",
+              "DocumentMoniker": "C:\\Users\\Usuario\\Documents\\Fran\\escuela\\mauri\\tp-ultimo\\TarjetaSube\\FranquiciaCompleta.cs",
               "RelativeDocumentMoniker": "TarjetaSube\\FranquiciaCompleta.cs",
-              "ToolTip": "C:\\Users\\veron\\OneDrive\\Documents\\repos\\Tarjeta\\TarjetaSube\\FranquiciaCompleta.cs",
+              "ToolTip": "C:\\Users\\Usuario\\Documents\\Fran\\escuela\\mauri\\tp-ultimo\\TarjetaSube\\FranquiciaCompleta.cs",
               "RelativeToolTip": "TarjetaSube\\FranquiciaCompleta.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABsAAAABAAAAAAAAAA==",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAQwBsAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-31T03:00:44.731Z"
+              "WhenOpened": "2025-10-31T03:00:44.731Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 6,
               "Title": "UnitTest1.cs",
-              "DocumentMoniker": "C:\\Users\\veron\\OneDrive\\Documents\\repos\\Tarjeta\\TarjetaSubeTest\\UnitTest1.cs",
+              "DocumentMoniker": "C:\\Users\\Usuario\\Documents\\Fran\\escuela\\mauri\\tp-ultimo\\TarjetaSubeTest\\UnitTest1.cs",
               "RelativeDocumentMoniker": "TarjetaSubeTest\\UnitTest1.cs",
-              "ToolTip": "C:\\Users\\veron\\OneDrive\\Documents\\repos\\Tarjeta\\TarjetaSubeTest\\UnitTest1.cs",
+              "ToolTip": "C:\\Users\\Usuario\\Documents\\Fran\\escuela\\mauri\\tp-ultimo\\TarjetaSubeTest\\UnitTest1.cs",
               "RelativeToolTip": "TarjetaSubeTest\\UnitTest1.cs",
               "ViewState": "AgIAAJMBAAAAAAAAAAAqwKABAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -167,11 +186,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 10,
               "Title": "Boleto.cs",
-              "DocumentMoniker": "C:\\Users\\veron\\OneDrive\\Documents\\repos\\Tarjeta\\TarjetaSube\\Boleto.cs",
+              "DocumentMoniker": "C:\\Users\\Usuario\\Documents\\Fran\\escuela\\mauri\\tp-ultimo\\TarjetaSube\\Boleto.cs",
               "RelativeDocumentMoniker": "TarjetaSube\\Boleto.cs",
-              "ToolTip": "C:\\Users\\veron\\OneDrive\\Documents\\repos\\Tarjeta\\TarjetaSube\\Boleto.cs",
+              "ToolTip": "C:\\Users\\Usuario\\Documents\\Fran\\escuela\\mauri\\tp-ultimo\\TarjetaSube\\Boleto.cs",
               "RelativeToolTip": "TarjetaSube\\Boleto.cs",
               "ViewState": "AgIAABsAAAAAAAAAAAA/wC4AAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -179,11 +198,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 11,
               "Title": "Tarjeta.cs",
-              "DocumentMoniker": "C:\\Users\\veron\\OneDrive\\Documents\\repos\\Tarjeta\\TarjetaSube\\Tarjeta.cs",
+              "DocumentMoniker": "C:\\Users\\Usuario\\Documents\\Fran\\escuela\\mauri\\tp-ultimo\\TarjetaSube\\Tarjeta.cs",
               "RelativeDocumentMoniker": "TarjetaSube\\Tarjeta.cs",
-              "ToolTip": "C:\\Users\\veron\\OneDrive\\Documents\\repos\\Tarjeta\\TarjetaSube\\Tarjeta.cs",
+              "ToolTip": "C:\\Users\\Usuario\\Documents\\Fran\\escuela\\mauri\\tp-ultimo\\TarjetaSube\\Tarjeta.cs",
               "RelativeToolTip": "TarjetaSube\\Tarjeta.cs",
               "ViewState": "AgIAAAIAAAAAAAAAAAAQwDMAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",

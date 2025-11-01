@@ -1,10 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "KnDjDSpOdG8=",
+  "dgSpecHash": "7zucqZFcvA8=",
   "success": true,
   "projectFilePath": "C:\\Users\\Usuario\\Documents\\Fran\\escuela\\mauri\\tp-ultimo\\TarjetaSubeTest\\TarjetaSubeTest.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\Usuario\\.nuget\\packages\\coverlet.collector\\3.0.2\\coverlet.collector.3.0.2.nupkg.sha512",
+    "C:\\Users\\Usuario\\.nuget\\packages\\coverlet.collector\\6.0.4\\coverlet.collector.6.0.4.nupkg.sha512",
+    "C:\\Users\\Usuario\\.nuget\\packages\\coverlet.msbuild\\6.0.4\\coverlet.msbuild.6.0.4.nupkg.sha512",
     "C:\\Users\\Usuario\\.nuget\\packages\\microsoft.codecoverage\\16.9.4\\microsoft.codecoverage.16.9.4.nupkg.sha512",
     "C:\\Users\\Usuario\\.nuget\\packages\\microsoft.csharp\\4.0.1\\microsoft.csharp.4.0.1.nupkg.sha512",
     "C:\\Users\\Usuario\\.nuget\\packages\\microsoft.dotnet.internalabstractions\\1.0.0\\microsoft.dotnet.internalabstractions.1.0.0.nupkg.sha512",
