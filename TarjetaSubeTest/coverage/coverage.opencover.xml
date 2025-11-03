@@ -1,0 +1,597 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CoverageSession>
+  <Summary numSequencePoints="197" visitedSequencePoints="103" numBranchPoints="42" visitedBranchPoints="10" sequenceCoverage="52.28" branchCoverage="23.8" maxCyclomaticComplexity="67" minCyclomaticComplexity="67" visitedClasses="6" numClasses="7" visitedMethods="27" numMethods="29" />
+  <Modules>
+    <Module hash="3F17BAB4-54AE-4EC6-AFB8-2E4D75AEA157">
+      <ModulePath>TarjetaSube.dll</ModulePath>
+      <ModuleTime>2025-11-01T08:09:53</ModuleTime>
+      <ModuleName>TarjetaSube</ModuleName>
+      <Files>
+        <File uid="1" fullPath="C:\Users\Usuario\Documents\Fran\escuela\mauri\tp-ultimo\TarjetaSube\Boleto.cs" />
+        <File uid="2" fullPath="C:\Users\Usuario\Documents\Fran\escuela\mauri\tp-ultimo\TarjetaSube\BoletoGratuito.cs" />
+        <File uid="3" fullPath="C:\Users\Usuario\Documents\Fran\escuela\mauri\tp-ultimo\TarjetaSube\Colectivo.cs" />
+        <File uid="4" fullPath="C:\Users\Usuario\Documents\Fran\escuela\mauri\tp-ultimo\TarjetaSube\FranquiciaCompleta.cs" />
+        <File uid="5" fullPath="C:\Users\Usuario\Documents\Fran\escuela\mauri\tp-ultimo\TarjetaSube\MedioBoleto.cs" />
+        <File uid="6" fullPath="C:\Users\Usuario\Documents\Fran\escuela\mauri\tp-ultimo\TarjetaSube\Program.cs" />
+        <File uid="7" fullPath="C:\Users\Usuario\Documents\Fran\escuela\mauri\tp-ultimo\TarjetaSube\Tarjeta.cs" />
+      </Files>
+      <Classes>
+        <Class>
+          <Summary numSequencePoints="13" visitedSequencePoints="13" numBranchPoints="0" visitedBranchPoints="0" sequenceCoverage="100" branchCoverage="100" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" visitedClasses="1" numClasses="1" visitedMethods="6" numMethods="6" />
+          <FullName>TarjetaSube.Boleto</FullName>
+          <Methods>
+            <Method cyclomaticComplexity="1" nPathComplexity="1" sequenceCoverage="100" branchCoverage="100" isConstructor="False" isGetter="True" isSetter="False" isStatic="True">
+              <Summary numSequencePoints="1" visitedSequencePoints="1" numBranchPoints="0" visitedBranchPoints="0" sequenceCoverage="100" branchCoverage="100" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" visitedClasses="0" numClasses="0" visitedMethods="1" numMethods="1" />
+              <MetadataToken />
+              <Name>System.Decimal TarjetaSube.Boleto::get_Monto()</Name>
+              <FileRef uid="1" />
+              <SequencePoints>
+                <SequencePoint vc="147" uspid="15" ordinal="0" sl="15" sc="1" el="15" ec="2" bec="0" bev="0" fileid="1" />
+              </SequencePoints>
+              <BranchPoints />
+              <MethodPoint vc="1" uspid="0" p8:type="SequencePoint" ordinal="0" offset="0" sc="0" sl="15" ec="1" el="15" bec="0" bev="0" fileid="1" xmlns:p8="xsi" />
+            </Method>
+            <Method cyclomaticComplexity="1" nPathComplexity="1" sequenceCoverage="100" branchCoverage="100" isConstructor="False" isGetter="True" isSetter="False" isStatic="True">
+              <Summary numSequencePoints="1" visitedSequencePoints="1" numBranchPoints="0" visitedBranchPoints="0" sequenceCoverage="100" branchCoverage="100" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" visitedClasses="0" numClasses="0" visitedMethods="1" numMethods="1" />
+              <MetadataToken />
+              <Name>System.Decimal TarjetaSube.Boleto::get_SaldoRestante()</Name>
+              <FileRef uid="1" />
+              <SequencePoints>
+                <SequencePoint vc="27" uspid="20" ordinal="0" sl="20" sc="1" el="20" ec="2" bec="0" bev="0" fileid="1" />
+              </SequencePoints>
+              <BranchPoints />
+              <MethodPoint vc="1" uspid="0" p8:type="SequencePoint" ordinal="1" offset="1" sc="0" sl="20" ec="1" el="20" bec="0" bev="0" fileid="1" xmlns:p8="xsi" />
+            </Method>
+            <Method cyclomaticComplexity="1" nPathComplexity="1" sequenceCoverage="100" branchCoverage="100" isConstructor="False" isGetter="True" isSetter="False" isStatic="True">
+              <Summary numSequencePoints="1" visitedSequencePoints="1" numBranchPoints="0" visitedBranchPoints="0" sequenceCoverage="100" branchCoverage="100" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" visitedClasses="0" numClasses="0" visitedMethods="1" numMethods="1" />
+              <MetadataToken />
+              <Name>System.String TarjetaSube.Boleto::get_Linea()</Name>
+              <FileRef uid="1" />
+              <SequencePoints>
+                <SequencePoint vc="78" uspid="25" ordinal="0" sl="25" sc="1" el="25" ec="2" bec="0" bev="0" fileid="1" />
+              </SequencePoints>
+              <BranchPoints />
+              <MethodPoint vc="1" uspid="0" p8:type="SequencePoint" ordinal="2" offset="2" sc="0" sl="25" ec="1" el="25" bec="0" bev="0" fileid="1" xmlns:p8="xsi" />
+            </Method>
+            <Method cyclomaticComplexity="1" nPathComplexity="1" sequenceCoverage="100" branchCoverage="100" isConstructor="False" isGetter="True" isSetter="False" isStatic="True">
+              <Summary numSequencePoints="1" visitedSequencePoints="1" numBranchPoints="0" visitedBranchPoints="0" sequenceCoverage="100" branchCoverage="100" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" visitedClasses="0" numClasses="0" visitedMethods="1" numMethods="1" />
+              <MetadataToken />
+              <Name>System.DateTime TarjetaSube.Boleto::get_Fecha()</Name>
+              <FileRef uid="1" />
+              <SequencePoints>
+                <SequencePoint vc="30" uspid="30" ordinal="0" sl="30" sc="1" el="30" ec="2" bec="0" bev="0" fileid="1" />
+              </SequencePoints>
+              <BranchPoints />
+              <MethodPoint vc="1" uspid="0" p8:type="SequencePoint" ordinal="3" offset="3" sc="0" sl="30" ec="1" el="30" bec="0" bev="0" fileid="1" xmlns:p8="xsi" />
+            </Method>
+            <Method cyclomaticComplexity="1" nPathComplexity="1" sequenceCoverage="100" branchCoverage="100" isConstructor="False" isGetter="True" isSetter="False" isStatic="True">
+              <Summary numSequencePoints="1" visitedSequencePoints="1" numBranchPoints="0" visitedBranchPoints="0" sequenceCoverage="100" branchCoverage="100" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" visitedClasses="0" numClasses="0" visitedMethods="1" numMethods="1" />
+              <MetadataToken />
+              <Name>System.String TarjetaSube.Boleto::get_TipoBoleto()</Name>
+              <FileRef uid="1" />
+              <SequencePoints>
+                <SequencePoint vc="42" uspid="35" ordinal="0" sl="35" sc="1" el="35" ec="2" bec="0" bev="0" fileid="1" />
+              </SequencePoints>
+              <BranchPoints />
+              <MethodPoint vc="1" uspid="0" p8:type="SequencePoint" ordinal="4" offset="4" sc="0" sl="35" ec="1" el="35" bec="0" bev="0" fileid="1" xmlns:p8="xsi" />
+            </Method>
+            <Method cyclomaticComplexity="1" nPathComplexity="1" sequenceCoverage="100" branchCoverage="100" isConstructor="True" isGetter="False" isSetter="False" isStatic="True">
+              <Summary numSequencePoints="8" visitedSequencePoints="8" numBranchPoints="0" visitedBranchPoints="0" sequenceCoverage="100" branchCoverage="100" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" visitedClasses="0" numClasses="0" visitedMethods="1" numMethods="1" />
+              <MetadataToken />
+              <Name>System.Void TarjetaSube.Boleto::.ctor(System.Decimal,System.Decimal,System.String,System.DateTime,System.String)</Name>
+              <FileRef uid="1" />
+              <SequencePoints>
+                <SequencePoint vc="179" uspid="38" ordinal="0" sl="38" sc="1" el="38" ec="2" bec="0" bev="0" fileid="1" />
+                <SequencePoint vc="179" uspid="39" ordinal="1" sl="39" sc="1" el="39" ec="2" bec="0" bev="0" fileid="1" />
+                <SequencePoint vc="179" uspid="40" ordinal="2" sl="40" sc="1" el="40" ec="2" bec="0" bev="0" fileid="1" />
+                <SequencePoint vc="179" uspid="41" ordinal="3" sl="41" sc="1" el="41" ec="2" bec="0" bev="0" fileid="1" />
+                <SequencePoint vc="179" uspid="42" ordinal="4" sl="42" sc="1" el="42" ec="2" bec="0" bev="0" fileid="1" />
+                <SequencePoint vc="179" uspid="43" ordinal="5" sl="43" sc="1" el="43" ec="2" bec="0" bev="0" fileid="1" />
+                <SequencePoint vc="179" uspid="44" ordinal="6" sl="44" sc="1" el="44" ec="2" bec="0" bev="0" fileid="1" />
+                <SequencePoint vc="179" uspid="45" ordinal="7" sl="45" sc="1" el="45" ec="2" bec="0" bev="0" fileid="1" />
+              </SequencePoints>
+              <BranchPoints />
+              <MethodPoint vc="8" uspid="0" p8:type="SequencePoint" ordinal="5" offset="5" sc="0" sl="38" ec="1" el="45" bec="0" bev="0" fileid="1" xmlns:p8="xsi" />
+            </Method>
+          </Methods>
+        </Class>
+        <Class>
+          <Summary numSequencePoints="12" visitedSequencePoints="12" numBranchPoints="0" visitedBranchPoints="0" sequenceCoverage="100" branchCoverage="100" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" visitedClasses="1" numClasses="1" visitedMethods="4" numMethods="4" />
+          <FullName>TarjetaSube.BoletoGratuito</FullName>
+          <Methods>
+            <Method cyclomaticComplexity="1" nPathComplexity="1" sequenceCoverage="100" branchCoverage="100" isConstructor="False" isGetter="False" isSetter="False" isStatic="True">
+              <Summary numSequencePoints="3" visitedSequencePoints="3" numBranchPoints="0" visitedBranchPoints="0" sequenceCoverage="100" branchCoverage="100" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" visitedClasses="0" numClasses="0" visitedMethods="1" numMethods="1" />
+              <MetadataToken />
+              <Name>System.Decimal TarjetaSube.BoletoGratuito::ObtenerTarifa(System.Decimal)</Name>
+              <FileRef uid="2" />
+              <SequencePoints>
+                <SequencePoint vc="31" uspid="15" ordinal="0" sl="15" sc="1" el="15" ec="2" bec="0" bev="0" fileid="2" />
+                <SequencePoint vc="31" uspid="16" ordinal="1" sl="16" sc="1" el="16" ec="2" bec="0" bev="0" fileid="2" />
+                <SequencePoint vc="31" uspid="17" ordinal="2" sl="17" sc="1" el="17" ec="2" bec="0" bev="0" fileid="2" />
+              </SequencePoints>
+              <BranchPoints />
+              <MethodPoint vc="3" uspid="0" p8:type="SequencePoint" ordinal="0" offset="0" sc="0" sl="15" ec="1" el="17" bec="0" bev="0" fileid="2" xmlns:p8="xsi" />
+            </Method>
+            <Method cyclomaticComplexity="1" nPathComplexity="1" sequenceCoverage="100" branchCoverage="100" isConstructor="False" isGetter="False" isSetter="False" isStatic="True">
+              <Summary numSequencePoints="3" visitedSequencePoints="3" numBranchPoints="0" visitedBranchPoints="0" sequenceCoverage="100" branchCoverage="100" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" visitedClasses="0" numClasses="0" visitedMethods="1" numMethods="1" />
+              <MetadataToken />
+              <Name>System.String TarjetaSube.BoletoGratuito::ObtenerTipoBoleto()</Name>
+              <FileRef uid="2" />
+              <SequencePoints>
+                <SequencePoint vc="31" uspid="20" ordinal="0" sl="20" sc="1" el="20" ec="2" bec="0" bev="0" fileid="2" />
+                <SequencePoint vc="31" uspid="21" ordinal="1" sl="21" sc="1" el="21" ec="2" bec="0" bev="0" fileid="2" />
+                <SequencePoint vc="31" uspid="22" ordinal="2" sl="22" sc="1" el="22" ec="2" bec="0" bev="0" fileid="2" />
+              </SequencePoints>
+              <BranchPoints />
+              <MethodPoint vc="3" uspid="0" p8:type="SequencePoint" ordinal="1" offset="1" sc="0" sl="20" ec="1" el="22" bec="0" bev="0" fileid="2" xmlns:p8="xsi" />
+            </Method>
+            <Method cyclomaticComplexity="1" nPathComplexity="1" sequenceCoverage="100" branchCoverage="100" isConstructor="False" isGetter="False" isSetter="False" isStatic="True">
+              <Summary numSequencePoints="3" visitedSequencePoints="3" numBranchPoints="0" visitedBranchPoints="0" sequenceCoverage="100" branchCoverage="100" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" visitedClasses="0" numClasses="0" visitedMethods="1" numMethods="1" />
+              <MetadataToken />
+              <Name>System.Boolean TarjetaSube.BoletoGratuito::DescontarSaldo(System.Decimal)</Name>
+              <FileRef uid="2" />
+              <SequencePoints>
+                <SequencePoint vc="31" uspid="25" ordinal="0" sl="25" sc="1" el="25" ec="2" bec="0" bev="0" fileid="2" />
+                <SequencePoint vc="31" uspid="27" ordinal="1" sl="27" sc="1" el="27" ec="2" bec="0" bev="0" fileid="2" />
+                <SequencePoint vc="31" uspid="28" ordinal="2" sl="28" sc="1" el="28" ec="2" bec="0" bev="0" fileid="2" />
+              </SequencePoints>
+              <BranchPoints />
+              <MethodPoint vc="3" uspid="0" p8:type="SequencePoint" ordinal="2" offset="2" sc="0" sl="25" ec="1" el="28" bec="0" bev="0" fileid="2" xmlns:p8="xsi" />
+            </Method>
+            <Method cyclomaticComplexity="1" nPathComplexity="1" sequenceCoverage="100" branchCoverage="100" isConstructor="True" isGetter="False" isSetter="False" isStatic="True">
+              <Summary numSequencePoints="3" visitedSequencePoints="3" numBranchPoints="0" visitedBranchPoints="0" sequenceCoverage="100" branchCoverage="100" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" visitedClasses="0" numClasses="0" visitedMethods="1" numMethods="1" />
+              <MetadataToken />
+              <Name>System.Void TarjetaSube.BoletoGratuito::.ctor()</Name>
+              <FileRef uid="2" />
+              <SequencePoints>
+                <SequencePoint vc="22" uspid="10" ordinal="0" sl="10" sc="1" el="10" ec="2" bec="0" bev="0" fileid="2" />
+                <SequencePoint vc="22" uspid="11" ordinal="1" sl="11" sc="1" el="11" ec="2" bec="0" bev="0" fileid="2" />
+                <SequencePoint vc="22" uspid="12" ordinal="2" sl="12" sc="1" el="12" ec="2" bec="0" bev="0" fileid="2" />
+              </SequencePoints>
+              <BranchPoints />
+              <MethodPoint vc="3" uspid="0" p8:type="SequencePoint" ordinal="3" offset="3" sc="0" sl="10" ec="1" el="12" bec="0" bev="0" fileid="2" xmlns:p8="xsi" />
+            </Method>
+          </Methods>
+        </Class>
+        <Class>
+          <Summary numSequencePoints="23" visitedSequencePoints="22" numBranchPoints="4" visitedBranchPoints="4" sequenceCoverage="95.65" branchCoverage="100" maxCyclomaticComplexity="4" minCyclomaticComplexity="1" visitedClasses="1" numClasses="1" visitedMethods="3" numMethods="4" />
+          <FullName>TarjetaSube.Colectivo</FullName>
+          <Methods>
+            <Method cyclomaticComplexity="1" nPathComplexity="1" sequenceCoverage="100" branchCoverage="100" isConstructor="False" isGetter="True" isSetter="False" isStatic="True">
+              <Summary numSequencePoints="1" visitedSequencePoints="1" numBranchPoints="0" visitedBranchPoints="0" sequenceCoverage="100" branchCoverage="100" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" visitedClasses="0" numClasses="0" visitedMethods="1" numMethods="1" />
+              <MetadataToken />
+              <Name>System.String TarjetaSube.Colectivo::get_Linea()</Name>
+              <FileRef uid="3" />
+              <SequencePoints>
+                <SequencePoint vc="12" uspid="12" ordinal="0" sl="12" sc="1" el="12" ec="2" bec="0" bev="0" fileid="3" />
+              </SequencePoints>
+              <BranchPoints />
+              <MethodPoint vc="1" uspid="0" p8:type="SequencePoint" ordinal="0" offset="0" sc="0" sl="12" ec="1" el="12" bec="0" bev="0" fileid="3" xmlns:p8="xsi" />
+            </Method>
+            <Method cyclomaticComplexity="4" nPathComplexity="4" sequenceCoverage="100" branchCoverage="100" isConstructor="False" isGetter="False" isSetter="False" isStatic="True">
+              <Summary numSequencePoints="17" visitedSequencePoints="17" numBranchPoints="4" visitedBranchPoints="4" sequenceCoverage="100" branchCoverage="100" maxCyclomaticComplexity="4" minCyclomaticComplexity="4" visitedClasses="0" numClasses="0" visitedMethods="1" numMethods="1" />
+              <MetadataToken />
+              <Name>TarjetaSube.Boleto TarjetaSube.Colectivo::PagarCon(TarjetaSube.Tarjeta)</Name>
+              <FileRef uid="3" />
+              <SequencePoints>
+                <SequencePoint vc="180" uspid="21" ordinal="0" sl="21" sc="1" el="21" ec="2" bec="0" bev="0" fileid="3" />
+                <SequencePoint vc="180" uspid="22" ordinal="1" sl="22" sc="1" el="22" ec="2" bec="2" bev="2" fileid="3" />
+                <SequencePoint vc="3" uspid="23" ordinal="2" sl="23" sc="1" el="23" ec="2" bec="0" bev="0" fileid="3" />
+                <SequencePoint vc="3" uspid="24" ordinal="3" sl="24" sc="1" el="24" ec="2" bec="0" bev="0" fileid="3" />
+                <SequencePoint vc="177" uspid="28" ordinal="4" sl="28" sc="1" el="28" ec="2" bec="0" bev="0" fileid="3" />
+                <SequencePoint vc="177" uspid="31" ordinal="5" sl="31" sc="1" el="31" ec="2" bec="2" bev="2" fileid="3" />
+                <SequencePoint vc="7" uspid="32" ordinal="6" sl="32" sc="1" el="32" ec="2" bec="0" bev="0" fileid="3" />
+                <SequencePoint vc="7" uspid="33" ordinal="7" sl="33" sc="1" el="33" ec="2" bec="0" bev="0" fileid="3" />
+                <SequencePoint vc="170" uspid="36" ordinal="8" sl="36" sc="1" el="36" ec="2" bec="0" bev="0" fileid="3" />
+                <SequencePoint vc="170" uspid="37" ordinal="9" sl="37" sc="1" el="37" ec="2" bec="0" bev="0" fileid="3" />
+                <SequencePoint vc="170" uspid="38" ordinal="10" sl="38" sc="1" el="38" ec="2" bec="0" bev="0" fileid="3" />
+                <SequencePoint vc="170" uspid="39" ordinal="11" sl="39" sc="1" el="39" ec="2" bec="0" bev="0" fileid="3" />
+                <SequencePoint vc="170" uspid="40" ordinal="12" sl="40" sc="1" el="40" ec="2" bec="0" bev="0" fileid="3" />
+                <SequencePoint vc="170" uspid="41" ordinal="13" sl="41" sc="1" el="41" ec="2" bec="0" bev="0" fileid="3" />
+                <SequencePoint vc="170" uspid="42" ordinal="14" sl="42" sc="1" el="42" ec="2" bec="0" bev="0" fileid="3" />
+                <SequencePoint vc="170" uspid="44" ordinal="15" sl="44" sc="1" el="44" ec="2" bec="0" bev="0" fileid="3" />
+                <SequencePoint vc="180" uspid="45" ordinal="16" sl="45" sc="1" el="45" ec="2" bec="0" bev="0" fileid="3" />
+              </SequencePoints>
+              <BranchPoints>
+                <BranchPoint vc="3" uspid="22" ordinal="0" path="0" offset="7" offsetend="9" sl="22" fileid="3" />
+                <BranchPoint vc="177" uspid="22" ordinal="1" path="1" offset="7" offsetend="14" sl="22" fileid="3" />
+                <BranchPoint vc="7" uspid="31" ordinal="2" path="0" offset="45" offsetend="47" sl="31" fileid="3" />
+                <BranchPoint vc="170" uspid="31" ordinal="3" path="1" offset="45" offsetend="52" sl="31" fileid="3" />
+              </BranchPoints>
+              <MethodPoint vc="17" uspid="0" p8:type="SequencePoint" ordinal="1" offset="1" sc="0" sl="21" ec="1" el="45" bec="0" bev="0" fileid="3" xmlns:p8="xsi" />
+            </Method>
+            <Method cyclomaticComplexity="1" nPathComplexity="1" sequenceCoverage="100" branchCoverage="100" isConstructor="True" isGetter="False" isSetter="False" isStatic="True">
+              <Summary numSequencePoints="4" visitedSequencePoints="4" numBranchPoints="0" visitedBranchPoints="0" sequenceCoverage="100" branchCoverage="100" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" visitedClasses="0" numClasses="0" visitedMethods="1" numMethods="1" />
+              <MetadataToken />
+              <Name>System.Void TarjetaSube.Colectivo::.ctor(System.String)</Name>
+              <FileRef uid="3" />
+              <SequencePoints>
+                <SequencePoint vc="80" uspid="15" ordinal="0" sl="15" sc="1" el="15" ec="2" bec="0" bev="0" fileid="3" />
+                <SequencePoint vc="80" uspid="16" ordinal="1" sl="16" sc="1" el="16" ec="2" bec="0" bev="0" fileid="3" />
+                <SequencePoint vc="80" uspid="17" ordinal="2" sl="17" sc="1" el="17" ec="2" bec="0" bev="0" fileid="3" />
+                <SequencePoint vc="80" uspid="18" ordinal="3" sl="18" sc="1" el="18" ec="2" bec="0" bev="0" fileid="3" />
+              </SequencePoints>
+              <BranchPoints />
+              <MethodPoint vc="4" uspid="0" p8:type="SequencePoint" ordinal="2" offset="2" sc="0" sl="15" ec="1" el="18" bec="0" bev="0" fileid="3" xmlns:p8="xsi" />
+            </Method>
+            <Method cyclomaticComplexity="1" nPathComplexity="1" sequenceCoverage="0" branchCoverage="100" isConstructor="True" isGetter="False" isSetter="False" isStatic="True">
+              <Summary numSequencePoints="1" visitedSequencePoints="0" numBranchPoints="0" visitedBranchPoints="0" sequenceCoverage="0" branchCoverage="100" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" visitedClasses="0" numClasses="0" visitedMethods="0" numMethods="1" />
+              <MetadataToken />
+              <Name>System.Void TarjetaSube.Colectivo::.cctor()</Name>
+              <FileRef uid="3" />
+              <SequencePoints>
+                <SequencePoint vc="0" uspid="7" ordinal="0" sl="7" sc="1" el="7" ec="2" bec="0" bev="0" fileid="3" />
+              </SequencePoints>
+              <BranchPoints />
+              <MethodPoint vc="0" uspid="0" p8:type="SequencePoint" ordinal="3" offset="3" sc="0" sl="7" ec="1" el="7" bec="0" bev="0" fileid="3" xmlns:p8="xsi" />
+            </Method>
+          </Methods>
+        </Class>
+        <Class>
+          <Summary numSequencePoints="12" visitedSequencePoints="12" numBranchPoints="0" visitedBranchPoints="0" sequenceCoverage="100" branchCoverage="100" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" visitedClasses="1" numClasses="1" visitedMethods="4" numMethods="4" />
+          <FullName>TarjetaSube.FranquiciaCompleta</FullName>
+          <Methods>
+            <Method cyclomaticComplexity="1" nPathComplexity="1" sequenceCoverage="100" branchCoverage="100" isConstructor="False" isGetter="False" isSetter="False" isStatic="True">
+              <Summary numSequencePoints="3" visitedSequencePoints="3" numBranchPoints="0" visitedBranchPoints="0" sequenceCoverage="100" branchCoverage="100" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" visitedClasses="0" numClasses="0" visitedMethods="1" numMethods="1" />
+              <MetadataToken />
+              <Name>System.Decimal TarjetaSube.FranquiciaCompleta::ObtenerTarifa(System.Decimal)</Name>
+              <FileRef uid="4" />
+              <SequencePoints>
+                <SequencePoint vc="39" uspid="17" ordinal="0" sl="17" sc="1" el="17" ec="2" bec="0" bev="0" fileid="4" />
+                <SequencePoint vc="39" uspid="18" ordinal="1" sl="18" sc="1" el="18" ec="2" bec="0" bev="0" fileid="4" />
+                <SequencePoint vc="39" uspid="19" ordinal="2" sl="19" sc="1" el="19" ec="2" bec="0" bev="0" fileid="4" />
+              </SequencePoints>
+              <BranchPoints />
+              <MethodPoint vc="3" uspid="0" p8:type="SequencePoint" ordinal="0" offset="0" sc="0" sl="17" ec="1" el="19" bec="0" bev="0" fileid="4" xmlns:p8="xsi" />
+            </Method>
+            <Method cyclomaticComplexity="1" nPathComplexity="1" sequenceCoverage="100" branchCoverage="100" isConstructor="False" isGetter="False" isSetter="False" isStatic="True">
+              <Summary numSequencePoints="3" visitedSequencePoints="3" numBranchPoints="0" visitedBranchPoints="0" sequenceCoverage="100" branchCoverage="100" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" visitedClasses="0" numClasses="0" visitedMethods="1" numMethods="1" />
+              <MetadataToken />
+              <Name>System.String TarjetaSube.FranquiciaCompleta::ObtenerTipoBoleto()</Name>
+              <FileRef uid="4" />
+              <SequencePoints>
+                <SequencePoint vc="39" uspid="22" ordinal="0" sl="22" sc="1" el="22" ec="2" bec="0" bev="0" fileid="4" />
+                <SequencePoint vc="39" uspid="23" ordinal="1" sl="23" sc="1" el="23" ec="2" bec="0" bev="0" fileid="4" />
+                <SequencePoint vc="39" uspid="24" ordinal="2" sl="24" sc="1" el="24" ec="2" bec="0" bev="0" fileid="4" />
+              </SequencePoints>
+              <BranchPoints />
+              <MethodPoint vc="3" uspid="0" p8:type="SequencePoint" ordinal="1" offset="1" sc="0" sl="22" ec="1" el="24" bec="0" bev="0" fileid="4" xmlns:p8="xsi" />
+            </Method>
+            <Method cyclomaticComplexity="1" nPathComplexity="1" sequenceCoverage="100" branchCoverage="100" isConstructor="False" isGetter="False" isSetter="False" isStatic="True">
+              <Summary numSequencePoints="3" visitedSequencePoints="3" numBranchPoints="0" visitedBranchPoints="0" sequenceCoverage="100" branchCoverage="100" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" visitedClasses="0" numClasses="0" visitedMethods="1" numMethods="1" />
+              <MetadataToken />
+              <Name>System.Boolean TarjetaSube.FranquiciaCompleta::DescontarSaldo(System.Decimal)</Name>
+              <FileRef uid="4" />
+              <SequencePoints>
+                <SequencePoint vc="39" uspid="27" ordinal="0" sl="27" sc="1" el="27" ec="2" bec="0" bev="0" fileid="4" />
+                <SequencePoint vc="39" uspid="29" ordinal="1" sl="29" sc="1" el="29" ec="2" bec="0" bev="0" fileid="4" />
+                <SequencePoint vc="39" uspid="30" ordinal="2" sl="30" sc="1" el="30" ec="2" bec="0" bev="0" fileid="4" />
+              </SequencePoints>
+              <BranchPoints />
+              <MethodPoint vc="3" uspid="0" p8:type="SequencePoint" ordinal="2" offset="2" sc="0" sl="27" ec="1" el="30" bec="0" bev="0" fileid="4" xmlns:p8="xsi" />
+            </Method>
+            <Method cyclomaticComplexity="1" nPathComplexity="1" sequenceCoverage="100" branchCoverage="100" isConstructor="True" isGetter="False" isSetter="False" isStatic="True">
+              <Summary numSequencePoints="3" visitedSequencePoints="3" numBranchPoints="0" visitedBranchPoints="0" sequenceCoverage="100" branchCoverage="100" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" visitedClasses="0" numClasses="0" visitedMethods="1" numMethods="1" />
+              <MetadataToken />
+              <Name>System.Void TarjetaSube.FranquiciaCompleta::.ctor()</Name>
+              <FileRef uid="4" />
+              <SequencePoints>
+                <SequencePoint vc="23" uspid="12" ordinal="0" sl="12" sc="1" el="12" ec="2" bec="0" bev="0" fileid="4" />
+                <SequencePoint vc="23" uspid="13" ordinal="1" sl="13" sc="1" el="13" ec="2" bec="0" bev="0" fileid="4" />
+                <SequencePoint vc="23" uspid="14" ordinal="2" sl="14" sc="1" el="14" ec="2" bec="0" bev="0" fileid="4" />
+              </SequencePoints>
+              <BranchPoints />
+              <MethodPoint vc="3" uspid="0" p8:type="SequencePoint" ordinal="3" offset="3" sc="0" sl="12" ec="1" el="14" bec="0" bev="0" fileid="4" xmlns:p8="xsi" />
+            </Method>
+          </Methods>
+        </Class>
+        <Class>
+          <Summary numSequencePoints="9" visitedSequencePoints="9" numBranchPoints="0" visitedBranchPoints="0" sequenceCoverage="100" branchCoverage="100" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" visitedClasses="1" numClasses="1" visitedMethods="3" numMethods="3" />
+          <FullName>TarjetaSube.MedioBoleto</FullName>
+          <Methods>
+            <Method cyclomaticComplexity="1" nPathComplexity="1" sequenceCoverage="100" branchCoverage="100" isConstructor="False" isGetter="False" isSetter="False" isStatic="True">
+              <Summary numSequencePoints="3" visitedSequencePoints="3" numBranchPoints="0" visitedBranchPoints="0" sequenceCoverage="100" branchCoverage="100" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" visitedClasses="0" numClasses="0" visitedMethods="1" numMethods="1" />
+              <MetadataToken />
+              <Name>System.Decimal TarjetaSube.MedioBoleto::ObtenerTarifa(System.Decimal)</Name>
+              <FileRef uid="5" />
+              <SequencePoints>
+                <SequencePoint vc="46" uspid="17" ordinal="0" sl="17" sc="1" el="17" ec="2" bec="0" bev="0" fileid="5" />
+                <SequencePoint vc="46" uspid="18" ordinal="1" sl="18" sc="1" el="18" ec="2" bec="0" bev="0" fileid="5" />
+                <SequencePoint vc="46" uspid="19" ordinal="2" sl="19" sc="1" el="19" ec="2" bec="0" bev="0" fileid="5" />
+              </SequencePoints>
+              <BranchPoints />
+              <MethodPoint vc="3" uspid="0" p8:type="SequencePoint" ordinal="0" offset="0" sc="0" sl="17" ec="1" el="19" bec="0" bev="0" fileid="5" xmlns:p8="xsi" />
+            </Method>
+            <Method cyclomaticComplexity="1" nPathComplexity="1" sequenceCoverage="100" branchCoverage="100" isConstructor="False" isGetter="False" isSetter="False" isStatic="True">
+              <Summary numSequencePoints="3" visitedSequencePoints="3" numBranchPoints="0" visitedBranchPoints="0" sequenceCoverage="100" branchCoverage="100" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" visitedClasses="0" numClasses="0" visitedMethods="1" numMethods="1" />
+              <MetadataToken />
+              <Name>System.String TarjetaSube.MedioBoleto::ObtenerTipoBoleto()</Name>
+              <FileRef uid="5" />
+              <SequencePoints>
+                <SequencePoint vc="45" uspid="22" ordinal="0" sl="22" sc="1" el="22" ec="2" bec="0" bev="0" fileid="5" />
+                <SequencePoint vc="45" uspid="23" ordinal="1" sl="23" sc="1" el="23" ec="2" bec="0" bev="0" fileid="5" />
+                <SequencePoint vc="45" uspid="24" ordinal="2" sl="24" sc="1" el="24" ec="2" bec="0" bev="0" fileid="5" />
+              </SequencePoints>
+              <BranchPoints />
+              <MethodPoint vc="3" uspid="0" p8:type="SequencePoint" ordinal="1" offset="1" sc="0" sl="22" ec="1" el="24" bec="0" bev="0" fileid="5" xmlns:p8="xsi" />
+            </Method>
+            <Method cyclomaticComplexity="1" nPathComplexity="1" sequenceCoverage="100" branchCoverage="100" isConstructor="True" isGetter="False" isSetter="False" isStatic="True">
+              <Summary numSequencePoints="3" visitedSequencePoints="3" numBranchPoints="0" visitedBranchPoints="0" sequenceCoverage="100" branchCoverage="100" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" visitedClasses="0" numClasses="0" visitedMethods="1" numMethods="1" />
+              <MetadataToken />
+              <Name>System.Void TarjetaSube.MedioBoleto::.ctor()</Name>
+              <FileRef uid="5" />
+              <SequencePoints>
+                <SequencePoint vc="27" uspid="12" ordinal="0" sl="12" sc="1" el="12" ec="2" bec="0" bev="0" fileid="5" />
+                <SequencePoint vc="27" uspid="13" ordinal="1" sl="13" sc="1" el="13" ec="2" bec="0" bev="0" fileid="5" />
+                <SequencePoint vc="27" uspid="14" ordinal="2" sl="14" sc="1" el="14" ec="2" bec="0" bev="0" fileid="5" />
+              </SequencePoints>
+              <BranchPoints />
+              <MethodPoint vc="3" uspid="0" p8:type="SequencePoint" ordinal="2" offset="2" sc="0" sl="12" ec="1" el="14" bec="0" bev="0" fileid="5" xmlns:p8="xsi" />
+            </Method>
+          </Methods>
+        </Class>
+        <Class>
+          <Summary numSequencePoints="93" visitedSequencePoints="0" numBranchPoints="32" visitedBranchPoints="0" sequenceCoverage="0" branchCoverage="0" maxCyclomaticComplexity="32" minCyclomaticComplexity="32" visitedClasses="0" numClasses="1" visitedMethods="0" numMethods="1" />
+          <FullName>TarjetaSube.Program</FullName>
+          <Methods>
+            <Method cyclomaticComplexity="32" nPathComplexity="32" sequenceCoverage="0" branchCoverage="0" isConstructor="False" isGetter="False" isSetter="False" isStatic="True">
+              <Summary numSequencePoints="93" visitedSequencePoints="0" numBranchPoints="32" visitedBranchPoints="0" sequenceCoverage="0" branchCoverage="0" maxCyclomaticComplexity="32" minCyclomaticComplexity="32" visitedClasses="0" numClasses="0" visitedMethods="0" numMethods="1" />
+              <MetadataToken />
+              <Name>System.Void TarjetaSube.Program::Main(System.String[])</Name>
+              <FileRef uid="6" />
+              <SequencePoints>
+                <SequencePoint vc="0" uspid="8" ordinal="0" sl="8" sc="1" el="8" ec="2" bec="0" bev="0" fileid="6" />
+                <SequencePoint vc="0" uspid="9" ordinal="1" sl="9" sc="1" el="9" ec="2" bec="0" bev="0" fileid="6" />
+                <SequencePoint vc="0" uspid="10" ordinal="2" sl="10" sc="1" el="10" ec="2" bec="0" bev="0" fileid="6" />
+                <SequencePoint vc="0" uspid="11" ordinal="3" sl="11" sc="1" el="11" ec="2" bec="0" bev="0" fileid="6" />
+                <SequencePoint vc="0" uspid="13" ordinal="4" sl="13" sc="1" el="13" ec="2" bec="0" bev="0" fileid="6" />
+                <SequencePoint vc="0" uspid="15" ordinal="5" sl="15" sc="1" el="15" ec="2" bec="2" bev="0" fileid="6" />
+                <SequencePoint vc="0" uspid="16" ordinal="6" sl="16" sc="1" el="16" ec="2" bec="0" bev="0" fileid="6" />
+                <SequencePoint vc="0" uspid="17" ordinal="7" sl="17" sc="1" el="17" ec="2" bec="0" bev="0" fileid="6" />
+                <SequencePoint vc="0" uspid="18" ordinal="8" sl="18" sc="1" el="18" ec="2" bec="0" bev="0" fileid="6" />
+                <SequencePoint vc="0" uspid="19" ordinal="9" sl="19" sc="1" el="19" ec="2" bec="0" bev="0" fileid="6" />
+                <SequencePoint vc="0" uspid="20" ordinal="10" sl="20" sc="1" el="20" ec="2" bec="0" bev="0" fileid="6" />
+                <SequencePoint vc="0" uspid="21" ordinal="11" sl="21" sc="1" el="21" ec="2" bec="0" bev="0" fileid="6" />
+                <SequencePoint vc="0" uspid="22" ordinal="12" sl="22" sc="1" el="22" ec="2" bec="0" bev="0" fileid="6" />
+                <SequencePoint vc="0" uspid="23" ordinal="13" sl="23" sc="1" el="23" ec="2" bec="0" bev="0" fileid="6" />
+                <SequencePoint vc="0" uspid="25" ordinal="14" sl="25" sc="1" el="25" ec="2" bec="0" bev="0" fileid="6" />
+                <SequencePoint vc="0" uspid="27" ordinal="15" sl="27" sc="1" el="27" ec="2" bec="10" bev="0" fileid="6" />
+                <SequencePoint vc="0" uspid="30" ordinal="16" sl="30" sc="1" el="30" ec="2" bec="0" bev="0" fileid="6" />
+                <SequencePoint vc="0" uspid="31" ordinal="17" sl="31" sc="1" el="31" ec="2" bec="0" bev="0" fileid="6" />
+                <SequencePoint vc="0" uspid="32" ordinal="18" sl="32" sc="1" el="32" ec="2" bec="0" bev="0" fileid="6" />
+                <SequencePoint vc="0" uspid="33" ordinal="19" sl="33" sc="1" el="33" ec="2" bec="0" bev="0" fileid="6" />
+                <SequencePoint vc="0" uspid="34" ordinal="20" sl="34" sc="1" el="34" ec="2" bec="0" bev="0" fileid="6" />
+                <SequencePoint vc="0" uspid="35" ordinal="21" sl="35" sc="1" el="35" ec="2" bec="0" bev="0" fileid="6" />
+                <SequencePoint vc="0" uspid="36" ordinal="22" sl="36" sc="1" el="36" ec="2" bec="0" bev="0" fileid="6" />
+                <SequencePoint vc="0" uspid="38" ordinal="23" sl="38" sc="1" el="38" ec="2" bec="8" bev="0" fileid="6" />
+                <SequencePoint vc="0" uspid="41" ordinal="24" sl="41" sc="1" el="41" ec="2" bec="0" bev="0" fileid="6" />
+                <SequencePoint vc="0" uspid="42" ordinal="25" sl="42" sc="1" el="42" ec="2" bec="0" bev="0" fileid="6" />
+                <SequencePoint vc="0" uspid="43" ordinal="26" sl="43" sc="1" el="43" ec="2" bec="0" bev="0" fileid="6" />
+                <SequencePoint vc="0" uspid="45" ordinal="27" sl="45" sc="1" el="45" ec="2" bec="0" bev="0" fileid="6" />
+                <SequencePoint vc="0" uspid="46" ordinal="28" sl="46" sc="1" el="46" ec="2" bec="0" bev="0" fileid="6" />
+                <SequencePoint vc="0" uspid="47" ordinal="29" sl="47" sc="1" el="47" ec="2" bec="0" bev="0" fileid="6" />
+                <SequencePoint vc="0" uspid="49" ordinal="30" sl="49" sc="1" el="49" ec="2" bec="0" bev="0" fileid="6" />
+                <SequencePoint vc="0" uspid="50" ordinal="31" sl="50" sc="1" el="50" ec="2" bec="0" bev="0" fileid="6" />
+                <SequencePoint vc="0" uspid="51" ordinal="32" sl="51" sc="1" el="51" ec="2" bec="0" bev="0" fileid="6" />
+                <SequencePoint vc="0" uspid="53" ordinal="33" sl="53" sc="1" el="53" ec="2" bec="0" bev="0" fileid="6" />
+                <SequencePoint vc="0" uspid="54" ordinal="34" sl="54" sc="1" el="54" ec="2" bec="0" bev="0" fileid="6" />
+                <SequencePoint vc="0" uspid="55" ordinal="35" sl="55" sc="1" el="55" ec="2" bec="0" bev="0" fileid="6" />
+                <SequencePoint vc="0" uspid="57" ordinal="36" sl="57" sc="1" el="57" ec="2" bec="0" bev="0" fileid="6" />
+                <SequencePoint vc="0" uspid="58" ordinal="37" sl="58" sc="1" el="58" ec="2" bec="0" bev="0" fileid="6" />
+                <SequencePoint vc="0" uspid="60" ordinal="38" sl="60" sc="1" el="60" ec="2" bec="0" bev="0" fileid="6" />
+                <SequencePoint vc="0" uspid="63" ordinal="39" sl="63" sc="1" el="63" ec="2" bec="2" bev="0" fileid="6" />
+                <SequencePoint vc="0" uspid="64" ordinal="40" sl="64" sc="1" el="64" ec="2" bec="0" bev="0" fileid="6" />
+                <SequencePoint vc="0" uspid="65" ordinal="41" sl="65" sc="1" el="65" ec="2" bec="0" bev="0" fileid="6" />
+                <SequencePoint vc="0" uspid="66" ordinal="42" sl="66" sc="1" el="66" ec="2" bec="0" bev="0" fileid="6" />
+                <SequencePoint vc="0" uspid="69" ordinal="43" sl="69" sc="1" el="69" ec="2" bec="0" bev="0" fileid="6" />
+                <SequencePoint vc="0" uspid="70" ordinal="44" sl="70" sc="1" el="70" ec="2" bec="0" bev="0" fileid="6" />
+                <SequencePoint vc="0" uspid="71" ordinal="45" sl="71" sc="1" el="71" ec="2" bec="2" bev="0" fileid="6" />
+                <SequencePoint vc="0" uspid="72" ordinal="46" sl="72" sc="1" el="72" ec="2" bec="0" bev="0" fileid="6" />
+                <SequencePoint vc="0" uspid="73" ordinal="47" sl="73" sc="1" el="73" ec="2" bec="2" bev="0" fileid="6" />
+                <SequencePoint vc="0" uspid="74" ordinal="48" sl="74" sc="1" el="74" ec="2" bec="0" bev="0" fileid="6" />
+                <SequencePoint vc="0" uspid="75" ordinal="49" sl="75" sc="1" el="75" ec="2" bec="0" bev="0" fileid="6" />
+                <SequencePoint vc="0" uspid="76" ordinal="50" sl="76" sc="1" el="76" ec="2" bec="0" bev="0" fileid="6" />
+                <SequencePoint vc="0" uspid="78" ordinal="51" sl="78" sc="1" el="78" ec="2" bec="0" bev="0" fileid="6" />
+                <SequencePoint vc="0" uspid="79" ordinal="52" sl="79" sc="1" el="79" ec="2" bec="0" bev="0" fileid="6" />
+                <SequencePoint vc="0" uspid="80" ordinal="53" sl="80" sc="1" el="80" ec="2" bec="0" bev="0" fileid="6" />
+                <SequencePoint vc="0" uspid="81" ordinal="54" sl="81" sc="1" el="81" ec="2" bec="0" bev="0" fileid="6" />
+                <SequencePoint vc="0" uspid="83" ordinal="55" sl="83" sc="1" el="83" ec="2" bec="0" bev="0" fileid="6" />
+                <SequencePoint vc="0" uspid="84" ordinal="56" sl="84" sc="1" el="84" ec="2" bec="0" bev="0" fileid="6" />
+                <SequencePoint vc="0" uspid="85" ordinal="57" sl="85" sc="1" el="85" ec="2" bec="0" bev="0" fileid="6" />
+                <SequencePoint vc="0" uspid="86" ordinal="58" sl="86" sc="1" el="86" ec="2" bec="0" bev="0" fileid="6" />
+                <SequencePoint vc="0" uspid="89" ordinal="59" sl="89" sc="1" el="89" ec="2" bec="2" bev="0" fileid="6" />
+                <SequencePoint vc="0" uspid="90" ordinal="60" sl="90" sc="1" el="90" ec="2" bec="0" bev="0" fileid="6" />
+                <SequencePoint vc="0" uspid="91" ordinal="61" sl="91" sc="1" el="91" ec="2" bec="0" bev="0" fileid="6" />
+                <SequencePoint vc="0" uspid="92" ordinal="62" sl="92" sc="1" el="92" ec="2" bec="0" bev="0" fileid="6" />
+                <SequencePoint vc="0" uspid="94" ordinal="63" sl="94" sc="1" el="94" ec="2" bec="0" bev="0" fileid="6" />
+                <SequencePoint vc="0" uspid="95" ordinal="64" sl="95" sc="1" el="95" ec="2" bec="0" bev="0" fileid="6" />
+                <SequencePoint vc="0" uspid="98" ordinal="65" sl="98" sc="1" el="98" ec="2" bec="2" bev="0" fileid="6" />
+                <SequencePoint vc="0" uspid="99" ordinal="66" sl="99" sc="1" el="99" ec="2" bec="0" bev="0" fileid="6" />
+                <SequencePoint vc="0" uspid="100" ordinal="67" sl="100" sc="1" el="100" ec="2" bec="0" bev="0" fileid="6" />
+                <SequencePoint vc="0" uspid="101" ordinal="68" sl="101" sc="1" el="101" ec="2" bec="0" bev="0" fileid="6" />
+                <SequencePoint vc="0" uspid="104" ordinal="69" sl="104" sc="1" el="104" ec="2" bec="0" bev="0" fileid="6" />
+                <SequencePoint vc="0" uspid="105" ordinal="70" sl="105" sc="1" el="105" ec="2" bec="0" bev="0" fileid="6" />
+                <SequencePoint vc="0" uspid="106" ordinal="71" sl="106" sc="1" el="106" ec="2" bec="0" bev="0" fileid="6" />
+                <SequencePoint vc="0" uspid="108" ordinal="72" sl="108" sc="1" el="108" ec="2" bec="0" bev="0" fileid="6" />
+                <SequencePoint vc="0" uspid="110" ordinal="73" sl="110" sc="1" el="110" ec="2" bec="2" bev="0" fileid="6" />
+                <SequencePoint vc="0" uspid="111" ordinal="74" sl="111" sc="1" el="111" ec="2" bec="0" bev="0" fileid="6" />
+                <SequencePoint vc="0" uspid="112" ordinal="75" sl="112" sc="1" el="112" ec="2" bec="0" bev="0" fileid="6" />
+                <SequencePoint vc="0" uspid="113" ordinal="76" sl="113" sc="1" el="113" ec="2" bec="0" bev="0" fileid="6" />
+                <SequencePoint vc="0" uspid="114" ordinal="77" sl="114" sc="1" el="114" ec="2" bec="0" bev="0" fileid="6" />
+                <SequencePoint vc="0" uspid="115" ordinal="78" sl="115" sc="1" el="115" ec="2" bec="0" bev="0" fileid="6" />
+                <SequencePoint vc="0" uspid="116" ordinal="79" sl="116" sc="1" el="116" ec="2" bec="0" bev="0" fileid="6" />
+                <SequencePoint vc="0" uspid="117" ordinal="80" sl="117" sc="1" el="117" ec="2" bec="0" bev="0" fileid="6" />
+                <SequencePoint vc="0" uspid="118" ordinal="81" sl="118" sc="1" el="118" ec="2" bec="0" bev="0" fileid="6" />
+                <SequencePoint vc="0" uspid="120" ordinal="82" sl="120" sc="1" el="120" ec="2" bec="0" bev="0" fileid="6" />
+                <SequencePoint vc="0" uspid="121" ordinal="83" sl="121" sc="1" el="121" ec="2" bec="0" bev="0" fileid="6" />
+                <SequencePoint vc="0" uspid="122" ordinal="84" sl="122" sc="1" el="122" ec="2" bec="0" bev="0" fileid="6" />
+                <SequencePoint vc="0" uspid="123" ordinal="85" sl="123" sc="1" el="123" ec="2" bec="0" bev="0" fileid="6" />
+                <SequencePoint vc="0" uspid="126" ordinal="86" sl="126" sc="1" el="126" ec="2" bec="0" bev="0" fileid="6" />
+                <SequencePoint vc="0" uspid="127" ordinal="87" sl="127" sc="1" el="127" ec="2" bec="0" bev="0" fileid="6" />
+                <SequencePoint vc="0" uspid="128" ordinal="88" sl="128" sc="1" el="128" ec="2" bec="0" bev="0" fileid="6" />
+                <SequencePoint vc="0" uspid="131" ordinal="89" sl="131" sc="1" el="131" ec="2" bec="0" bev="0" fileid="6" />
+                <SequencePoint vc="0" uspid="132" ordinal="90" sl="132" sc="1" el="132" ec="2" bec="0" bev="0" fileid="6" />
+                <SequencePoint vc="0" uspid="134" ordinal="91" sl="134" sc="1" el="134" ec="2" bec="0" bev="0" fileid="6" />
+                <SequencePoint vc="0" uspid="135" ordinal="92" sl="135" sc="1" el="135" ec="2" bec="0" bev="0" fileid="6" />
+              </SequencePoints>
+              <BranchPoints>
+                <BranchPoint vc="0" uspid="15" ordinal="31" path="1" offset="922" offsetend="32" sl="15" fileid="6" />
+                <BranchPoint vc="0" uspid="27" ordinal="0" path="0" offset="135" offsetend="137" sl="27" fileid="6" />
+                <BranchPoint vc="0" uspid="27" ordinal="2" path="0" offset="149" offsetend="154" sl="27" fileid="6" />
+                <BranchPoint vc="0" uspid="27" ordinal="4" path="0" offset="166" offsetend="171" sl="27" fileid="6" />
+                <BranchPoint vc="0" uspid="27" ordinal="6" path="0" offset="183" offsetend="188" sl="27" fileid="6" />
+                <BranchPoint vc="0" uspid="27" ordinal="1" path="1" offset="135" offsetend="210" sl="27" fileid="6" />
+                <BranchPoint vc="0" uspid="38" ordinal="10" path="0" offset="303" offsetend="305" sl="38" fileid="6" />
+                <BranchPoint vc="0" uspid="38" ordinal="12" path="0" offset="317" offsetend="319" sl="38" fileid="6" />
+                <BranchPoint vc="0" uspid="38" ordinal="14" path="0" offset="331" offsetend="333" sl="38" fileid="6" />
+                <BranchPoint vc="0" uspid="38" ordinal="11" path="1" offset="303" offsetend="349" sl="38" fileid="6" />
+                <BranchPoint vc="0" uspid="38" ordinal="13" path="1" offset="317" offsetend="368" sl="38" fileid="6" />
+                <BranchPoint vc="0" uspid="38" ordinal="15" path="1" offset="331" offsetend="387" sl="38" fileid="6" />
+                <BranchPoint vc="0" uspid="38" ordinal="17" path="1" offset="345" offsetend="406" sl="38" fileid="6" />
+                <BranchPoint vc="0" uspid="38" ordinal="16" path="0" offset="345" offsetend="425" sl="38" fileid="6" />
+                <BranchPoint vc="0" uspid="27" ordinal="3" path="1" offset="149" offsetend="443" sl="27" fileid="6" />
+                <BranchPoint vc="0" uspid="63" ordinal="18" path="0" offset="451" offsetend="453" sl="63" fileid="6" />
+                <BranchPoint vc="0" uspid="63" ordinal="19" path="1" offset="451" offsetend="470" sl="63" fileid="6" />
+                <BranchPoint vc="0" uspid="71" ordinal="20" path="0" offset="508" offsetend="510" sl="71" fileid="6" />
+                <BranchPoint vc="0" uspid="73" ordinal="22" path="0" offset="523" offsetend="525" sl="73" fileid="6" />
+                <BranchPoint vc="0" uspid="73" ordinal="23" path="1" offset="523" offsetend="556" sl="73" fileid="6" />
+                <BranchPoint vc="0" uspid="71" ordinal="21" path="1" offset="508" offsetend="572" sl="71" fileid="6" />
+                <BranchPoint vc="0" uspid="27" ordinal="5" path="1" offset="166" offsetend="590" sl="27" fileid="6" />
+                <BranchPoint vc="0" uspid="89" ordinal="24" path="0" offset="598" offsetend="600" sl="89" fileid="6" />
+                <BranchPoint vc="0" uspid="89" ordinal="25" path="1" offset="598" offsetend="617" sl="89" fileid="6" />
+                <BranchPoint vc="0" uspid="27" ordinal="7" path="1" offset="183" offsetend="649" sl="27" fileid="6" />
+                <BranchPoint vc="0" uspid="98" ordinal="26" path="0" offset="657" offsetend="659" sl="98" fileid="6" />
+                <BranchPoint vc="0" uspid="98" ordinal="27" path="1" offset="657" offsetend="676" sl="98" fileid="6" />
+                <BranchPoint vc="0" uspid="110" ordinal="28" path="0" offset="720" offsetend="725" sl="110" fileid="6" />
+                <BranchPoint vc="0" uspid="110" ordinal="29" path="1" offset="720" offsetend="870" sl="110" fileid="6" />
+                <BranchPoint vc="0" uspid="27" ordinal="9" path="1" offset="200" offsetend="885" sl="27" fileid="6" />
+                <BranchPoint vc="0" uspid="27" ordinal="8" path="0" offset="200" offsetend="900" sl="27" fileid="6" />
+                <BranchPoint vc="0" uspid="15" ordinal="30" path="0" offset="922" offsetend="927" sl="15" fileid="6" />
+              </BranchPoints>
+              <MethodPoint vc="0" uspid="0" p8:type="SequencePoint" ordinal="0" offset="0" sc="0" sl="8" ec="1" el="135" bec="0" bev="0" fileid="6" xmlns:p8="xsi" />
+            </Method>
+          </Methods>
+        </Class>
+        <Class>
+          <Summary numSequencePoints="35" visitedSequencePoints="35" numBranchPoints="6" visitedBranchPoints="6" sequenceCoverage="100" branchCoverage="100" maxCyclomaticComplexity="4" minCyclomaticComplexity="1" visitedClasses="1" numClasses="1" visitedMethods="7" numMethods="7" />
+          <FullName>TarjetaSube.Tarjeta</FullName>
+          <Methods>
+            <Method cyclomaticComplexity="1" nPathComplexity="1" sequenceCoverage="100" branchCoverage="100" isConstructor="False" isGetter="True" isSetter="False" isStatic="True">
+              <Summary numSequencePoints="1" visitedSequencePoints="1" numBranchPoints="0" visitedBranchPoints="0" sequenceCoverage="100" branchCoverage="100" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" visitedClasses="0" numClasses="0" visitedMethods="1" numMethods="1" />
+              <MetadataToken />
+              <Name>System.Decimal TarjetaSube.Tarjeta::get_Saldo()</Name>
+              <FileRef uid="7" />
+              <SequencePoints>
+                <SequencePoint vc="999" uspid="18" ordinal="0" sl="18" sc="1" el="18" ec="2" bec="0" bev="0" fileid="7" />
+              </SequencePoints>
+              <BranchPoints />
+              <MethodPoint vc="1" uspid="0" p8:type="SequencePoint" ordinal="0" offset="0" sc="0" sl="18" ec="1" el="18" bec="0" bev="0" fileid="7" xmlns:p8="xsi" />
+            </Method>
+            <Method cyclomaticComplexity="4" nPathComplexity="4" sequenceCoverage="100" branchCoverage="100" isConstructor="False" isGetter="False" isSetter="False" isStatic="True">
+              <Summary numSequencePoints="11" visitedSequencePoints="11" numBranchPoints="4" visitedBranchPoints="4" sequenceCoverage="100" branchCoverage="100" maxCyclomaticComplexity="4" minCyclomaticComplexity="4" visitedClasses="0" numClasses="0" visitedMethods="1" numMethods="1" />
+              <MetadataToken />
+              <Name>System.Boolean TarjetaSube.Tarjeta::Cargar(System.Decimal)</Name>
+              <FileRef uid="7" />
+              <SequencePoints>
+                <SequencePoint vc="165" uspid="27" ordinal="0" sl="27" sc="1" el="27" ec="2" bec="0" bev="0" fileid="7" />
+                <SequencePoint vc="165" uspid="28" ordinal="1" sl="28" sc="1" el="28" ec="2" bec="2" bev="2" fileid="7" />
+                <SequencePoint vc="9" uspid="29" ordinal="2" sl="29" sc="1" el="29" ec="2" bec="0" bev="0" fileid="7" />
+                <SequencePoint vc="9" uspid="30" ordinal="3" sl="30" sc="1" el="30" ec="2" bec="0" bev="0" fileid="7" />
+                <SequencePoint vc="156" uspid="33" ordinal="4" sl="33" sc="1" el="33" ec="2" bec="0" bev="0" fileid="7" />
+                <SequencePoint vc="156" uspid="35" ordinal="5" sl="35" sc="1" el="35" ec="2" bec="2" bev="2" fileid="7" />
+                <SequencePoint vc="6" uspid="36" ordinal="6" sl="36" sc="1" el="36" ec="2" bec="0" bev="0" fileid="7" />
+                <SequencePoint vc="6" uspid="37" ordinal="7" sl="37" sc="1" el="37" ec="2" bec="0" bev="0" fileid="7" />
+                <SequencePoint vc="150" uspid="40" ordinal="8" sl="40" sc="1" el="40" ec="2" bec="0" bev="0" fileid="7" />
+                <SequencePoint vc="150" uspid="41" ordinal="9" sl="41" sc="1" el="41" ec="2" bec="0" bev="0" fileid="7" />
+                <SequencePoint vc="165" uspid="42" ordinal="10" sl="42" sc="1" el="42" ec="2" bec="0" bev="0" fileid="7" />
+              </SequencePoints>
+              <BranchPoints>
+                <BranchPoint vc="9" uspid="28" ordinal="0" path="0" offset="17" offsetend="19" sl="28" fileid="7" />
+                <BranchPoint vc="156" uspid="28" ordinal="1" path="1" offset="17" offsetend="24" sl="28" fileid="7" />
+                <BranchPoint vc="6" uspid="35" ordinal="2" path="0" offset="55" offsetend="57" sl="35" fileid="7" />
+                <BranchPoint vc="150" uspid="35" ordinal="3" path="1" offset="55" offsetend="62" sl="35" fileid="7" />
+              </BranchPoints>
+              <MethodPoint vc="11" uspid="0" p8:type="SequencePoint" ordinal="1" offset="1" sc="0" sl="27" ec="1" el="42" bec="0" bev="0" fileid="7" xmlns:p8="xsi" />
+            </Method>
+            <Method cyclomaticComplexity="2" nPathComplexity="2" sequenceCoverage="100" branchCoverage="100" isConstructor="False" isGetter="False" isSetter="False" isStatic="True">
+              <Summary numSequencePoints="7" visitedSequencePoints="7" numBranchPoints="2" visitedBranchPoints="2" sequenceCoverage="100" branchCoverage="100" maxCyclomaticComplexity="2" minCyclomaticComplexity="2" visitedClasses="0" numClasses="0" visitedMethods="1" numMethods="1" />
+              <MetadataToken />
+              <Name>System.Boolean TarjetaSube.Tarjeta::DescontarSaldo(System.Decimal)</Name>
+              <FileRef uid="7" />
+              <SequencePoints>
+                <SequencePoint vc="135" uspid="45" ordinal="0" sl="45" sc="1" el="45" ec="2" bec="0" bev="0" fileid="7" />
+                <SequencePoint vc="135" uspid="46" ordinal="1" sl="46" sc="1" el="46" ec="2" bec="2" bev="2" fileid="7" />
+                <SequencePoint vc="10" uspid="47" ordinal="2" sl="47" sc="1" el="47" ec="2" bec="0" bev="0" fileid="7" />
+                <SequencePoint vc="10" uspid="48" ordinal="3" sl="48" sc="1" el="48" ec="2" bec="0" bev="0" fileid="7" />
+                <SequencePoint vc="125" uspid="51" ordinal="4" sl="51" sc="1" el="51" ec="2" bec="0" bev="0" fileid="7" />
+                <SequencePoint vc="125" uspid="52" ordinal="5" sl="52" sc="1" el="52" ec="2" bec="0" bev="0" fileid="7" />
+                <SequencePoint vc="135" uspid="53" ordinal="6" sl="53" sc="1" el="53" ec="2" bec="0" bev="0" fileid="7" />
+              </SequencePoints>
+              <BranchPoints>
+                <BranchPoint vc="10" uspid="46" ordinal="0" path="0" offset="30" offsetend="32" sl="46" fileid="7" />
+                <BranchPoint vc="125" uspid="46" ordinal="1" path="1" offset="30" offsetend="37" sl="46" fileid="7" />
+              </BranchPoints>
+              <MethodPoint vc="7" uspid="0" p8:type="SequencePoint" ordinal="2" offset="2" sc="0" sl="45" ec="1" el="53" bec="0" bev="0" fileid="7" xmlns:p8="xsi" />
+            </Method>
+            <Method cyclomaticComplexity="1" nPathComplexity="1" sequenceCoverage="100" branchCoverage="100" isConstructor="False" isGetter="False" isSetter="False" isStatic="True">
+              <Summary numSequencePoints="3" visitedSequencePoints="3" numBranchPoints="0" visitedBranchPoints="0" sequenceCoverage="100" branchCoverage="100" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" visitedClasses="0" numClasses="0" visitedMethods="1" numMethods="1" />
+              <MetadataToken />
+              <Name>System.Decimal TarjetaSube.Tarjeta::ObtenerTarifa(System.Decimal)</Name>
+              <FileRef uid="7" />
+              <SequencePoints>
+                <SequencePoint vc="69" uspid="56" ordinal="0" sl="56" sc="1" el="56" ec="2" bec="0" bev="0" fileid="7" />
+                <SequencePoint vc="69" uspid="57" ordinal="1" sl="57" sc="1" el="57" ec="2" bec="0" bev="0" fileid="7" />
+                <SequencePoint vc="69" uspid="58" ordinal="2" sl="58" sc="1" el="58" ec="2" bec="0" bev="0" fileid="7" />
+              </SequencePoints>
+              <BranchPoints />
+              <MethodPoint vc="3" uspid="0" p8:type="SequencePoint" ordinal="3" offset="3" sc="0" sl="56" ec="1" el="58" bec="0" bev="0" fileid="7" xmlns:p8="xsi" />
+            </Method>
+            <Method cyclomaticComplexity="1" nPathComplexity="1" sequenceCoverage="100" branchCoverage="100" isConstructor="False" isGetter="False" isSetter="False" isStatic="True">
+              <Summary numSequencePoints="3" visitedSequencePoints="3" numBranchPoints="0" visitedBranchPoints="0" sequenceCoverage="100" branchCoverage="100" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" visitedClasses="0" numClasses="0" visitedMethods="1" numMethods="1" />
+              <MetadataToken />
+              <Name>System.String TarjetaSube.Tarjeta::ObtenerTipoBoleto()</Name>
+              <FileRef uid="7" />
+              <SequencePoints>
+                <SequencePoint vc="63" uspid="61" ordinal="0" sl="61" sc="1" el="61" ec="2" bec="0" bev="0" fileid="7" />
+                <SequencePoint vc="63" uspid="62" ordinal="1" sl="62" sc="1" el="62" ec="2" bec="0" bev="0" fileid="7" />
+                <SequencePoint vc="63" uspid="63" ordinal="2" sl="63" sc="1" el="63" ec="2" bec="0" bev="0" fileid="7" />
+              </SequencePoints>
+              <BranchPoints />
+              <MethodPoint vc="3" uspid="0" p8:type="SequencePoint" ordinal="4" offset="4" sc="0" sl="61" ec="1" el="63" bec="0" bev="0" fileid="7" xmlns:p8="xsi" />
+            </Method>
+            <Method cyclomaticComplexity="1" nPathComplexity="1" sequenceCoverage="100" branchCoverage="100" isConstructor="True" isGetter="False" isSetter="False" isStatic="True">
+              <Summary numSequencePoints="4" visitedSequencePoints="4" numBranchPoints="0" visitedBranchPoints="0" sequenceCoverage="100" branchCoverage="100" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" visitedClasses="0" numClasses="0" visitedMethods="1" numMethods="1" />
+              <MetadataToken />
+              <Name>System.Void TarjetaSube.Tarjeta::.ctor()</Name>
+              <FileRef uid="7" />
+              <SequencePoints>
+                <SequencePoint vc="172" uspid="21" ordinal="0" sl="21" sc="1" el="21" ec="2" bec="0" bev="0" fileid="7" />
+                <SequencePoint vc="172" uspid="22" ordinal="1" sl="22" sc="1" el="22" ec="2" bec="0" bev="0" fileid="7" />
+                <SequencePoint vc="172" uspid="23" ordinal="2" sl="23" sc="1" el="23" ec="2" bec="0" bev="0" fileid="7" />
+                <SequencePoint vc="172" uspid="24" ordinal="3" sl="24" sc="1" el="24" ec="2" bec="0" bev="0" fileid="7" />
+              </SequencePoints>
+              <BranchPoints />
+              <MethodPoint vc="4" uspid="0" p8:type="SequencePoint" ordinal="5" offset="5" sc="0" sl="21" ec="1" el="24" bec="0" bev="0" fileid="7" xmlns:p8="xsi" />
+            </Method>
+            <Method cyclomaticComplexity="1" nPathComplexity="1" sequenceCoverage="100" branchCoverage="100" isConstructor="True" isGetter="False" isSetter="False" isStatic="True">
+              <Summary numSequencePoints="6" visitedSequencePoints="6" numBranchPoints="0" visitedBranchPoints="0" sequenceCoverage="100" branchCoverage="100" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" visitedClasses="0" numClasses="0" visitedMethods="1" numMethods="1" />
+              <MetadataToken />
+              <Name>System.Void TarjetaSube.Tarjeta::.cctor()</Name>
+              <FileRef uid="7" />
+              <SequencePoints>
+                <SequencePoint vc="1" uspid="9" ordinal="0" sl="9" sc="1" el="9" ec="2" bec="0" bev="0" fileid="7" />
+                <SequencePoint vc="1" uspid="10" ordinal="1" sl="10" sc="1" el="10" ec="2" bec="0" bev="0" fileid="7" />
+                <SequencePoint vc="1" uspid="11" ordinal="2" sl="11" sc="1" el="11" ec="2" bec="0" bev="0" fileid="7" />
+                <SequencePoint vc="1" uspid="12" ordinal="3" sl="12" sc="1" el="12" ec="2" bec="0" bev="0" fileid="7" />
+                <SequencePoint vc="1" uspid="13" ordinal="4" sl="13" sc="1" el="13" ec="2" bec="0" bev="0" fileid="7" />
+                <SequencePoint vc="1" uspid="14" ordinal="5" sl="14" sc="1" el="14" ec="2" bec="0" bev="0" fileid="7" />
+              </SequencePoints>
+              <BranchPoints />
+              <MethodPoint vc="6" uspid="0" p8:type="SequencePoint" ordinal="6" offset="6" sc="0" sl="9" ec="1" el="14" bec="0" bev="0" fileid="7" xmlns:p8="xsi" />
+            </Method>
+          </Methods>
+        </Class>
+      </Classes>
+    </Module>
+  </Modules>
+</CoverageSession>

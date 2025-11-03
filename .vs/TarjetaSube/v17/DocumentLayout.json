@@ -63,7 +63,7 @@
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "TarjetaSubeTest",
+              "Title": "TarjetaSubeTest.csproj",
               "DocumentMoniker": "C:\\Users\\Usuario\\Documents\\Fran\\escuela\\mauri\\tp-ultimo\\TarjetaSubeTest\\TarjetaSubeTest.csproj",
               "RelativeDocumentMoniker": "TarjetaSubeTest\\TarjetaSubeTest.csproj",
               "ToolTip": "C:\\Users\\Usuario\\Documents\\Fran\\escuela\\mauri\\tp-ultimo\\TarjetaSubeTest\\TarjetaSubeTest.csproj",
@@ -96,7 +96,8 @@
               "RelativeToolTip": "TarjetaSubeTest\\TestSaldoNegativo.cs",
               "ViewState": "AgIAADMBAAAAAAAAAAAAADMBAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-31T03:09:25.207Z"
+              "WhenOpened": "2025-10-31T03:09:25.207Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -108,7 +109,8 @@
               "RelativeToolTip": "TarjetaSube\\BoletoGratuito.cs",
               "ViewState": "AgIAAAIAAAAAAAAAAAAqwBEAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-31T03:00:10.894Z"
+              "WhenOpened": "2025-10-31T03:00:10.894Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -120,7 +122,8 @@
               "RelativeToolTip": "TarjetaSube\\MedioBoleto.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-31T02:59:39.735Z"
+              "WhenOpened": "2025-10-31T02:59:39.735Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -132,7 +135,8 @@
               "RelativeToolTip": "TarjetaSube\\Colectivo.cs",
               "ViewState": "AgIAABQAAAAAAAAAAAAgwA4AAAAvAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-28T20:25:56.207Z"
+              "WhenOpened": "2025-10-28T20:25:56.207Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -157,7 +161,8 @@
               "RelativeToolTip": "TarjetaSubeTest\\TestFranquicias.cs",
               "ViewState": "AgIAAPgBAAAAAAAAAAAAAB8CAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-31T03:02:08.646Z"
+              "WhenOpened": "2025-10-31T03:02:08.646Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -182,7 +187,8 @@
               "RelativeToolTip": "TarjetaSubeTest\\UnitTest1.cs",
               "ViewState": "AgIAAJMBAAAAAAAAAAAqwKABAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-28T20:24:54.555Z"
+              "WhenOpened": "2025-10-28T20:24:54.555Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -194,7 +200,8 @@
               "RelativeToolTip": "TarjetaSube\\Boleto.cs",
               "ViewState": "AgIAABsAAAAAAAAAAAA/wC4AAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-28T20:22:26.566Z"
+              "WhenOpened": "2025-10-28T20:22:26.566Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -206,7 +213,8 @@
               "RelativeToolTip": "TarjetaSube\\Tarjeta.cs",
               "ViewState": "AgIAAAIAAAAAAAAAAAAQwDMAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-28T20:21:59.982Z"
+              "WhenOpened": "2025-10-28T20:21:59.982Z",
+              "EditorCaption": ""
             }
           ]
         }
