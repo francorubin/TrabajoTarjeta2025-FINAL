@@ -2,12 +2,17 @@ coverage:
   status:
     project:
       default:
-        target: auto
+        target: 85%
         threshold: 1%
     patch:
       default:
-        target: auto
-        threshold: 1%
+        target: 80%
 
 ignore:
+  - "TarjetaSube/Program.cs"
   - "**/Program.cs"
+
+comment:
+  layout: "reach, diff, flags, files"
+  behavior: default
+  require_changes: false
