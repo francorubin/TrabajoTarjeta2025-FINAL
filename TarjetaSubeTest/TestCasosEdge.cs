@@ -20,20 +20,23 @@ namespace TarjetaSubeTest
         public void TestBoletoConstructorConTodosLosParametros()
         {
             DateTime fecha = DateTime.Now;
-            Boleto boleto = new Boleto(1580m, 5000m, "K", fecha, "Normal");
+            Guid idTarjeta = Guid.NewGuid();
+            Boleto boleto = new Boleto(1580m, 5000m, "K", fecha, "Normal", idTarjeta, 5000m);
 
             Assert.AreEqual(1580m, boleto.Monto);
             Assert.AreEqual(5000m, boleto.SaldoRestante);
             Assert.AreEqual("K", boleto.Linea);
             Assert.AreEqual(fecha, boleto.Fecha);
             Assert.AreEqual("Normal", boleto.TipoBoleto);
+            Assert.AreEqual(idTarjeta, boleto.IdTarjeta);
         }
 
         [Test]
         public void TestBoletoConstructorConSaldoNegativo()
         {
             DateTime fecha = DateTime.Now;
-            Boleto boleto = new Boleto(1580m, -500m, "142", fecha, "Normal");
+            Guid idTarjeta = Guid.NewGuid();
+            Boleto boleto = new Boleto(1580m, -500m, "142", fecha, "Normal", idTarjeta, 1080m);
 
             Assert.AreEqual(1580m, boleto.Monto);
             Assert.AreEqual(-500m, boleto.SaldoRestante);
@@ -43,7 +46,8 @@ namespace TarjetaSubeTest
         public void TestBoletoConstructorConMontoDecimal()
         {
             DateTime fecha = DateTime.Now;
-            Boleto boleto = new Boleto(790m, 4210m, "K", fecha, "Medio Boleto");
+            Guid idTarjeta = Guid.NewGuid();
+            Boleto boleto = new Boleto(790m, 4210m, "K", fecha, "Medio Boleto", idTarjeta, 5000m);
 
             Assert.AreEqual(790m, boleto.Monto);
             Assert.AreEqual("Medio Boleto", boleto.TipoBoleto);
@@ -53,7 +57,8 @@ namespace TarjetaSubeTest
         public void TestBoletoGettersMonto()
         {
             DateTime fecha = DateTime.Now;
-            Boleto boleto = new Boleto(1580m, 5000m, "K", fecha, "Normal");
+            Guid idTarjeta = Guid.NewGuid();
+            Boleto boleto = new Boleto(1580m, 5000m, "K", fecha, "Normal", idTarjeta, 5000m);
             decimal monto = boleto.Monto;
             Assert.AreEqual(1580m, monto);
         }
@@ -62,7 +67,8 @@ namespace TarjetaSubeTest
         public void TestBoletoGettersSaldoRestante()
         {
             DateTime fecha = DateTime.Now;
-            Boleto boleto = new Boleto(1580m, 5000m, "K", fecha, "Normal");
+            Guid idTarjeta = Guid.NewGuid();
+            Boleto boleto = new Boleto(1580m, 5000m, "K", fecha, "Normal", idTarjeta, 5000m);
             decimal saldo = boleto.SaldoRestante;
             Assert.AreEqual(5000m, saldo);
         }
@@ -71,7 +77,8 @@ namespace TarjetaSubeTest
         public void TestBoletoGettersLinea()
         {
             DateTime fecha = DateTime.Now;
-            Boleto boleto = new Boleto(1580m, 5000m, "K", fecha, "Normal");
+            Guid idTarjeta = Guid.NewGuid();
+            Boleto boleto = new Boleto(1580m, 5000m, "K", fecha, "Normal", idTarjeta, 5000m);
             string linea = boleto.Linea;
             Assert.AreEqual("K", linea);
         }
@@ -80,7 +87,8 @@ namespace TarjetaSubeTest
         public void TestBoletoGettersFecha()
         {
             DateTime fecha = DateTime.Now;
-            Boleto boleto = new Boleto(1580m, 5000m, "K", fecha, "Normal");
+            Guid idTarjeta = Guid.NewGuid();
+            Boleto boleto = new Boleto(1580m, 5000m, "K", fecha, "Normal", idTarjeta, 5000m);
             DateTime fechaBoleto = boleto.Fecha;
             Assert.AreEqual(fecha, fechaBoleto);
         }
@@ -89,7 +97,8 @@ namespace TarjetaSubeTest
         public void TestBoletoGettersTipoBoleto()
         {
             DateTime fecha = DateTime.Now;
-            Boleto boleto = new Boleto(1580m, 5000m, "K", fecha, "Normal");
+            Guid idTarjeta = Guid.NewGuid();
+            Boleto boleto = new Boleto(1580m, 5000m, "K", fecha, "Normal", idTarjeta, 5000m);
             string tipo = boleto.TipoBoleto;
             Assert.AreEqual("Normal", tipo);
         }

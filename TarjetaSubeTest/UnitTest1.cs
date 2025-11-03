@@ -369,7 +369,7 @@ namespace TarjetaSubeTest
             colectivo.PagarCon(tarjeta); // -1160
             decimal saldoAntes = tarjeta.Saldo;
 
-            // Intentar un tercer pago que excedería el límite de -1200
+            // Intentar un tercer pago que exceder?a el l?mite de -1200
             Boleto boleto = colectivo.PagarCon(tarjeta);
 
             Assert.IsNull(boleto);
@@ -396,13 +396,16 @@ namespace TarjetaSubeTest
         public void TestBoletoGetters()
         {
             DateTime fechaActual = DateTime.Now;
-            Boleto boleto = new Boleto(1580, 5000, "K", fechaActual, "Normal");
+            Guid idTarjeta = Guid.NewGuid();
+            Boleto boleto = new Boleto(1580, 5000, "K", fechaActual, "Normal", idTarjeta, 5000);
 
             Assert.AreEqual(1580, boleto.Monto);
             Assert.AreEqual(5000, boleto.SaldoRestante);
             Assert.AreEqual("K", boleto.Linea);
             Assert.AreEqual("Normal", boleto.TipoBoleto);
             Assert.AreEqual(fechaActual, boleto.Fecha);
+            Assert.AreEqual(idTarjeta, boleto.IdTarjeta);
+            Assert.AreEqual(1580, boleto.TotalAbonado);
         }
 
         [Test]
