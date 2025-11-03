@@ -4,8 +4,7 @@
     <DataCollectors>
       <DataCollector friendlyName="XPlat code coverage">
         <Configuration>
-          <ExcludeByAttribute>ExcludeFromCodeCoverageAttribute</ExcludeByAttribute>
-          <Exclude>[TarjetaSube]TarjetaSube.Program</Exclude>
+          <Format>cobertura</Format>
         </Configuration>
       </DataCollector>
     </DataCollectors>

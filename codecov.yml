@@ -8,10 +8,6 @@ coverage:
       default:
         target: 80%
 
-ignore:
-  - "TarjetaSube/Program.cs"
-  - "**/Program.cs"
-
 comment:
   layout: "reach, diff, flags, files"
   behavior: default

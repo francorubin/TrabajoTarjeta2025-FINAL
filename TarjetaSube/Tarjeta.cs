@@ -63,5 +63,3 @@ namespace TarjetaSube
         }
     }
 }
-
-//Puto el que lo lea
