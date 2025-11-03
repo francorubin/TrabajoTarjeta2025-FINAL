@@ -5,7 +5,10 @@ namespace TarjetaSube
 {
     public class Tarjeta
     {
+
+
         protected decimal saldo;
+        private Guid id;
         private const decimal LIMITE_SALDO = 40000m;
         private const decimal SALDO_NEGATIVO_PERMITIDO = -1200m;
         private static readonly List<decimal> CARGAS_ACEPTADAS = new List<decimal>
@@ -18,9 +21,15 @@ namespace TarjetaSube
             get { return saldo; }
         }
 
+        public Guid Id
+        {
+            get { return id; }
+        }
+
         public Tarjeta()
         {
             saldo = 0m;
+            id = Guid.NewGuid();
         }
 
         public virtual bool Cargar(decimal monto)
