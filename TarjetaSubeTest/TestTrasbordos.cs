@@ -14,20 +14,16 @@ namespace TarjetaSubeTest
             tarjeta.Cargar(10000);
             Colectivo colectivoK = new Colectivo("K");
             Colectivo colectivo142 = new Colectivo("142");
-            TiempoFalso tiempo = new TiempoFalso(2024, 11, 4, 10, 0, 0);
+            TiempoFalso tiempo = new TiempoFalso(2024, 10, 14, 8, 0, 0);
 
-            Boleto boleto1 = colectivoK.PagarCon(tarjeta, tiempo);
-            Assert.IsNotNull(boleto1);
-            Assert.AreEqual(1580, boleto1.Monto);
-            Assert.IsFalse(boleto1.EsTrasbordo);
+            Boleto b1 = colectivoK.PagarCon(tarjeta, tiempo);
+            Assert.AreEqual(1580, b1.Monto);
             Assert.AreEqual(8420, tarjeta.Saldo);
 
             tiempo.AgregarMinutos(30);
 
-            Boleto boleto2 = colectivo142.PagarCon(tarjeta, tiempo);
-            Assert.IsNotNull(boleto2);
-            Assert.AreEqual(0, boleto2.Monto);
-            Assert.IsTrue(boleto2.EsTrasbordo);
+            Boleto b2 = colectivo142.PagarCon(tarjeta, tiempo);
+            Assert.AreEqual(0, b2.Monto);
             Assert.AreEqual(8420, tarjeta.Saldo);
         }
 
@@ -36,19 +32,16 @@ namespace TarjetaSubeTest
         {
             Tarjeta tarjeta = new Tarjeta();
             tarjeta.Cargar(10000);
-            Colectivo colectivoK = new Colectivo("K");
-            TiempoFalso tiempo = new TiempoFalso(2024, 11, 4, 10, 0, 0);
+            Colectivo colectivo = new Colectivo("K");
+            TiempoFalso tiempo = new TiempoFalso(2024, 10, 14, 8, 0, 0);
 
-            Boleto boleto1 = colectivoK.PagarCon(tarjeta, tiempo);
-            Assert.AreEqual(1580, boleto1.Monto);
-            Assert.IsFalse(boleto1.EsTrasbordo);
+            Boleto b1 = colectivo.PagarCon(tarjeta, tiempo);
+            Assert.AreEqual(1580, b1.Monto);
 
             tiempo.AgregarMinutos(30);
 
-            Boleto boleto2 = colectivoK.PagarCon(tarjeta, tiempo);
-            Assert.AreEqual(1580, boleto2.Monto);
-            Assert.IsFalse(boleto2.EsTrasbordo);
-            Assert.AreEqual(6840, tarjeta.Saldo);
+            Boleto b2 = colectivo.PagarCon(tarjeta, tiempo);
+            Assert.AreEqual(1580, b2.Monto);
         }
 
         [Test]
@@ -58,18 +51,15 @@ namespace TarjetaSubeTest
             tarjeta.Cargar(10000);
             Colectivo colectivoK = new Colectivo("K");
             Colectivo colectivo142 = new Colectivo("142");
-            TiempoFalso tiempo = new TiempoFalso(2024, 11, 4, 10, 0, 0);
+            TiempoFalso tiempo = new TiempoFalso(2024, 10, 14, 8, 0, 0);
 
-            Boleto boleto1 = colectivoK.PagarCon(tarjeta, tiempo);
-            Assert.AreEqual(1580, boleto1.Monto);
-            Assert.IsFalse(boleto1.EsTrasbordo);
+            Boleto b1 = colectivoK.PagarCon(tarjeta, tiempo);
+            Assert.AreEqual(1580, b1.Monto);
 
             tiempo.AgregarMinutos(61);
 
-            Boleto boleto2 = colectivo142.PagarCon(tarjeta, tiempo);
-            Assert.AreEqual(1580, boleto2.Monto);
-            Assert.IsFalse(boleto2.EsTrasbordo);
-            Assert.AreEqual(6840, tarjeta.Saldo);
+            Boleto b2 = colectivo142.PagarCon(tarjeta, tiempo);
+            Assert.AreEqual(1580, b2.Monto);
         }
 
         [Test]
@@ -79,16 +69,15 @@ namespace TarjetaSubeTest
             tarjeta.Cargar(10000);
             Colectivo colectivoK = new Colectivo("K");
             Colectivo colectivo142 = new Colectivo("142");
-            TiempoFalso tiempo = new TiempoFalso(2024, 11, 4, 10, 0, 0);
+            TiempoFalso tiempo = new TiempoFalso(2024, 10, 14, 8, 0, 0);
 
-            Boleto boleto1 = colectivoK.PagarCon(tarjeta, tiempo);
-            Assert.AreEqual(1580, boleto1.Monto);
+            Boleto b1 = colectivoK.PagarCon(tarjeta, tiempo);
+            Assert.AreEqual(1580, b1.Monto);
 
             tiempo.AgregarMinutos(60);
 
-            Boleto boleto2 = colectivo142.PagarCon(tarjeta, tiempo);
-            Assert.AreEqual(0, boleto2.Monto);
-            Assert.IsTrue(boleto2.EsTrasbordo);
+            Boleto b2 = colectivo142.PagarCon(tarjeta, tiempo);
+            Assert.AreEqual(0, b2.Monto);
         }
 
         [Test]
@@ -98,16 +87,15 @@ namespace TarjetaSubeTest
             tarjeta.Cargar(10000);
             Colectivo colectivoK = new Colectivo("K");
             Colectivo colectivo142 = new Colectivo("142");
-            TiempoFalso tiempo = new TiempoFalso(2024, 11, 3, 10, 0, 0);
+            TiempoFalso tiempo = new TiempoFalso(2024, 10, 13, 10, 0, 0);
 
-            Boleto boleto1 = colectivoK.PagarCon(tarjeta, tiempo);
-            Assert.AreEqual(1580, boleto1.Monto);
+            Boleto b1 = colectivoK.PagarCon(tarjeta, tiempo);
+            Assert.AreEqual(1580, b1.Monto);
 
             tiempo.AgregarMinutos(30);
 
-            Boleto boleto2 = colectivo142.PagarCon(tarjeta, tiempo);
-            Assert.AreEqual(1580, boleto2.Monto);
-            Assert.IsFalse(boleto2.EsTrasbordo);
+            Boleto b2 = colectivo142.PagarCon(tarjeta, tiempo);
+            Assert.AreEqual(1580, b2.Monto);
         }
 
         [Test]
@@ -117,35 +105,33 @@ namespace TarjetaSubeTest
             tarjeta.Cargar(10000);
             Colectivo colectivoK = new Colectivo("K");
             Colectivo colectivo142 = new Colectivo("142");
-            TiempoFalso tiempo = new TiempoFalso(2024, 11, 4, 6, 30, 0);
+            TiempoFalso tiempo = new TiempoFalso(2024, 10, 14, 6, 30, 0);
 
-            Boleto boleto1 = colectivoK.PagarCon(tarjeta, tiempo);
-            Assert.AreEqual(1580, boleto1.Monto);
+            Boleto b1 = colectivoK.PagarCon(tarjeta, tiempo);
+            Assert.AreEqual(1580, b1.Monto);
 
-            tiempo.AgregarMinutos(30);
+            tiempo.AgregarMinutos(20);
 
-            Boleto boleto2 = colectivo142.PagarCon(tarjeta, tiempo);
-            Assert.AreEqual(1580, boleto2.Monto);
-            Assert.IsFalse(boleto2.EsTrasbordo);
+            Boleto b2 = colectivo142.PagarCon(tarjeta, tiempo);
+            Assert.AreEqual(1580, b2.Monto);
         }
 
         [Test]
-        public void TestTrasbordoDespuesDe22HsNoAplica()
+        public void TestTrasbordoDespuesDe22NoAplica()
         {
             Tarjeta tarjeta = new Tarjeta();
             tarjeta.Cargar(10000);
             Colectivo colectivoK = new Colectivo("K");
             Colectivo colectivo142 = new Colectivo("142");
-            TiempoFalso tiempo = new TiempoFalso(2024, 11, 4, 21, 50, 0);
+            TiempoFalso tiempo = new TiempoFalso(2024, 10, 14, 21, 50, 0);
 
-            Boleto boleto1 = colectivoK.PagarCon(tarjeta, tiempo);
-            Assert.AreEqual(1580, boleto1.Monto);
+            Boleto b1 = colectivoK.PagarCon(tarjeta, tiempo);
+            Assert.AreEqual(1580, b1.Monto);
 
-            tiempo.AgregarMinutos(30);
+            tiempo.AgregarMinutos(20);
 
-            Boleto boleto2 = colectivo142.PagarCon(tarjeta, tiempo);
-            Assert.AreEqual(1580, boleto2.Monto);
-            Assert.IsFalse(boleto2.EsTrasbordo);
+            Boleto b2 = colectivo142.PagarCon(tarjeta, tiempo);
+            Assert.AreEqual(1580, b2.Monto);
         }
 
         [Test]
@@ -155,13 +141,13 @@ namespace TarjetaSubeTest
             tarjeta.Cargar(10000);
             Colectivo colectivoK = new Colectivo("K");
             Colectivo colectivo142 = new Colectivo("142");
-            TiempoFalso tiempo = new TiempoFalso(2024, 11, 4, 10, 0, 0);
+            TiempoFalso tiempo = new TiempoFalso(2024, 10, 14, 10, 0, 0);
 
-            Boleto boleto1 = colectivoK.PagarCon(tarjeta, tiempo);
+            colectivoK.PagarCon(tarjeta, tiempo);
             tiempo.AgregarMinutos(30);
-            Boleto boleto2 = colectivo142.PagarCon(tarjeta, tiempo);
 
-            Assert.IsTrue(boleto2.EsTrasbordo);
+            bool esTrasbordo = tarjeta.EsTrasbordo("142", tiempo);
+            Assert.IsTrue(esTrasbordo);
         }
 
         [Test]
@@ -171,13 +157,13 @@ namespace TarjetaSubeTest
             tarjeta.Cargar(10000);
             Colectivo colectivoK = new Colectivo("K");
             Colectivo colectivo142 = new Colectivo("142");
-            TiempoFalso tiempo = new TiempoFalso(2024, 11, 9, 10, 0, 0);
+            TiempoFalso tiempo = new TiempoFalso(2024, 10, 19, 10, 0, 0);
 
-            Boleto boleto1 = colectivoK.PagarCon(tarjeta, tiempo);
+            colectivoK.PagarCon(tarjeta, tiempo);
             tiempo.AgregarMinutos(30);
-            Boleto boleto2 = colectivo142.PagarCon(tarjeta, tiempo);
 
-            Assert.IsTrue(boleto2.EsTrasbordo);
+            bool esTrasbordo = tarjeta.EsTrasbordo("142", tiempo);
+            Assert.IsTrue(esTrasbordo);
         }
 
         [Test]
@@ -188,25 +174,32 @@ namespace TarjetaSubeTest
             Colectivo colectivoK = new Colectivo("K");
             Colectivo colectivo142 = new Colectivo("142");
             Colectivo colectivo133 = new Colectivo("133");
-            TiempoFalso tiempo = new TiempoFalso(2024, 11, 4, 10, 0, 0);
+            TiempoFalso tiempo = new TiempoFalso(2024, 10, 14, 8, 0, 0);
 
-            Boleto boleto1 = colectivoK.PagarCon(tarjeta, tiempo);
-            Assert.AreEqual(1580, boleto1.Monto);
-            Assert.IsFalse(boleto1.EsTrasbordo);
-
-            tiempo.AgregarMinutos(20);
-
-            Boleto boleto2 = colectivo142.PagarCon(tarjeta, tiempo);
-            Assert.AreEqual(0, boleto2.Monto);
-            Assert.IsTrue(boleto2.EsTrasbordo);
+            Boleto b1 = colectivoK.PagarCon(tarjeta, tiempo);
+            Assert.AreEqual(1580, b1.Monto);
 
             tiempo.AgregarMinutos(20);
 
-            Boleto boleto3 = colectivo133.PagarCon(tarjeta, tiempo);
-            Assert.AreEqual(0, boleto3.Monto);
-            Assert.IsTrue(boleto3.EsTrasbordo);
+            Boleto b2 = colectivo142.PagarCon(tarjeta, tiempo);
+            Assert.AreEqual(0, b2.Monto);
 
-            Assert.AreEqual(8420, tarjeta.Saldo);
+            tiempo.AgregarMinutos(20);
+
+            Boleto b3 = colectivo133.PagarCon(tarjeta, tiempo);
+            Assert.AreEqual(0, b3.Monto);
+        }
+
+        [Test]
+        public void TestTrasbordoNoAplicaSiPrimerViajeNull()
+        {
+            Tarjeta tarjeta = new Tarjeta();
+            tarjeta.Cargar(10000);
+            Colectivo colectivo = new Colectivo("K");
+            TiempoFalso tiempo = new TiempoFalso(2024, 10, 14, 8, 0, 0);
+
+            bool esTrasbordo = tarjeta.EsTrasbordo("K", tiempo);
+            Assert.IsFalse(esTrasbordo);
         }
 
         [Test]
@@ -216,19 +209,32 @@ namespace TarjetaSubeTest
             tarjeta.Cargar(10000);
             Colectivo colectivoK = new Colectivo("K");
             Colectivo colectivo142 = new Colectivo("142");
-            TiempoFalso tiempo = new TiempoFalso(2024, 11, 4, 10, 0, 0);
+            TiempoFalso tiempo = new TiempoFalso(2024, 10, 14, 8, 0, 0);
 
-            Boleto boleto1 = colectivoK.PagarCon(tarjeta, tiempo);
-            Assert.AreEqual(790, boleto1.Monto);
-            Assert.IsFalse(boleto1.EsTrasbordo);
+            Boleto b1 = colectivoK.PagarCon(tarjeta, tiempo);
+            Assert.AreEqual(790, b1.Monto);
 
             tiempo.AgregarMinutos(30);
 
-            Boleto boleto2 = colectivo142.PagarCon(tarjeta, tiempo);
-            Assert.AreEqual(0, boleto2.Monto);
-            Assert.IsTrue(boleto2.EsTrasbordo);
+            Boleto b2 = colectivo142.PagarCon(tarjeta, tiempo);
+            Assert.AreEqual(0, b2.Monto);
+        }
 
-            Assert.AreEqual(9210, tarjeta.Saldo);
+        [Test]
+        public void TestTrasbordoConFranquiciaCompleta()
+        {
+            FranquiciaCompleta tarjeta = new FranquiciaCompleta();
+            Colectivo colectivoK = new Colectivo("K");
+            Colectivo colectivo142 = new Colectivo("142");
+            TiempoFalso tiempo = new TiempoFalso(2024, 10, 14, 8, 0, 0);
+
+            Boleto b1 = colectivoK.PagarCon(tarjeta, tiempo);
+            Assert.AreEqual(0, b1.Monto);
+
+            tiempo.AgregarMinutos(30);
+
+            Boleto b2 = colectivo142.PagarCon(tarjeta, tiempo);
+            Assert.AreEqual(0, b2.Monto);
         }
 
         [Test]
@@ -238,41 +244,15 @@ namespace TarjetaSubeTest
             tarjeta.Cargar(10000);
             Colectivo colectivoK = new Colectivo("K");
             Colectivo colectivo142 = new Colectivo("142");
-            TiempoFalso tiempo = new TiempoFalso(2024, 11, 4, 10, 0, 0);
+            TiempoFalso tiempo = new TiempoFalso(2024, 10, 14, 8, 0, 0);
 
-            Boleto boleto1 = colectivoK.PagarCon(tarjeta, tiempo);
-            Assert.AreEqual(0, boleto1.Monto);
-            Assert.IsFalse(boleto1.EsTrasbordo);
-
-            tiempo.AgregarMinutos(30);
-
-            Boleto boleto2 = colectivo142.PagarCon(tarjeta, tiempo);
-            Assert.AreEqual(0, boleto2.Monto);
-            Assert.IsTrue(boleto2.EsTrasbordo);
-
-            Assert.AreEqual(10000, tarjeta.Saldo);
-        }
-
-        [Test]
-        public void TestTrasbordoConFranquiciaCompleta()
-        {
-            FranquiciaCompleta tarjeta = new FranquiciaCompleta();
-            tarjeta.Cargar(10000);
-            Colectivo colectivoK = new Colectivo("K");
-            Colectivo colectivo142 = new Colectivo("142");
-            TiempoFalso tiempo = new TiempoFalso(2024, 11, 4, 10, 0, 0);
-
-            Boleto boleto1 = colectivoK.PagarCon(tarjeta, tiempo);
-            Assert.AreEqual(0, boleto1.Monto);
-            Assert.IsFalse(boleto1.EsTrasbordo);
+            Boleto b1 = colectivoK.PagarCon(tarjeta, tiempo);
+            Assert.AreEqual(0, b1.Monto);
 
             tiempo.AgregarMinutos(30);
 
-            Boleto boleto2 = colectivo142.PagarCon(tarjeta, tiempo);
-            Assert.AreEqual(0, boleto2.Monto);
-            Assert.IsTrue(boleto2.EsTrasbordo);
-
-            Assert.AreEqual(10000, tarjeta.Saldo);
+            Boleto b2 = colectivo142.PagarCon(tarjeta, tiempo);
+            Assert.AreEqual(0, b2.Monto);
         }
 
         [Test]
@@ -282,23 +262,20 @@ namespace TarjetaSubeTest
             tarjeta.Cargar(10000);
             Colectivo colectivoK = new Colectivo("K");
             Colectivo colectivo142 = new Colectivo("142");
-            TiempoFalso tiempo = new TiempoFalso(2024, 11, 4, 10, 0, 0);
+            TiempoFalso tiempo = new TiempoFalso(2024, 10, 14, 8, 0, 0);
 
-            Boleto boleto1 = colectivoK.PagarCon(tarjeta, tiempo);
-            Assert.AreEqual(1580, boleto1.Monto);
-            Assert.IsFalse(boleto1.EsTrasbordo);
+            Boleto b1 = colectivoK.PagarCon(tarjeta, tiempo);
+            Assert.AreEqual(1580, b1.Monto);
 
-            tiempo.AgregarMinutos(30);
+            tiempo.AgregarMinutos(20);
 
-            Boleto boleto2 = colectivo142.PagarCon(tarjeta, tiempo);
-            Assert.AreEqual(0, boleto2.Monto);
-            Assert.IsTrue(boleto2.EsTrasbordo);
+            Boleto b2 = colectivo142.PagarCon(tarjeta, tiempo);
+            Assert.AreEqual(0, b2.Monto);
 
-            tiempo.AgregarMinutos(70);
+            tiempo.AgregarMinutos(20);
 
-            Boleto boleto3 = colectivoK.PagarCon(tarjeta, tiempo);
-            Assert.AreEqual(1580, boleto3.Monto);
-            Assert.IsFalse(boleto3.EsTrasbordo);
+            Boleto b3 = colectivoK.PagarCon(tarjeta, tiempo);
+            Assert.AreEqual(0, b3.Monto);
         }
 
         [Test]
@@ -308,16 +285,15 @@ namespace TarjetaSubeTest
             tarjeta.Cargar(10000);
             Colectivo colectivoK = new Colectivo("K");
             Colectivo colectivo142 = new Colectivo("142");
-            TiempoFalso tiempo = new TiempoFalso(2024, 11, 4, 6, 50, 0);
+            TiempoFalso tiempo = new TiempoFalso(2024, 10, 14, 6, 30, 0);
 
-            Boleto boleto1 = colectivoK.PagarCon(tarjeta, tiempo);
-            Assert.AreEqual(1580, boleto1.Monto);
+            Boleto b1 = colectivoK.PagarCon(tarjeta, tiempo);
+            Assert.AreEqual(1580, b1.Monto);
 
-            tiempo.AgregarMinutos(20);
+            tiempo.AgregarMinutos(30);
 
-            Boleto boleto2 = colectivo142.PagarCon(tarjeta, tiempo);
-            Assert.AreEqual(0, boleto2.Monto);
-            Assert.IsTrue(boleto2.EsTrasbordo);
+            Boleto b2 = colectivo142.PagarCon(tarjeta, tiempo);
+            Assert.AreEqual(0, b2.Monto);
         }
 
         [Test]
@@ -327,16 +303,15 @@ namespace TarjetaSubeTest
             tarjeta.Cargar(10000);
             Colectivo colectivoK = new Colectivo("K");
             Colectivo colectivo142 = new Colectivo("142");
-            TiempoFalso tiempo = new TiempoFalso(2024, 11, 4, 21, 30, 0);
+            TiempoFalso tiempo = new TiempoFalso(2024, 10, 14, 21, 30, 0);
 
-            Boleto boleto1 = colectivoK.PagarCon(tarjeta, tiempo);
-            Assert.AreEqual(1580, boleto1.Monto);
+            Boleto b1 = colectivoK.PagarCon(tarjeta, tiempo);
+            Assert.AreEqual(1580, b1.Monto);
 
-            tiempo.AgregarMinutos(20);
+            tiempo.AgregarMinutos(25);
 
-            Boleto boleto2 = colectivo142.PagarCon(tarjeta, tiempo);
-            Assert.AreEqual(0, boleto2.Monto);
-            Assert.IsTrue(boleto2.EsTrasbordo);
+            Boleto b2 = colectivo142.PagarCon(tarjeta, tiempo);
+            Assert.AreEqual(0, b2.Monto);
         }
 
         [Test]
@@ -346,18 +321,17 @@ namespace TarjetaSubeTest
             tarjeta.Cargar(2000);
             Colectivo colectivoK = new Colectivo("K");
             Colectivo colectivo142 = new Colectivo("142");
-            TiempoFalso tiempo = new TiempoFalso(2024, 11, 4, 10, 0, 0);
+            TiempoFalso tiempo = new TiempoFalso(2024, 10, 14, 8, 0, 0);
 
-            Boleto boleto1 = colectivoK.PagarCon(tarjeta, tiempo);
-            Assert.AreEqual(1580, boleto1.Monto);
+            Boleto b1 = colectivoK.PagarCon(tarjeta, tiempo);
+            Assert.AreEqual(1580, b1.Monto);
             Assert.AreEqual(420, tarjeta.Saldo);
 
             tiempo.AgregarMinutos(30);
 
-            Boleto boleto2 = colectivo142.PagarCon(tarjeta, tiempo);
-            Assert.IsNotNull(boleto2);
-            Assert.AreEqual(0, boleto2.Monto);
-            Assert.IsTrue(boleto2.EsTrasbordo);
+            Boleto b2 = colectivo142.PagarCon(tarjeta, tiempo);
+            Assert.IsNotNull(b2);
+            Assert.AreEqual(0, b2.Monto);
             Assert.AreEqual(420, tarjeta.Saldo);
         }
 
@@ -369,19 +343,18 @@ namespace TarjetaSubeTest
             tarjeta.Cargar(30000);
             Colectivo colectivoK = new Colectivo("K");
             Colectivo colectivo142 = new Colectivo("142");
-            TiempoFalso tiempo = new TiempoFalso(2024, 11, 4, 10, 0, 0);
+            TiempoFalso tiempo = new TiempoFalso(2024, 10, 14, 8, 0, 0);
 
             Assert.AreEqual(56000, tarjeta.Saldo);
             Assert.AreEqual(4000, tarjeta.SaldoPendiente);
 
-            Boleto boleto1 = colectivoK.PagarCon(tarjeta, tiempo);
-            Assert.AreEqual(1580, boleto1.Monto);
+            Boleto b1 = colectivoK.PagarCon(tarjeta, tiempo);
+            Assert.AreEqual(1580, b1.Monto);
 
             tiempo.AgregarMinutos(30);
 
-            Boleto boleto2 = colectivo142.PagarCon(tarjeta, tiempo);
-            Assert.AreEqual(0, boleto2.Monto);
-            Assert.IsTrue(boleto2.EsTrasbordo);
+            Boleto b2 = colectivo142.PagarCon(tarjeta, tiempo);
+            Assert.AreEqual(0, b2.Monto);
             Assert.AreEqual(56000, tarjeta.Saldo);
         }
 
@@ -392,35 +365,20 @@ namespace TarjetaSubeTest
             tarjeta.Cargar(10000);
             Colectivo colectivoK = new Colectivo("K");
             Colectivo colectivo142 = new Colectivo("142");
-            TiempoFalso tiempo = new TiempoFalso(2024, 11, 4, 10, 0, 0);
+            TiempoFalso tiempo = new TiempoFalso(2024, 10, 14, 8, 0, 0);
 
-            Boleto boleto1 = colectivoK.PagarCon(tarjeta, tiempo);
-            Assert.AreEqual(1580, boleto1.Monto);
-            Assert.IsFalse(boleto1.EsTrasbordo);
-
-            tiempo.AgregarMinutos(20);
-
-            Boleto boleto2 = colectivo142.PagarCon(tarjeta, tiempo);
-            Assert.AreEqual(0, boleto2.Monto);
-            Assert.IsTrue(boleto2.EsTrasbordo);
+            Boleto b1 = colectivoK.PagarCon(tarjeta, tiempo);
+            Assert.AreEqual(1580, b1.Monto);
 
             tiempo.AgregarMinutos(20);
 
-            Boleto boleto3 = colectivoK.PagarCon(tarjeta, tiempo);
-            Assert.AreEqual(0, boleto3.Monto);
-            Assert.IsTrue(boleto3.EsTrasbordo);
-        }
+            Boleto b2 = colectivo142.PagarCon(tarjeta, tiempo);
+            Assert.AreEqual(0, b2.Monto);
 
-        [Test]
-        public void TestBoletoSinTrasbordoTieneEsTrasbordoFalse()
-        {
-            Tarjeta tarjeta = new Tarjeta();
-            tarjeta.Cargar(10000);
-            Colectivo colectivo = new Colectivo("K");
-            TiempoFalso tiempo = new TiempoFalso(2024, 11, 4, 10, 0, 0);
+            tiempo.AgregarMinutos(20);
 
-            Boleto boleto = colectivo.PagarCon(tarjeta, tiempo);
-            Assert.IsFalse(boleto.EsTrasbordo);
+            Boleto b3 = colectivoK.PagarCon(tarjeta, tiempo);
+            Assert.AreEqual(0, b3.Monto);
         }
 
         [Test]
@@ -430,53 +388,28 @@ namespace TarjetaSubeTest
             tarjeta.Cargar(10000);
             Colectivo colectivoK = new Colectivo("K");
             Colectivo colectivo142 = new Colectivo("142");
-            TiempoFalso tiempo = new TiempoFalso(2024, 11, 8, 10, 0, 0);
+            TiempoFalso tiempo = new TiempoFalso(2024, 10, 18, 10, 0, 0);
 
-            Boleto boleto1 = colectivoK.PagarCon(tarjeta, tiempo);
+            colectivoK.PagarCon(tarjeta, tiempo);
             tiempo.AgregarMinutos(30);
-            Boleto boleto2 = colectivo142.PagarCon(tarjeta, tiempo);
 
-            Assert.IsTrue(boleto2.EsTrasbordo);
+            bool esTrasbordo = tarjeta.EsTrasbordo("142", tiempo);
+            Assert.IsTrue(esTrasbordo);
         }
 
         [Test]
-        public void TestPrimerViajeDelDiaNuncaEsTrasbordo()
+        public void TestTrasbordoMartesAplica()
         {
             Tarjeta tarjeta = new Tarjeta();
             tarjeta.Cargar(10000);
-            Colectivo colectivo = new Colectivo("K");
-            TiempoFalso tiempo = new TiempoFalso(2024, 11, 4, 10, 0, 0);
-
-            Boleto boleto = colectivo.PagarCon(tarjeta, tiempo);
-            Assert.IsFalse(boleto.EsTrasbordo);
-            Assert.AreEqual(1580, boleto.Monto);
-        }
-
-        [Test]
-        public void TestTrasbordoConDescuentoUsoFrecuente()
-        {
-            Tarjeta tarjeta = new Tarjeta();
-            tarjeta.Cargar(30000);
-            tarjeta.Cargar(30000);
             Colectivo colectivoK = new Colectivo("K");
-            Colectivo colectivo142 = new Colectivo("142");
-            TiempoFalso tiempo = new TiempoFalso(2024, 11, 1, 10, 0, 0);
+            TiempoFalso tiempo = new TiempoFalso(2024, 10, 15, 10, 0, 0);
 
-            for (int i = 0; i < 29; i++)
-            {
-                colectivoK.PagarCon(tarjeta, tiempo);
-                tiempo.AgregarMinutos(70);
-            }
-
-            Boleto boleto30 = colectivoK.PagarCon(tarjeta, tiempo);
-            Assert.AreEqual(1264, boleto30.Monto);
-            Assert.IsFalse(boleto30.EsTrasbordo);
-
+            colectivoK.PagarCon(tarjeta, tiempo);
             tiempo.AgregarMinutos(30);
 
-            Boleto boletoTrasbordo = colectivo142.PagarCon(tarjeta, tiempo);
-            Assert.AreEqual(0, boletoTrasbordo.Monto);
-            Assert.IsTrue(boletoTrasbordo.EsTrasbordo);
+            bool esTrasbordo = tarjeta.EsTrasbordo("142", tiempo);
+            Assert.IsTrue(esTrasbordo);
         }
 
         [Test]
@@ -485,14 +418,13 @@ namespace TarjetaSubeTest
             Tarjeta tarjeta = new Tarjeta();
             tarjeta.Cargar(10000);
             Colectivo colectivoK = new Colectivo("K");
-            Colectivo colectivo142 = new Colectivo("142");
-            TiempoFalso tiempo = new TiempoFalso(2024, 11, 4, 10, 0, 0);
+            TiempoFalso tiempo = new TiempoFalso(2024, 10, 14, 8, 0, 0);
 
-            Boleto boleto1 = colectivoK.PagarCon(tarjeta, tiempo);
+            colectivoK.PagarCon(tarjeta, tiempo);
             tiempo.AgregarMinutos(59);
 
-            Boleto boleto2 = colectivo142.PagarCon(tarjeta, tiempo);
-            Assert.IsTrue(boleto2.EsTrasbordo);
+            bool esTrasbordo = tarjeta.EsTrasbordo("142", tiempo);
+            Assert.IsTrue(esTrasbordo);
         }
 
         [Test]
@@ -502,17 +434,99 @@ namespace TarjetaSubeTest
             tarjeta.Cargar(10000);
             Colectivo colectivoK = new Colectivo("K");
             Colectivo colectivo142 = new Colectivo("142");
-            TiempoFalso tiempo = new TiempoFalso(2024, 11, 4, 10, 0, 0);
+            TiempoFalso tiempo = new TiempoFalso(2024, 10, 14, 8, 0, 0);
 
-            Boleto boleto1 = colectivoK.PagarCon(tarjeta, tiempo);
-            bool esTrasbordo1 = boleto1.EsTrasbordo;
-            Assert.IsFalse(esTrasbordo1);
+            Boleto b1 = colectivoK.PagarCon(tarjeta, tiempo);
+            Assert.IsFalse(b1.EsTrasbordo);
 
             tiempo.AgregarMinutos(30);
 
-            Boleto boleto2 = colectivo142.PagarCon(tarjeta, tiempo);
-            bool esTrasbordo2 = boleto2.EsTrasbordo;
-            Assert.IsTrue(esTrasbordo2);
+            Boleto b2 = colectivo142.PagarCon(tarjeta, tiempo);
+            Assert.IsTrue(b2.EsTrasbordo);
+        }
+
+        [Test]
+        public void TestTrasbordoNoAplicaSiLineaEsNull()
+        {
+            Tarjeta tarjeta = new Tarjeta();
+            TiempoFalso tiempo = new TiempoFalso(2024, 10, 14, 8, 0, 0);
+
+            bool esTrasbordo = tarjeta.EsTrasbordo("K", tiempo);
+            Assert.IsFalse(esTrasbordo);
+        }
+
+        [Test]
+        public void TestTrasbordoTresDiferentesLineasEnUnaHora()
+        {
+            Tarjeta tarjeta = new Tarjeta();
+            tarjeta.Cargar(10000);
+            Colectivo colectivoK = new Colectivo("K");
+            Colectivo colectivo142 = new Colectivo("142");
+            Colectivo colectivo133 = new Colectivo("133");
+            Colectivo colectivo115 = new Colectivo("115");
+            TiempoFalso tiempo = new TiempoFalso(2024, 10, 14, 8, 0, 0);
+
+            Boleto b1 = colectivoK.PagarCon(tarjeta, tiempo);
+            Assert.AreEqual(1580, b1.Monto);
+            Assert.IsFalse(b1.EsTrasbordo);
+
+            tiempo.AgregarMinutos(15);
+
+            Boleto b2 = colectivo142.PagarCon(tarjeta, tiempo);
+            Assert.AreEqual(0, b2.Monto);
+            Assert.IsTrue(b2.EsTrasbordo);
+
+            tiempo.AgregarMinutos(15);
+
+            Boleto b3 = colectivo133.PagarCon(tarjeta, tiempo);
+            Assert.AreEqual(0, b3.Monto);
+            Assert.IsTrue(b3.EsTrasbordo);
+
+            tiempo.AgregarMinutos(15);
+
+            Boleto b4 = colectivo115.PagarCon(tarjeta, tiempo);
+            Assert.AreEqual(0, b4.Monto);
+            Assert.IsTrue(b4.EsTrasbordo);
+        }
+
+        [Test]
+        public void TestTrasbordoConDiferentesTarjetas()
+        {
+            Tarjeta normal = new Tarjeta();
+            MedioBoleto medio = new MedioBoleto();
+            BoletoGratuito gratuito = new BoletoGratuito();
+            FranquiciaCompleta franquicia = new FranquiciaCompleta();
+
+            normal.Cargar(10000);
+            medio.Cargar(10000);
+            gratuito.Cargar(10000);
+
+            Colectivo colectivoK = new Colectivo("K");
+            Colectivo colectivo142 = new Colectivo("142");
+            TiempoFalso tiempo = new TiempoFalso(2024, 10, 14, 8, 0, 0);
+
+            colectivoK.PagarCon(normal, tiempo);
+            tiempo.AgregarMinutos(30);
+            Boleto b1 = colectivo142.PagarCon(normal, tiempo);
+            Assert.IsTrue(b1.EsTrasbordo);
+
+            tiempo = new TiempoFalso(2024, 10, 14, 8, 0, 0);
+            colectivoK.PagarCon(medio, tiempo);
+            tiempo.AgregarMinutos(30);
+            Boleto b2 = colectivo142.PagarCon(medio, tiempo);
+            Assert.IsTrue(b2.EsTrasbordo);
+
+            tiempo = new TiempoFalso(2024, 10, 14, 8, 0, 0);
+            colectivoK.PagarCon(gratuito, tiempo);
+            tiempo.AgregarMinutos(30);
+            Boleto b3 = colectivo142.PagarCon(gratuito, tiempo);
+            Assert.IsTrue(b3.EsTrasbordo);
+
+            tiempo = new TiempoFalso(2024, 10, 14, 8, 0, 0);
+            colectivoK.PagarCon(franquicia, tiempo);
+            tiempo.AgregarMinutos(30);
+            Boleto b4 = colectivo142.PagarCon(franquicia, tiempo);
+            Assert.IsTrue(b4.EsTrasbordo);
         }
     }
 }

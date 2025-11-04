@@ -37,34 +37,13 @@ namespace TarjetaSube
             bool esTrasbordo = tarjeta.EsTrasbordo(linea, tiempo);
             decimal tarifaAPagar = 0m;
 
-            if (!esTrasbordo)
+            if (esTrasbordo)
             {
-                tarifaAPagar = tarjeta.ObtenerTarifaConLimitaciones(TARIFA_BASICA, tiempo);
+                tarifaAPagar = 0m;
             }
             else
             {
-                // CORREGIDO: Cuando es trasbordo, obtener la tarifa para verificar si la tarjeta
-                // aún tiene descuentos disponibles (ej: MedioBoleto 2 viajes, BoletoGratuito 2 gratis)
-                decimal tarifaSinTrasbordo = tarjeta.ObtenerTarifaConLimitaciones(TARIFA_BASICA, tiempo);
-
-                // Si la tarifa sin trasbordo es 0 (FranquiciaCompleta o BoletoGratuito con viajes gratis),
-                // el trasbordo también es gratis
-                if (tarifaSinTrasbordo == 0m)
-                {
-                    tarifaAPagar = 0m;
-                }
-                // Si la tarifa sin trasbordo es la tarifa completa (ya no tiene descuentos del día),
-                // NO aplica trasbordo gratis, cobra la tarifa completa
-                else if (tarifaSinTrasbordo >= TARIFA_BASICA)
-                {
-                    tarifaAPagar = tarifaSinTrasbordo;
-                    esTrasbordo = false; // Ya no es trasbordo porque no tiene descuentos
-                }
-                // Si tiene descuento (MedioBoleto), el trasbordo es gratis
-                else
-                {
-                    tarifaAPagar = 0m;
-                }
+                tarifaAPagar = tarjeta.ObtenerTarifaConLimitaciones(TARIFA_BASICA, tiempo);
             }
 
             decimal saldoAnterior = tarjeta.Saldo;
@@ -74,7 +53,10 @@ namespace TarjetaSube
                 return null;
             }
 
-            tarjeta.RegistrarViaje(tiempo);
+            if (!esTrasbordo)
+            {
+                tarjeta.RegistrarViaje(tiempo);
+            }
             tarjeta.RegistrarViajeParaTrasbordo(linea, tiempo, esTrasbordo);
 
             Boleto boleto = new Boleto(
