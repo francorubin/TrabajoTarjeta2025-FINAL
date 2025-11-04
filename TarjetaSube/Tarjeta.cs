@@ -6,8 +6,10 @@ namespace TarjetaSube
     public class Tarjeta
     {
         protected decimal saldo;
+        protected decimal saldoPendiente;
         private Guid id;
         private const decimal LIMITE_SALDO = 40000m;
+        private const decimal LIMITE_SALDO_MAXIMO = 56000m;
         private const decimal SALDO_NEGATIVO_PERMITIDO = -1200m;
         private static readonly List<decimal> CARGAS_ACEPTADAS = new List<decimal>
         {
@@ -19,6 +21,11 @@ namespace TarjetaSube
             get { return saldo; }
         }
 
+        public decimal SaldoPendiente
+        {
+            get { return saldoPendiente; }
+        }
+
         public Guid Id
         {
             get { return id; }
@@ -27,6 +34,7 @@ namespace TarjetaSube
         public Tarjeta()
         {
             saldo = 0m;
+            saldoPendiente = 0m;
             id = Guid.NewGuid();
         }
 
@@ -39,12 +47,23 @@ namespace TarjetaSube
 
             decimal nuevoSaldo = saldo + monto;
 
-            if (nuevoSaldo > LIMITE_SALDO)
+            // Si el nuevo saldo supera el límite máximo de 56000
+            if (nuevoSaldo > LIMITE_SALDO_MAXIMO)
             {
+                decimal excedente = nuevoSaldo - LIMITE_SALDO_MAXIMO;
+                saldo = LIMITE_SALDO_MAXIMO;
+                saldoPendiente += excedente;
+            }
+            else if (nuevoSaldo > LIMITE_SALDO)
+            {
+                // Si supera 40000 pero no 56000, rechazar (comportamiento original)
                 return false;
             }
+            else
+            {
+                saldo += monto;
+            }
 
-            saldo += monto;
             return true;
         }
 
@@ -56,7 +75,26 @@ namespace TarjetaSube
             }
 
             saldo -= monto;
+
+            // Después de descontar, intentar acreditar saldo pendiente
+            AcreditarCarga();
+
             return true;
+        }
+
+        public virtual void AcreditarCarga()
+        {
+            if (saldoPendiente > 0)
+            {
+                decimal espacioDisponible = LIMITE_SALDO_MAXIMO - saldo;
+
+                if (espacioDisponible > 0)
+                {
+                    decimal montoAAcreditar = Math.Min(saldoPendiente, espacioDisponible);
+                    saldo += montoAAcreditar;
+                    saldoPendiente -= montoAAcreditar;
+                }
+            }
         }
 
         public virtual decimal ObtenerTarifa(decimal tarifaBase)
