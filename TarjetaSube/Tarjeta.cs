@@ -75,10 +75,10 @@ namespace TarjetaSube
             }
 
             saldo -= monto;
-            
+
             // Después de descontar, intentar acreditar saldo pendiente
             AcreditarCarga();
-            
+
             return true;
         }
 
@@ -87,7 +87,7 @@ namespace TarjetaSube
             if (saldoPendiente > 0)
             {
                 decimal espacioDisponible = LIMITE_SALDO_MAXIMO - saldo;
-                
+
                 if (espacioDisponible > 0)
                 {
                     decimal montoAAcreditar = Math.Min(saldoPendiente, espacioDisponible);

@@ -51,15 +51,25 @@ namespace TarjetaSubeTest
         {
             Tarjeta tarjeta = new Tarjeta();
             tarjeta.Cargar(30000);
-            tarjeta.Cargar(20000);
-            tarjeta.Cargar(15000);
 
-            // Total intentado: 65000
-            // Saldo: 56000 (límite máximo)
-            // Pendiente: 9000
+            // Intentar cargar 20000 (30000 + 20000 = 50000, > 40000, <= 56000) → RECHAZADA
+            bool resultado1 = tarjeta.Cargar(20000);
+            Assert.IsFalse(resultado1);
+            Assert.AreEqual(30000, tarjeta.Saldo);
+
+            // Intentar cargar 15000 (30000 + 15000 = 45000, > 40000, <= 56000) → RECHAZADA
+            bool resultado2 = tarjeta.Cargar(15000);
+            Assert.IsFalse(resultado2);
+            Assert.AreEqual(30000, tarjeta.Saldo);
+
+            // Para que funcione la funcionalidad de pendiente, necesitamos cargar algo que supere 56000
+            // Cargar 30000 (30000 + 30000 = 60000 > 56000) → ACEPTADA con pendiente
+            bool resultado3 = tarjeta.Cargar(30000);
+            Assert.IsTrue(resultado3);
             Assert.AreEqual(56000, tarjeta.Saldo);
-            Assert.AreEqual(9000, tarjeta.SaldoPendiente);
+            Assert.AreEqual(4000, tarjeta.SaldoPendiente);
         }
+        
 
         [Test]
         public void TestSaldoPendienteSeAcreditaProgresivamente()
@@ -96,21 +106,31 @@ namespace TarjetaSubeTest
             Assert.AreEqual(20000, tarjeta.Saldo);
             Assert.AreEqual(0, tarjeta.SaldoPendiente);
 
-            tarjeta.Cargar(30000);
-            Assert.AreEqual(50000, tarjeta.Saldo);
+            // Intentar cargar 30000 (20000 + 30000 = 50000, > 40000, <= 56000) → RECHAZADA
+            bool resultado1 = tarjeta.Cargar(30000);
+            Assert.IsFalse(resultado1);
+            Assert.AreEqual(20000, tarjeta.Saldo);
             Assert.AreEqual(0, tarjeta.SaldoPendiente);
 
-            tarjeta.Cargar(10000);
-            // 50000 + 10000 = 60000, excede por 4000
+            // Cargar 10000 (20000 + 10000 = 30000, OK)
+            bool resultado2 = tarjeta.Cargar(10000);
+            Assert.IsTrue(resultado2);
+            Assert.AreEqual(30000, tarjeta.Saldo);
+            Assert.AreEqual(0, tarjeta.SaldoPendiente);
+
+            // Cargar 30000 (30000 + 30000 = 60000 > 56000) → Saldo 56000, Pendiente 4000
+            bool resultado3 = tarjeta.Cargar(30000);
+            Assert.IsTrue(resultado3);
             Assert.AreEqual(56000, tarjeta.Saldo);
             Assert.AreEqual(4000, tarjeta.SaldoPendiente);
 
-            tarjeta.Cargar(5000);
-            // Intenta cargar 5000 pero saldo ya está en 56000
-            // Se va todo a pendiente
+            // Intentar cargar 5000 (saldo ya está en 56000) → Todo a pendiente
+            bool resultado4 = tarjeta.Cargar(5000);
+            Assert.IsTrue(resultado4);
             Assert.AreEqual(56000, tarjeta.Saldo);
             Assert.AreEqual(9000, tarjeta.SaldoPendiente);
         }
+
 
         [Test]
         public void TestAcreditarCargaConSaldoNegativo()
@@ -163,13 +183,17 @@ namespace TarjetaSubeTest
         {
             Tarjeta tarjeta = new Tarjeta();
             tarjeta.Cargar(30000);
-            tarjeta.Cargar(26000);
-            // Saldo: 56000, Pendiente: 0
+
+            // Intentar cargar 26000 (30000 + 26000 = 56000, NO > 56000) → RECHAZADA
+            bool resultado = tarjeta.Cargar(26000);
+            Assert.IsFalse(resultado);
+            Assert.AreEqual(30000, tarjeta.Saldo);
+            Assert.AreEqual(0, tarjeta.SaldoPendiente);
 
             // Llamar a AcreditarCarga manualmente
             tarjeta.AcreditarCarga();
 
-            Assert.AreEqual(56000, tarjeta.Saldo);
+            Assert.AreEqual(30000, tarjeta.Saldo);
             Assert.AreEqual(0, tarjeta.SaldoPendiente);
         }
 
@@ -178,9 +202,12 @@ namespace TarjetaSubeTest
         {
             Tarjeta tarjeta = new Tarjeta();
             tarjeta.Cargar(30000);
-            tarjeta.Cargar(26000);
+            // Intentar cargar 26000 (30000 + 26000 = 56000)
+            // Como 56000 NO es > 56000, cae en la condición > 40000 y RECHAZA
+            bool resultado = tarjeta.Cargar(26000);
 
-            Assert.AreEqual(56000, tarjeta.Saldo);
+            Assert.IsFalse(resultado); // Ahora debe ser FALSE
+            Assert.AreEqual(30000, tarjeta.Saldo); // Saldo no cambia
             Assert.AreEqual(0, tarjeta.SaldoPendiente);
         }
 
@@ -264,12 +291,17 @@ namespace TarjetaSubeTest
         {
             Tarjeta tarjeta = new Tarjeta();
             tarjeta.Cargar(30000);
-            tarjeta.Cargar(25000);
-            tarjeta.Cargar(2000);
+            tarjeta.Cargar(25000); // 30000 + 25000 = 55000 (> 40000, <= 56000) → RECHAZADA
 
-            // 30000 + 25000 = 55000, +2000 = 57000 (excede por 1000)
-            Assert.AreEqual(56000, tarjeta.Saldo);
-            Assert.AreEqual(1000, tarjeta.SaldoPendiente);
+            // La carga de 25000 fue rechazada, saldo sigue en 30000
+            Assert.AreEqual(30000, tarjeta.Saldo);
+            Assert.AreEqual(0, tarjeta.SaldoPendiente);
+
+            // Ahora cargar 2000 (30000 + 2000 = 32000, OK)
+            bool resultado = tarjeta.Cargar(2000);
+            Assert.IsTrue(resultado);
+            Assert.AreEqual(32000, tarjeta.Saldo);
+            Assert.AreEqual(0, tarjeta.SaldoPendiente);
         }
 
         [Test]
