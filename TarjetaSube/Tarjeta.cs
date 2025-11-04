@@ -5,8 +5,6 @@ namespace TarjetaSube
 {
     public class Tarjeta
     {
-
-
         protected decimal saldo;
         private Guid id;
         private const decimal LIMITE_SALDO = 40000m;
@@ -69,6 +67,24 @@ namespace TarjetaSube
         public virtual string ObtenerTipoBoleto()
         {
             return "Normal";
+        }
+
+        // Nuevos métodos para manejo de limitaciones temporales
+        public virtual bool PuedeViajar(Tiempo tiempo)
+        {
+            // Por defecto, cualquier tarjeta puede viajar sin restricciones de tiempo
+            return true;
+        }
+
+        public virtual decimal ObtenerTarifaConLimitaciones(decimal tarifaBase, Tiempo tiempo)
+        {
+            // Por defecto, usa el método ObtenerTarifa normal
+            return ObtenerTarifa(tarifaBase);
+        }
+
+        public virtual void RegistrarViaje(Tiempo tiempo)
+        {
+            // Por defecto, no hace nada. Las clases hijas lo sobrescriben si necesitan
         }
     }
 }
