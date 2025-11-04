@@ -1,4 +1,4 @@
-[![codecov](https://codecov.io/gh/francorubin/TrabajoTarjeta2025-FINAL/graph/badge.svg?token=912ed97a-1b58-42f5-ad15-88915f2e5561)](https://codecov.io/gh/francorubin/TrabajoTarjeta2025-FINAL)
+[![codecov](https://codecov.io/gh/francorubin/TrabajoTarjeta2025-FINAL/graph/badge.svg?token=b9d5f45b-5b3e-4dfc-9a2e-bce46ed331f0)](https://codecov.io/gh/francorubin/TrabajoTarjeta2025-FINAL)
 
 # Trabajo Tarjeta 2025.
 

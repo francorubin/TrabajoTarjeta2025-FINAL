@@ -197,7 +197,6 @@ namespace TarjetaSubeTest
         {
             Tarjeta tarjeta = new Tarjeta();
             tarjeta.Cargar(2000);
-            // Ahora puede descontar hasta -1200, entonces 2000 - 3000 = -1000 (PERMITIDO)
             bool resultado = tarjeta.DescontarSaldo(3000);
             Assert.IsTrue(resultado);
             Assert.AreEqual(-1000, tarjeta.Saldo);
@@ -217,7 +216,6 @@ namespace TarjetaSubeTest
         public void TestDescontarSaldoConSaldoCero()
         {
             Tarjeta tarjeta = new Tarjeta();
-            // Con saldo 0, puede descontar hasta -1200
             bool resultado = tarjeta.DescontarSaldo(1000);
             Assert.IsTrue(resultado);
             Assert.AreEqual(-1000, tarjeta.Saldo);
@@ -258,8 +256,8 @@ namespace TarjetaSubeTest
             tarjeta.Cargar(2000);
             Colectivo colectivo = new Colectivo("K");
 
-            colectivo.PagarCon(tarjeta); // 2000 - 1580 = 420
-            Boleto boleto = colectivo.PagarCon(tarjeta); // 420 - 1580 = -1160 (PERMITIDO)
+            colectivo.PagarCon(tarjeta);
+            Boleto boleto = colectivo.PagarCon(tarjeta);
 
             Assert.IsNotNull(boleto);
             Assert.AreEqual(-1160, tarjeta.Saldo);
@@ -364,12 +362,10 @@ namespace TarjetaSubeTest
             tarjeta.Cargar(2000);
             Colectivo colectivo = new Colectivo("K");
 
-            // Hacer dos pagos para llegar a saldo negativo
-            colectivo.PagarCon(tarjeta); // 420
-            colectivo.PagarCon(tarjeta); // -1160
+            colectivo.PagarCon(tarjeta);
+            colectivo.PagarCon(tarjeta);
             decimal saldoAntes = tarjeta.Saldo;
 
-            // Intentar un tercer pago que exceder?a el l?mite de -1200
             Boleto boleto = colectivo.PagarCon(tarjeta);
 
             Assert.IsNull(boleto);
@@ -397,7 +393,7 @@ namespace TarjetaSubeTest
         {
             DateTime fechaActual = DateTime.Now;
             Guid idTarjeta = Guid.NewGuid();
-            Boleto boleto = new Boleto(1580, 5000, "K", fechaActual, "Normal", idTarjeta, 5000);
+            Boleto boleto = new Boleto(1580, 5000, "K", fechaActual, "Normal", idTarjeta, 6580);
 
             Assert.AreEqual(1580, boleto.Monto);
             Assert.AreEqual(5000, boleto.SaldoRestante);
