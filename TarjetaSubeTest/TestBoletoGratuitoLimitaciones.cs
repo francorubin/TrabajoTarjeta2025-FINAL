@@ -44,7 +44,7 @@ namespace TarjetaSubeTest
             BoletoGratuito tarjeta = new BoletoGratuito();
             tarjeta.Cargar(10000);
             Colectivo colectivo = new Colectivo("K");
-            TiempoFalso tiempo = new TiempoFalso();
+            TiempoFalso tiempo = new TiempoFalso(2024, 10, 14, 8, 0, 0);
 
             // Primer viaje
             colectivo.PagarCon(tarjeta, tiempo);
@@ -94,7 +94,7 @@ namespace TarjetaSubeTest
             BoletoGratuito tarjeta = new BoletoGratuito();
             tarjeta.Cargar(20000);
             Colectivo colectivo = new Colectivo("K");
-            TiempoFalso tiempo = new TiempoFalso();
+            TiempoFalso tiempo = new TiempoFalso(2024, 10, 14, 8, 0, 0);
 
             // Viaje 1 - gratis
             Boleto b1 = colectivo.PagarCon(tarjeta, tiempo);
@@ -159,7 +159,7 @@ namespace TarjetaSubeTest
             BoletoGratuito tarjeta = new BoletoGratuito();
             tarjeta.Cargar(2000);
             Colectivo colectivo = new Colectivo("K");
-            TiempoFalso tiempo = new TiempoFalso();
+            TiempoFalso tiempo = new TiempoFalso(2024, 10, 14, 8, 0, 0);
 
             // Viaje 1: gratis - saldo: 2000
             Boleto b1 = colectivo.PagarCon(tarjeta, tiempo);
@@ -189,7 +189,7 @@ namespace TarjetaSubeTest
             tarjeta.Cargar(10000);
             Colectivo colectivoK = new Colectivo("K");
             Colectivo colectivo142 = new Colectivo("142");
-            TiempoFalso tiempo = new TiempoFalso();
+            TiempoFalso tiempo = new TiempoFalso(2024, 10, 14, 8, 0, 0);
 
             // Primer viaje gratis en línea K
             Boleto b1 = colectivoK.PagarCon(tarjeta, tiempo);
