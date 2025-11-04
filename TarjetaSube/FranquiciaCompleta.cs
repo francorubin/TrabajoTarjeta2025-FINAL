@@ -25,8 +25,12 @@ namespace TarjetaSube
 
         public override bool DescontarSaldo(decimal monto)
         {
- 
             return true;
+        }
+
+        public override decimal ObtenerTarifaConLimitaciones(decimal tarifaBase, Tiempo tiempo)
+        {
+            return 0m;
         }
     }
 }

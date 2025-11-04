@@ -16,6 +16,9 @@ namespace TarjetaSube
             2000, 3000, 4000, 5000, 8000, 10000, 15000, 20000, 25000, 30000
         };
 
+        private int viajesDelMes;
+        private DateTime? primerViajeMes;
+
         public decimal Saldo
         {
             get { return saldo; }
@@ -31,11 +34,18 @@ namespace TarjetaSube
             get { return id; }
         }
 
+        public int ViajesDelMes
+        {
+            get { return viajesDelMes; }
+        }
+
         public Tarjeta()
         {
             saldo = 0m;
             saldoPendiente = 0m;
             id = Guid.NewGuid();
+            viajesDelMes = 0;
+            primerViajeMes = null;
         }
 
         public virtual bool Cargar(decimal monto)
@@ -47,7 +57,6 @@ namespace TarjetaSube
 
             decimal nuevoSaldo = saldo + monto;
 
-            // Si el nuevo saldo supera el límite máximo de 56000
             if (nuevoSaldo > LIMITE_SALDO_MAXIMO)
             {
                 decimal excedente = nuevoSaldo - LIMITE_SALDO_MAXIMO;
@@ -56,7 +65,6 @@ namespace TarjetaSube
             }
             else if (nuevoSaldo > LIMITE_SALDO)
             {
-                // Si supera 40000 pero no 56000, rechazar (comportamiento original)
                 return false;
             }
             else
@@ -76,7 +84,6 @@ namespace TarjetaSube
 
             saldo -= monto;
 
-            // Después de descontar, intentar acreditar saldo pendiente
             AcreditarCarga();
 
             return true;
@@ -107,22 +114,48 @@ namespace TarjetaSube
             return "Normal";
         }
 
-        // Nuevos métodos para manejo de limitaciones temporales
         public virtual bool PuedeViajar(Tiempo tiempo)
         {
-            // Por defecto, cualquier tarjeta puede viajar sin restricciones de tiempo
             return true;
         }
 
         public virtual decimal ObtenerTarifaConLimitaciones(decimal tarifaBase, Tiempo tiempo)
         {
-            // Por defecto, usa el método ObtenerTarifa normal
-            return ObtenerTarifa(tarifaBase);
+            ActualizarContadorMensual(tiempo);
+            return AplicarDescuentoUsoFrecuente(tarifaBase, viajesDelMes);
         }
 
         public virtual void RegistrarViaje(Tiempo tiempo)
         {
-            // Por defecto, no hace nada. Las clases hijas lo sobrescriben si necesitan
+            ActualizarContadorMensual(tiempo);
+            viajesDelMes++;
+        }
+
+        protected void ActualizarContadorMensual(Tiempo tiempo)
+        {
+            DateTime ahora = tiempo.Now();
+
+            if (primerViajeMes == null || ahora.Month != primerViajeMes.Value.Month || ahora.Year != primerViajeMes.Value.Year)
+            {
+                primerViajeMes = ahora;
+                viajesDelMes = 0;
+            }
+        }
+
+        protected decimal AplicarDescuentoUsoFrecuente(decimal tarifaBase, int numeroViaje)
+        {
+            if (numeroViaje >= 29 && numeroViaje < 59)
+            {
+                return tarifaBase * 0.80m;
+            }
+            else if (numeroViaje >= 59 && numeroViaje < 80)
+            {
+                return tarifaBase * 0.75m;
+            }
+            else
+            {
+                return tarifaBase;
+            }
         }
     }
 }

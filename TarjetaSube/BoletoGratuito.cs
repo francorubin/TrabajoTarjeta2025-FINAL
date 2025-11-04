@@ -25,13 +25,11 @@ namespace TarjetaSube
 
         public override bool DescontarSaldo(decimal monto)
         {
-            // Si el monto es 0 (viaje gratis), no descontar
             if (monto == 0)
             {
                 return true;
             }
 
-            // Si el monto es mayor a 0 (tercer viaje en adelante), descontar normalmente
             return base.DescontarSaldo(monto);
         }
 
@@ -39,15 +37,12 @@ namespace TarjetaSube
         {
             DateTime ahora = tiempo.Now();
 
-            // Verificar si es un nuevo día
             if (primerViajeDia == null || ahora.Date != primerViajeDia.Value.Date)
             {
-                // Es un nuevo día, reiniciar contador
                 primerViajeDia = ahora;
                 viajesDelDia = 0;
             }
 
-            // Siempre puede viajar, pero después de 2 viajes pagará tarifa completa
             return true;
         }
 
@@ -55,20 +50,17 @@ namespace TarjetaSube
         {
             DateTime ahora = tiempo.Now();
 
-            // Verificar si es un nuevo día
             if (primerViajeDia == null || ahora.Date != primerViajeDia.Value.Date)
             {
                 primerViajeDia = ahora;
                 viajesDelDia = 0;
             }
 
-            // Si ya hizo 2 viajes hoy, cobrar tarifa completa
             if (viajesDelDia >= 2)
             {
-                return tarifaBase; // Tarifa completa
+                return tarifaBase;
             }
 
-            // Cobrar gratis (tarifa 0)
             return 0m;
         }
 
@@ -76,7 +68,6 @@ namespace TarjetaSube
         {
             DateTime ahora = tiempo.Now();
 
-            // Verificar si es un nuevo día
             if (primerViajeDia == null || ahora.Date != primerViajeDia.Value.Date)
             {
                 primerViajeDia = ahora;

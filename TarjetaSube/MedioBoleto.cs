@@ -29,27 +29,23 @@ namespace TarjetaSube
         {
             DateTime ahora = tiempo.Now();
 
-            // Verificar si es un nuevo día
             if (primerViajeDia == null || ahora.Date != primerViajeDia.Value.Date)
             {
-                // Es un nuevo día, reiniciar contador
                 primerViajeDia = ahora;
                 viajesDelDia = 0;
             }
 
-            // Si ya hizo 2 viajes hoy, puede viajar pero pagará tarifa completa
             if (viajesDelDia >= 2)
             {
-                return true; // Puede viajar, pero ObtenerTarifa devolverá tarifa completa
+                return true;
             }
 
-            // Verificar que hayan pasado 5 minutos desde el último viaje
             if (ultimoViaje != null)
             {
                 TimeSpan diferencia = ahora - ultimoViaje.Value;
                 if (diferencia.TotalMinutes < 5)
                 {
-                    return false; // No han pasado 5 minutos
+                    return false;
                 }
             }
 
@@ -60,20 +56,17 @@ namespace TarjetaSube
         {
             DateTime ahora = tiempo.Now();
 
-            // Verificar si es un nuevo día
             if (primerViajeDia == null || ahora.Date != primerViajeDia.Value.Date)
             {
                 primerViajeDia = ahora;
                 viajesDelDia = 0;
             }
 
-            // Si ya hizo 2 viajes hoy, cobrar tarifa completa
             if (viajesDelDia >= 2)
             {
-                return tarifaBase; // Tarifa completa
+                return tarifaBase;
             }
 
-            // Cobrar medio boleto
             return tarifaBase / 2;
         }
 
@@ -81,10 +74,8 @@ namespace TarjetaSube
         {
             DateTime ahora = tiempo.Now();
 
-            // Actualizar último viaje
             ultimoViaje = ahora;
 
-            // Verificar si es un nuevo día
             if (primerViajeDia == null || ahora.Date != primerViajeDia.Value.Date)
             {
                 primerViajeDia = ahora;
