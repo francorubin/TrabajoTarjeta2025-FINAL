@@ -15,7 +15,7 @@ namespace TarjetaSubeTest
             MedioBoleto tarjeta = new MedioBoleto();
             tarjeta.Cargar(2000);
             Colectivo colectivo = new Colectivo("K");
-            TiempoFalso tiempo = new TiempoFalso();
+            TiempoFalso tiempo = new TiempoFalso(2024, 10, 14, 10, 0, 0); // LUNES EN HORARIO PERMITIDO
 
             Boleto boleto = colectivo.PagarCon(tarjeta, tiempo);
 
@@ -30,8 +30,9 @@ namespace TarjetaSubeTest
         {
             FranquiciaCompleta tarjeta = new FranquiciaCompleta();
             Colectivo colectivo = new Colectivo("K");
+            TiempoFalso tiempo = new TiempoFalso(2024, 10, 14, 10, 0, 0); // LUNES EN HORARIO PERMITIDO
 
-            Boleto boleto = colectivo.PagarCon(tarjeta);
+            Boleto boleto = colectivo.PagarCon(tarjeta, tiempo);
 
             Assert.IsNotNull(boleto);
             Assert.AreEqual(0, boleto.Monto);
@@ -70,7 +71,7 @@ namespace TarjetaSubeTest
             MedioBoleto tarjeta = new MedioBoleto();
             tarjeta.Cargar(5000);
             Colectivo colectivo = new Colectivo("K");
-            TiempoFalso tiempo = new TiempoFalso();
+            TiempoFalso tiempo = new TiempoFalso(2024, 10, 14, 10, 0, 0); // LUNES EN HORARIO PERMITIDO
 
             Boleto b1 = colectivo.PagarCon(tarjeta, tiempo);
             tiempo.AgregarMinutos(10);
@@ -94,7 +95,7 @@ namespace TarjetaSubeTest
         {
             MedioBoleto tarjeta = new MedioBoleto();
             Colectivo colectivo = new Colectivo("K");
-            TiempoFalso tiempo = new TiempoFalso();
+            TiempoFalso tiempo = new TiempoFalso(2024, 10, 14, 10, 0, 0); // LUNES EN HORARIO PERMITIDO
 
             Boleto boleto = colectivo.PagarCon(tarjeta, tiempo);
             Assert.IsNotNull(boleto);
@@ -107,7 +108,7 @@ namespace TarjetaSubeTest
             MedioBoleto tarjeta = new MedioBoleto();
             tarjeta.Cargar(2000);
             Colectivo colectivo = new Colectivo("K");
-            TiempoFalso tiempo = new TiempoFalso();
+            TiempoFalso tiempo = new TiempoFalso(2024, 10, 14, 10, 0, 0); // LUNES EN HORARIO PERMITIDO
 
             colectivo.PagarCon(tarjeta, tiempo); // 1210
             tiempo.AgregarMinutos(10);
@@ -146,7 +147,7 @@ namespace TarjetaSubeTest
             MedioBoleto tarjeta = new MedioBoleto();
             tarjeta.Cargar(2000);
             Colectivo colectivo = new Colectivo("K");
-            TiempoFalso tiempo = new TiempoFalso();
+            TiempoFalso tiempo = new TiempoFalso(2024, 10, 14, 10, 0, 0); // LUNES EN HORARIO PERMITIDO
 
             // Viaje 1: 2000 - 790 = 1210
             Boleto b1 = colectivo.PagarCon(tarjeta, tiempo);
@@ -181,7 +182,7 @@ namespace TarjetaSubeTest
             MedioBoleto tarjeta = new MedioBoleto();
             tarjeta.Cargar(2000);
             Colectivo colectivo = new Colectivo("K");
-            TiempoFalso tiempo = new TiempoFalso();
+            TiempoFalso tiempo = new TiempoFalso(2024, 10, 14, 10, 0, 0); // LUNES EN HORARIO PERMITIDO
 
             colectivo.PagarCon(tarjeta, tiempo); // 1210
             tiempo.AgregarMinutos(10);
@@ -200,7 +201,7 @@ namespace TarjetaSubeTest
         {
             MedioBoleto tarjeta = new MedioBoleto();
             tarjeta.Cargar(5000);
-            TiempoFalso tiempo = new TiempoFalso();
+            TiempoFalso tiempo = new TiempoFalso(2024, 10, 14, 10, 0, 0); // LUNES EN HORARIO PERMITIDO
 
             Colectivo colectivoK = new Colectivo("K");
             Colectivo colectivo142 = new Colectivo("142");
@@ -248,8 +249,9 @@ namespace TarjetaSubeTest
             BoletoGratuito tarjeta = new BoletoGratuito();
             tarjeta.Cargar(2000);
             Colectivo colectivo = new Colectivo("K");
+            TiempoFalso tiempo = new TiempoFalso(2024, 10, 14, 10, 0, 0); // LUNES EN HORARIO PERMITIDO
 
-            Boleto boleto = colectivo.PagarCon(tarjeta);
+            Boleto boleto = colectivo.PagarCon(tarjeta, tiempo);
 
             Assert.IsNotNull(boleto);
             Assert.AreEqual(0, boleto.Monto);
@@ -262,8 +264,9 @@ namespace TarjetaSubeTest
         {
             BoletoGratuito tarjeta = new BoletoGratuito();
             Colectivo colectivo = new Colectivo("K");
+            TiempoFalso tiempo = new TiempoFalso(2024, 10, 14, 10, 0, 0); // LUNES EN HORARIO PERMITIDO
 
-            Boleto boleto = colectivo.PagarCon(tarjeta);
+            Boleto boleto = colectivo.PagarCon(tarjeta, tiempo);
 
             Assert.IsNotNull(boleto);
             Assert.AreEqual(0, tarjeta.Saldo);
@@ -275,7 +278,7 @@ namespace TarjetaSubeTest
             BoletoGratuito tarjeta = new BoletoGratuito();
             tarjeta.Cargar(5000);
             Colectivo colectivo = new Colectivo("K");
-            TiempoFalso tiempo = new TiempoFalso();
+            TiempoFalso tiempo = new TiempoFalso(2024, 10, 14, 10, 0, 0); // LUNES EN HORARIO PERMITIDO
 
             // Primer viaje gratis
             colectivo.PagarCon(tarjeta, tiempo);
@@ -325,7 +328,7 @@ namespace TarjetaSubeTest
         {
             BoletoGratuito tarjeta = new BoletoGratuito();
             Colectivo colectivo = new Colectivo("K");
-            TiempoFalso tiempo = new TiempoFalso();
+            TiempoFalso tiempo = new TiempoFalso(2024, 10, 14, 10, 0, 0); // LUNES EN HORARIO PERMITIDO
 
             // Primeros 2 viajes gratis sin saldo
             Boleto b1 = colectivo.PagarCon(tarjeta, tiempo);
@@ -351,12 +354,13 @@ namespace TarjetaSubeTest
         {
             BoletoGratuito tarjeta = new BoletoGratuito();
             tarjeta.Cargar(5000);
+            TiempoFalso tiempo = new TiempoFalso(2024, 10, 14, 10, 0, 0); // LUNES EN HORARIO PERMITIDO
 
             Colectivo colectivoK = new Colectivo("K");
             Colectivo colectivo142 = new Colectivo("142");
 
-            Boleto b1 = colectivoK.PagarCon(tarjeta);
-            Boleto b2 = colectivo142.PagarCon(tarjeta);
+            Boleto b1 = colectivoK.PagarCon(tarjeta, tiempo);
+            Boleto b2 = colectivo142.PagarCon(tarjeta, tiempo);
 
             Assert.AreEqual(0, b1.Monto);
             Assert.AreEqual(0, b2.Monto);
@@ -394,8 +398,9 @@ namespace TarjetaSubeTest
             FranquiciaCompleta tarjeta = new FranquiciaCompleta();
             tarjeta.Cargar(5000);
             Colectivo colectivo = new Colectivo("K");
+            TiempoFalso tiempo = new TiempoFalso(2024, 10, 14, 10, 0, 0); // LUNES EN HORARIO PERMITIDO
 
-            Boleto boleto = colectivo.PagarCon(tarjeta);
+            Boleto boleto = colectivo.PagarCon(tarjeta, tiempo);
 
             Assert.IsNotNull(boleto);
             Assert.AreEqual(0, boleto.Monto);
@@ -407,10 +412,11 @@ namespace TarjetaSubeTest
         {
             FranquiciaCompleta tarjeta = new FranquiciaCompleta();
             Colectivo colectivo = new Colectivo("K");
+            TiempoFalso tiempo = new TiempoFalso(2024, 10, 14, 10, 0, 0); // LUNES EN HORARIO PERMITIDO
 
-            Boleto b1 = colectivo.PagarCon(tarjeta);
-            Boleto b2 = colectivo.PagarCon(tarjeta);
-            Boleto b3 = colectivo.PagarCon(tarjeta);
+            Boleto b1 = colectivo.PagarCon(tarjeta, tiempo);
+            Boleto b2 = colectivo.PagarCon(tarjeta, tiempo);
+            Boleto b3 = colectivo.PagarCon(tarjeta, tiempo);
 
             Assert.IsNotNull(b1);
             Assert.IsNotNull(b2);
@@ -424,8 +430,9 @@ namespace TarjetaSubeTest
             FranquiciaCompleta tarjeta = new FranquiciaCompleta();
             tarjeta.Cargar(5000);
             Colectivo colectivo = new Colectivo("K");
+            TiempoFalso tiempo = new TiempoFalso(2024, 10, 14, 10, 0, 0); // LUNES EN HORARIO PERMITIDO
 
-            Boleto boleto = colectivo.PagarCon(tarjeta);
+            Boleto boleto = colectivo.PagarCon(tarjeta, tiempo);
 
             Assert.IsNotNull(boleto);
             Assert.AreEqual(5000, tarjeta.Saldo);
@@ -455,10 +462,11 @@ namespace TarjetaSubeTest
         {
             FranquiciaCompleta tarjeta = new FranquiciaCompleta();
             Colectivo colectivo = new Colectivo("K");
+            TiempoFalso tiempo = new TiempoFalso(2024, 10, 14, 10, 0, 0); // LUNES EN HORARIO PERMITIDO
 
             for (int i = 0; i < 10; i++)
             {
-                Boleto boleto = colectivo.PagarCon(tarjeta);
+                Boleto boleto = colectivo.PagarCon(tarjeta, tiempo);
                 Assert.IsNotNull(boleto);
             }
 
@@ -469,14 +477,15 @@ namespace TarjetaSubeTest
         public void TestFranquiciaCompletaPorDiferentesLineas()
         {
             FranquiciaCompleta tarjeta = new FranquiciaCompleta();
+            TiempoFalso tiempo = new TiempoFalso(2024, 10, 14, 10, 0, 0); // LUNES EN HORARIO PERMITIDO
 
             Colectivo colectivoK = new Colectivo("K");
             Colectivo colectivo142 = new Colectivo("142");
             Colectivo colectivo133 = new Colectivo("133");
 
-            Boleto b1 = colectivoK.PagarCon(tarjeta);
-            Boleto b2 = colectivo142.PagarCon(tarjeta);
-            Boleto b3 = colectivo133.PagarCon(tarjeta);
+            Boleto b1 = colectivoK.PagarCon(tarjeta, tiempo);
+            Boleto b2 = colectivo142.PagarCon(tarjeta, tiempo);
+            Boleto b3 = colectivo133.PagarCon(tarjeta, tiempo);
 
             Assert.AreEqual("K", b1.Linea);
             Assert.AreEqual("142", b2.Linea);
@@ -500,12 +509,12 @@ namespace TarjetaSubeTest
             franquicia.Cargar(5000);
 
             Colectivo colectivo = new Colectivo("K");
-            TiempoFalso tiempo = new TiempoFalso();
+            TiempoFalso tiempo = new TiempoFalso(2024, 10, 14, 10, 0, 0); // LUNES EN HORARIO PERMITIDO
 
-            Boleto b1 = colectivo.PagarCon(normal);
+            Boleto b1 = colectivo.PagarCon(normal, tiempo);
             Boleto b2 = colectivo.PagarCon(medio, tiempo);
-            Boleto b3 = colectivo.PagarCon(gratuito);
-            Boleto b4 = colectivo.PagarCon(franquicia);
+            Boleto b3 = colectivo.PagarCon(gratuito, tiempo);
+            Boleto b4 = colectivo.PagarCon(franquicia, tiempo);
 
             Assert.AreEqual(1580, b1.Monto);
             Assert.AreEqual(790, b2.Monto);
@@ -557,7 +566,7 @@ namespace TarjetaSubeTest
             Assert.AreEqual(10000, tarjeta.Saldo);
 
             Colectivo colectivo = new Colectivo("K");
-            TiempoFalso tiempo = new TiempoFalso();
+            TiempoFalso tiempo = new TiempoFalso(2024, 10, 14, 10, 0, 0); // LUNES EN HORARIO PERMITIDO
 
             colectivo.PagarCon(tarjeta, tiempo);
 
@@ -574,7 +583,9 @@ namespace TarjetaSubeTest
             Assert.AreEqual(40000, tarjeta.Saldo);
 
             Colectivo colectivo = new Colectivo("K");
-            colectivo.PagarCon(tarjeta);
+            TiempoFalso tiempo = new TiempoFalso(2024, 10, 14, 10, 0, 0); // LUNES EN HORARIO PERMITIDO
+
+            colectivo.PagarCon(tarjeta, tiempo);
 
             Assert.AreEqual(40000, tarjeta.Saldo);
         }
@@ -595,12 +606,62 @@ namespace TarjetaSubeTest
             MedioBoleto tarjeta = new MedioBoleto();
             tarjeta.Cargar(5000);
             Colectivo colectivo = new Colectivo("K");
-            TiempoFalso tiempo = new TiempoFalso();
+            TiempoFalso tiempo = new TiempoFalso(2024, 10, 14, 10, 0, 0); // LUNES EN HORARIO PERMITIDO
 
             Boleto boleto = colectivo.PagarCon(tarjeta, tiempo);
 
             Assert.AreEqual(4210, boleto.SaldoRestante);
             Assert.AreEqual(4210, tarjeta.Saldo);
+        }
+
+        // ===== TESTS NUEVOS PARA RESTRICCIONES HORARIAS =====
+
+        [Test]
+        public void TestMedioBoletoNoPermiteViajarDomingo()
+        {
+            MedioBoleto tarjeta = new MedioBoleto();
+            tarjeta.Cargar(5000);
+            Colectivo colectivo = new Colectivo("K");
+            TiempoFalso tiempo = new TiempoFalso(2024, 10, 13, 10, 0, 0); // DOMINGO
+
+            Boleto boleto = colectivo.PagarCon(tarjeta, tiempo);
+            Assert.IsNull(boleto);
+        }
+
+        [Test]
+        public void TestBoletoGratuitoNoPermiteViajarDomingo()
+        {
+            BoletoGratuito tarjeta = new BoletoGratuito();
+            tarjeta.Cargar(5000);
+            Colectivo colectivo = new Colectivo("K");
+            TiempoFalso tiempo = new TiempoFalso(2024, 10, 13, 10, 0, 0); // DOMINGO
+
+            Boleto boleto = colectivo.PagarCon(tarjeta, tiempo);
+            Assert.IsNull(boleto);
+        }
+
+        [Test]
+        public void TestFranquiciaCompletaNoPermiteViajarDomingo()
+        {
+            FranquiciaCompleta tarjeta = new FranquiciaCompleta();
+            tarjeta.Cargar(5000);
+            Colectivo colectivo = new Colectivo("K");
+            TiempoFalso tiempo = new TiempoFalso(2024, 10, 13, 10, 0, 0); // DOMINGO
+
+            Boleto boleto = colectivo.PagarCon(tarjeta, tiempo);
+            Assert.IsNull(boleto);
+        }
+
+        [Test]
+        public void TestTarjetaNormalPermiteViajarDomingo()
+        {
+            Tarjeta tarjeta = new Tarjeta();
+            tarjeta.Cargar(5000);
+            Colectivo colectivo = new Colectivo("K");
+            TiempoFalso tiempo = new TiempoFalso(2024, 10, 13, 10, 0, 0); // DOMINGO
+
+            Boleto boleto = colectivo.PagarCon(tarjeta, tiempo);
+            Assert.IsNotNull(boleto);
         }
     }
 }

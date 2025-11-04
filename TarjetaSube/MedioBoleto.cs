@@ -29,6 +29,11 @@ namespace TarjetaSube
         {
             DateTime ahora = tiempo.Now();
 
+            if (!EstaEnHorarioPermitido(ahora))
+            {
+                return false;
+            }
+
             if (primerViajeDia == null || ahora.Date != primerViajeDia.Value.Date)
             {
                 primerViajeDia = ahora;
@@ -85,6 +90,20 @@ namespace TarjetaSube
             {
                 viajesDelDia++;
             }
+        }
+
+        private bool EstaEnHorarioPermitido(DateTime fecha)
+        {
+            if (fecha.DayOfWeek == DayOfWeek.Sunday)
+            {
+                return false;
+            }
+
+            TimeSpan hora = fecha.TimeOfDay;
+            TimeSpan horaInicio = new TimeSpan(6, 0, 0);
+            TimeSpan horaFin = new TimeSpan(22, 0, 0);
+
+            return hora >= horaInicio && hora < horaFin;
         }
     }
 }
