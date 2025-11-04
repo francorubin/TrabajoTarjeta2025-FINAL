@@ -302,13 +302,14 @@ namespace TarjetaSubeTest
             FranquiciaCompleta franquicia = new FranquiciaCompleta();
             Colectivo colectivo = new Colectivo("K");
             TiempoFalso tiempo = new TiempoFalso(2024, 11, 1, 8, 0, 0);
+            Boleto boleto = colectivo.PagarCon(franquicia, tiempo);
 
             for (int i = 0; i < 100; i++)
             {
-                Boleto boleto = colectivo.PagarCon(franquicia, tiempo);
                 Assert.IsNotNull(boleto);
                 Assert.AreEqual(0, boleto.Monto);
                 tiempo.AgregarMinutos(10);
+                boleto = colectivo.PagarCon(franquicia, tiempo);
             }
         }
 
