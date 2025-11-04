@@ -18,6 +18,8 @@ namespace TarjetaSube
 
         private int viajesDelMes;
         private DateTime? primerViajeMes;
+        private DateTime? ultimoViajeParaTrasbordo;
+        private string ultimaLineaViaje;
 
         public decimal Saldo
         {
@@ -46,6 +48,8 @@ namespace TarjetaSube
             id = Guid.NewGuid();
             viajesDelMes = 0;
             primerViajeMes = null;
+            ultimoViajeParaTrasbordo = null;
+            ultimaLineaViaje = null;
         }
 
         public virtual bool Cargar(decimal monto)
@@ -129,6 +133,50 @@ namespace TarjetaSube
         {
             ActualizarContadorMensual(tiempo);
             viajesDelMes++;
+        }
+
+        public virtual bool EsTrasbordo(string lineaColectivo, Tiempo tiempo)
+        {
+            if (ultimoViajeParaTrasbordo == null || ultimaLineaViaje == null)
+            {
+                return false;
+            }
+
+            if (lineaColectivo == ultimaLineaViaje)
+            {
+                return false;
+            }
+
+            DateTime ahora = tiempo.Now();
+            DayOfWeek dia = ahora.DayOfWeek;
+
+            if (dia == DayOfWeek.Sunday)
+            {
+                return false;
+            }
+
+            if (ahora.Hour < 7 || ahora.Hour >= 22)
+            {
+                return false;
+            }
+
+            TimeSpan diferencia = ahora - ultimoViajeParaTrasbordo.Value;
+            if (diferencia.TotalHours <= 1)
+            {
+                return true;
+            }
+
+            return false;
+        }
+
+        public virtual void RegistrarViajeParaTrasbordo(string lineaColectivo, Tiempo tiempo, bool esTrasbordo)
+        {
+            if (!esTrasbordo)
+            {
+                ultimoViajeParaTrasbordo = tiempo.Now();
+            }
+
+            ultimaLineaViaje = lineaColectivo;
         }
 
         protected void ActualizarContadorMensual(Tiempo tiempo)

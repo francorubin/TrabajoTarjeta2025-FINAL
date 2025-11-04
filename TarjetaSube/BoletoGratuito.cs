@@ -37,6 +37,7 @@ namespace TarjetaSube
         {
             DateTime ahora = tiempo.Now();
 
+            // RESTRICCIÓN DE HORARIOS: Lunes a sábado de 6 a 22
             if (!EstaEnHorarioPermitido(ahora))
             {
                 return false;
@@ -49,6 +50,22 @@ namespace TarjetaSube
             }
 
             return true;
+        }
+
+        private bool EstaEnHorarioPermitido(DateTime fecha)
+        {
+            // No se puede viajar los domingos
+            if (fecha.DayOfWeek == DayOfWeek.Sunday)
+            {
+                return false;
+            }
+
+            // Solo lunes a sábado de 6 a 22
+            TimeSpan hora = fecha.TimeOfDay;
+            TimeSpan horaInicio = new TimeSpan(6, 0, 0);
+            TimeSpan horaFin = new TimeSpan(22, 0, 0);
+
+            return hora >= horaInicio && hora < horaFin;
         }
 
         public override decimal ObtenerTarifaConLimitaciones(decimal tarifaBase, Tiempo tiempo)
@@ -82,20 +99,14 @@ namespace TarjetaSube
             {
                 viajesDelDia++;
             }
+
+            // Llamar al método base para registrar viajes del mes (uso frecuente)
+            base.RegistrarViaje(tiempo);
         }
 
-        private bool EstaEnHorarioPermitido(DateTime fecha)
+        public override void RegistrarViajeParaTrasbordo(string lineaColectivo, Tiempo tiempo, bool esTrasbordo)
         {
-            if (fecha.DayOfWeek == DayOfWeek.Sunday)
-            {
-                return false;
-            }
-
-            TimeSpan hora = fecha.TimeOfDay;
-            TimeSpan horaInicio = new TimeSpan(6, 0, 0);
-            TimeSpan horaFin = new TimeSpan(22, 0, 0);
-
-            return hora >= horaInicio && hora < horaFin;
+            base.RegistrarViajeParaTrasbordo(lineaColectivo, tiempo, esTrasbordo);
         }
     }
 }

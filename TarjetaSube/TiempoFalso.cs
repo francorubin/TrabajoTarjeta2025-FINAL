@@ -8,8 +8,10 @@ namespace TarjetaSube
 
         public TiempoFalso()
         {
-            // Inicia en una fecha específica (lunes 14 de octubre de 2024 a las 00:00:00)
-            tiempo = new DateTime(2024, 10, 14, 0, 0, 0);
+            // CORREGIDO: Inicia en una fecha específica (lunes 14 de octubre de 2024 a las 08:00:00)
+            // Cambio de 00:00:00 a 08:00:00 para que esté dentro del horario permitido (6-22)
+            // y para que los tests que avanzan muchas horas no salgan del rango
+            tiempo = new DateTime(2024, 10, 14, 8, 0, 0);
         }
 
         public TiempoFalso(int anio, int mes, int dia, int hora, int minuto, int segundo)

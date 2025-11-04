@@ -11,6 +11,7 @@ namespace TarjetaSube
         private string tipoBoleto;
         private Guid idTarjeta;
         private decimal totalAbonado;
+        private bool esTrasbordo;
 
         public decimal Monto
         {
@@ -47,15 +48,34 @@ namespace TarjetaSube
             get { return totalAbonado; }
         }
 
-        public Boleto(decimal montoViaje, decimal saldoActual, string lineaColectivo, DateTime fechaViaje, string tipo, Guid id, decimal saldoAnterior)
+        public bool EsTrasbordo
         {
-            monto = montoViaje;
-            saldoRestante = saldoActual;
+            get { return esTrasbordo; }
+        }
+
+        public Boleto(decimal montoAbonado, decimal saldo, string lineaColectivo, DateTime fechaViaje, string tipo, Guid id, decimal saldoAnterior)
+            : this(montoAbonado, saldo, lineaColectivo, fechaViaje, tipo, id, saldoAnterior, false)
+        {
+        }
+
+        public Boleto(decimal montoAbonado, decimal saldo, string lineaColectivo, DateTime fechaViaje, string tipo, Guid id, decimal saldoAnterior, bool trasbordo)
+        {
+            monto = montoAbonado;
+            saldoRestante = saldo;
             linea = lineaColectivo;
             fecha = fechaViaje;
             tipoBoleto = tipo;
             idTarjeta = id;
-            totalAbonado = saldoAnterior - saldoActual;
+            esTrasbordo = trasbordo;
+
+            if (saldoAnterior < 0)
+            {
+                totalAbonado = montoAbonado + Math.Abs(saldoAnterior);
+            }
+            else
+            {
+                totalAbonado = montoAbonado;
+            }
         }
     }
 }

@@ -216,14 +216,15 @@ namespace TarjetaSubeTest
             MedioBoleto tarjeta = new MedioBoleto();
             tarjeta.Cargar(20000);
             Colectivo colectivo = new Colectivo("K");
-            TiempoFalso tiempo = new TiempoFalso(2024, 10, 14, 23, 55, 0);
+            // CORREGIDO: Cambio de 23:55 a 21:50 para que el siguiente viaje esté en horario válido
+            TiempoFalso tiempo = new TiempoFalso(2024, 10, 14, 21, 50, 0);
 
             // Viaje al final del día
             Boleto b1 = colectivo.PagarCon(tarjeta, tiempo);
             Assert.AreEqual(790, b1.Monto);
 
-            // Avanzar al día siguiente (00:05 del martes)
-            tiempo.AgregarMinutos(10);
+            // Avanzar al día siguiente (07:50 del martes) - 600 minutos = 10 horas
+            tiempo.AgregarMinutos(600);
 
             // Debe poder hacer 2 viajes con medio boleto nuevamente
             Boleto b2 = colectivo.PagarCon(tarjeta, tiempo);
