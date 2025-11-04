@@ -47,23 +47,15 @@ namespace TarjetaSube
             get { return totalAbonado; }
         }
 
-        public Boleto(decimal montoAbonado, decimal saldo, string lineaColectivo, DateTime fechaViaje, string tipo, Guid id, decimal saldoAnterior)
+        public Boleto(decimal montoViaje, decimal saldoActual, string lineaColectivo, DateTime fechaViaje, string tipo, Guid id, decimal saldoAnterior)
         {
-            monto = montoAbonado;
-            saldoRestante = saldo;
+            monto = montoViaje;
+            saldoRestante = saldoActual;
             linea = lineaColectivo;
             fecha = fechaViaje;
             tipoBoleto = tipo;
             idTarjeta = id;
-
-            if (saldoAnterior < 0)
-            {
-                totalAbonado = montoAbonado + Math.Abs(saldoAnterior);
-            }
-            else
-            {
-                totalAbonado = montoAbonado;
-            }
+            totalAbonado = saldoAnterior - saldoActual;
         }
     }
 }
