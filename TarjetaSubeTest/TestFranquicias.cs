@@ -273,14 +273,25 @@ namespace TarjetaSubeTest
         public void TestBoletoGratuitoMultiplesViajes()
         {
             BoletoGratuito tarjeta = new BoletoGratuito();
-            tarjeta.Cargar(2000);
+            tarjeta.Cargar(5000);
             Colectivo colectivo = new Colectivo("K");
+            TiempoFalso tiempo = new TiempoFalso();
 
-            colectivo.PagarCon(tarjeta);
-            colectivo.PagarCon(tarjeta);
-            colectivo.PagarCon(tarjeta);
+            // Primer viaje gratis
+            colectivo.PagarCon(tarjeta, tiempo);
+            Assert.AreEqual(5000, tarjeta.Saldo);
 
-            Assert.AreEqual(2000, tarjeta.Saldo);
+            tiempo.AgregarMinutos(10);
+
+            // Segundo viaje gratis
+            colectivo.PagarCon(tarjeta, tiempo);
+            Assert.AreEqual(5000, tarjeta.Saldo);
+
+            tiempo.AgregarMinutos(10);
+
+            // Tercer viaje - tarifa completa
+            colectivo.PagarCon(tarjeta, tiempo);
+            Assert.AreEqual(3420, tarjeta.Saldo); // 5000 - 1580 = 3420
         }
 
         [Test]
@@ -297,9 +308,16 @@ namespace TarjetaSubeTest
         {
             BoletoGratuito tarjeta = new BoletoGratuito();
             tarjeta.Cargar(3000);
-            bool resultado = tarjeta.DescontarSaldo(1580);
+
+            // Descontar 0 no modifica el saldo (viaje gratis)
+            bool resultado = tarjeta.DescontarSaldo(0);
             Assert.IsTrue(resultado);
             Assert.AreEqual(3000, tarjeta.Saldo);
+
+            // Descontar 1580 sí modifica el saldo (viaje con tarifa completa)
+            resultado = tarjeta.DescontarSaldo(1580);
+            Assert.IsTrue(resultado);
+            Assert.AreEqual(1420, tarjeta.Saldo);
         }
 
         [Test]
@@ -307,14 +325,24 @@ namespace TarjetaSubeTest
         {
             BoletoGratuito tarjeta = new BoletoGratuito();
             Colectivo colectivo = new Colectivo("K");
+            TiempoFalso tiempo = new TiempoFalso();
 
-            Boleto b1 = colectivo.PagarCon(tarjeta);
-            Boleto b2 = colectivo.PagarCon(tarjeta);
-            Boleto b3 = colectivo.PagarCon(tarjeta);
-
+            // Primeros 2 viajes gratis sin saldo
+            Boleto b1 = colectivo.PagarCon(tarjeta, tiempo);
             Assert.IsNotNull(b1);
+            Assert.AreEqual(0, tarjeta.Saldo);
+
+            tiempo.AgregarMinutos(10);
+
+            Boleto b2 = colectivo.PagarCon(tarjeta, tiempo);
             Assert.IsNotNull(b2);
-            Assert.IsNotNull(b3);
+            Assert.AreEqual(0, tarjeta.Saldo);
+
+            tiempo.AgregarMinutos(10);
+
+            // Tercer viaje sin saldo - NO puede viajar porque excedería -1200
+            Boleto b3 = colectivo.PagarCon(tarjeta, tiempo);
+            Assert.IsNull(b3); // Debe ser NULL
             Assert.AreEqual(0, tarjeta.Saldo);
         }
 

@@ -292,8 +292,14 @@ namespace TarjetaSubeTest
         {
             BoletoGratuito tarjeta = new BoletoGratuito();
             tarjeta.Cargar(5000);
-            tarjeta.DescontarSaldo(1580);
+
+            // Descontar 0 (viaje gratis) no modifica saldo
+            tarjeta.DescontarSaldo(0);
             Assert.AreEqual(5000, tarjeta.Saldo);
+
+            // Descontar 1580 (viaje con tarifa) sí modifica saldo
+            tarjeta.DescontarSaldo(1580);
+            Assert.AreEqual(3420, tarjeta.Saldo);
         }
 
         [Test]
