@@ -13,8 +13,9 @@ namespace TarjetaSubeTest
             MedioBoleto tarjeta = new MedioBoleto();
             tarjeta.Cargar(5000);
             Colectivo colectivo = new Colectivo("K");
+            TiempoFalso tiempo = new TiempoFalso(2024, 10, 14, 8, 0, 0);
 
-            Boleto boleto = colectivo.PagarCon(tarjeta);
+            Boleto boleto = colectivo.PagarCon(tarjeta, tiempo);
 
             Assert.IsNotNull(boleto);
             Assert.AreEqual(790, boleto.Monto);
@@ -59,8 +60,9 @@ namespace TarjetaSubeTest
         {
             FranquiciaCompleta tarjeta = new FranquiciaCompleta();
             Colectivo colectivo = new Colectivo("K");
+            TiempoFalso tiempo = new TiempoFalso(2024, 10, 14, 8, 0, 0);
 
-            Boleto boleto = colectivo.PagarCon(tarjeta);
+            Boleto boleto = colectivo.PagarCon(tarjeta, tiempo);
 
             Assert.IsNotNull(boleto);
             Assert.AreEqual(0, boleto.Monto);
@@ -73,10 +75,11 @@ namespace TarjetaSubeTest
             FranquiciaCompleta tarjeta = new FranquiciaCompleta();
             tarjeta.Cargar(5000);
             Colectivo colectivo = new Colectivo("K");
+            TiempoFalso tiempo = new TiempoFalso(2024, 10, 14, 8, 0, 0);
 
-            colectivo.PagarCon(tarjeta);
-            colectivo.PagarCon(tarjeta);
-            colectivo.PagarCon(tarjeta);
+            colectivo.PagarCon(tarjeta, tiempo);
+            colectivo.PagarCon(tarjeta, tiempo);
+            colectivo.PagarCon(tarjeta, tiempo);
 
             Assert.AreEqual(5000, tarjeta.Saldo);
         }
@@ -87,8 +90,9 @@ namespace TarjetaSubeTest
             BoletoGratuito tarjeta = new BoletoGratuito();
             tarjeta.Cargar(5000);
             Colectivo colectivo = new Colectivo("K");
+            TiempoFalso tiempo = new TiempoFalso(2024, 10, 14, 8, 0, 0);
 
-            Boleto boleto = colectivo.PagarCon(tarjeta);
+            Boleto boleto = colectivo.PagarCon(tarjeta, tiempo);
 
             Assert.IsNotNull(boleto);
             Assert.AreEqual(0, boleto.Monto);

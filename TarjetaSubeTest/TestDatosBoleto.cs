@@ -40,14 +40,11 @@ namespace TarjetaSubeTest
             tarjeta.Cargar(2000);
             Colectivo colectivo = new Colectivo("K");
 
-            colectivo.PagarCon(tarjeta); // Saldo: 420
-            Boleto boleto2 = colectivo.PagarCon(tarjeta); // Saldo: -1160
+            colectivo.PagarCon(tarjeta);
+            Boleto boleto2 = colectivo.PagarCon(tarjeta);
 
-            // El monto del boleto es siempre 1580
             Assert.AreEqual(1580, boleto2.Monto);
 
-            // El total abonado es la diferencia entre saldos
-            // saldoAnterior (420) - saldoActual (-1160) = 1580
             Assert.AreEqual(1580, boleto2.TotalAbonado);
         }
 
@@ -74,8 +71,9 @@ namespace TarjetaSubeTest
             MedioBoleto tarjeta = new MedioBoleto();
             tarjeta.Cargar(5000);
             Colectivo colectivo = new Colectivo("K");
+            TiempoFalso tiempo = new TiempoFalso(2024, 10, 14, 8, 0, 0);
 
-            Boleto boleto = colectivo.PagarCon(tarjeta);
+            Boleto boleto = colectivo.PagarCon(tarjeta, tiempo);
 
             Assert.AreEqual("Medio Boleto", boleto.TipoBoleto);
             Assert.AreEqual(790, boleto.Monto);
@@ -87,8 +85,9 @@ namespace TarjetaSubeTest
             FranquiciaCompleta tarjeta = new FranquiciaCompleta();
             tarjeta.Cargar(5000);
             Colectivo colectivo = new Colectivo("K");
+            TiempoFalso tiempo = new TiempoFalso(2024, 10, 14, 8, 0, 0);
 
-            Boleto boleto = colectivo.PagarCon(tarjeta);
+            Boleto boleto = colectivo.PagarCon(tarjeta, tiempo);
 
             Assert.AreEqual("Franquicia Completa", boleto.TipoBoleto);
             Assert.AreEqual(0, boleto.Monto);
@@ -100,8 +99,9 @@ namespace TarjetaSubeTest
             BoletoGratuito tarjeta = new BoletoGratuito();
             tarjeta.Cargar(5000);
             Colectivo colectivo = new Colectivo("K");
+            TiempoFalso tiempo = new TiempoFalso(2024, 10, 14, 8, 0, 0);
 
-            Boleto boleto = colectivo.PagarCon(tarjeta);
+            Boleto boleto = colectivo.PagarCon(tarjeta, tiempo);
 
             Assert.AreEqual("Boleto Gratuito", boleto.TipoBoleto);
             Assert.AreEqual(0, boleto.Monto);
